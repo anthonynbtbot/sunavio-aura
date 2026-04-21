@@ -3,6 +3,7 @@ import { Container } from "@/components/atoms/Container";
 import { Eyebrow } from "@/components/atoms/Eyebrow";
 import { AnimatedText } from "@/components/atoms/AnimatedText";
 import { Reveal } from "@/components/atoms/Reveal";
+import solarTexture from "@/assets/solar-texture.jpg";
 
 const EASE = [0.22, 1, 0.36, 1] as const;
 
@@ -33,8 +34,22 @@ export function WhySunavio() {
   const reduced = useReducedMotion();
 
   return (
-    <section className="relative bg-bg3 py-24 md:py-32 lg:py-40">
-      <Container size="wide">
+    <section className="relative overflow-hidden bg-bg3 py-24 md:py-32 lg:py-40">
+      <img
+        src={solarTexture}
+        alt=""
+        aria-hidden
+        loading="lazy"
+        decoding="async"
+        width={1600}
+        height={896}
+        className="pointer-events-none absolute inset-0 h-full w-full object-cover opacity-[0.18] mix-blend-luminosity"
+      />
+      <div
+        aria-hidden
+        className="pointer-events-none absolute inset-0 bg-gradient-to-b from-bg3 via-bg3/60 to-bg3"
+      />
+      <Container size="wide" className="relative z-10">
         <div className="max-w-3xl">
           <Reveal>
             <Eyebrow>Pourquoi SUNAVIO</Eyebrow>

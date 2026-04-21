@@ -14,6 +14,7 @@ import { Container } from "@/components/atoms/Container";
 import { Eyebrow } from "@/components/atoms/Eyebrow";
 import { AnimatedText } from "@/components/atoms/AnimatedText";
 import { Reveal } from "@/components/atoms/Reveal";
+import solarTexture from "@/assets/solar-texture.jpg";
 
 const EASE = [0.22, 1, 0.36, 1] as const;
 
@@ -123,28 +124,45 @@ export function Segments() {
                 to={`/services#${slug}`}
                 className="group relative flex h-full flex-col overflow-hidden rounded-xl border border-line bg-bg2 p-8 transition-all duration-400 ease-out-expo hover:-translate-y-2 hover:border-or hover:shadow-card-hover"
               >
-                {/* Halo */}
+                {/* Texture solaire commune */}
+                <img
+                  src={solarTexture}
+                  alt=""
+                  aria-hidden
+                  loading="lazy"
+                  decoding="async"
+                  width={1600}
+                  height={896}
+                  className="pointer-events-none absolute inset-0 h-full w-full object-cover opacity-[0.12] mix-blend-luminosity transition-opacity duration-500 group-hover:opacity-[0.20]"
+                />
                 <div
                   aria-hidden
-                  className="pointer-events-none absolute -right-16 -top-16 h-48 w-48 rounded-full bg-or/10 opacity-0 blur-3xl transition-opacity duration-500 group-hover:opacity-100"
+                  className="pointer-events-none absolute inset-0 bg-gradient-to-br from-bg2/85 via-bg2/90 to-bg2"
+                />
+                {/* Halo orange au hover */}
+                <div
+                  aria-hidden
+                  className="pointer-events-none absolute -right-16 -top-16 h-48 w-48 rounded-full bg-or/20 opacity-0 blur-3xl transition-opacity duration-500 group-hover:opacity-100"
                 />
 
-                <Icon
-                  className="h-12 w-12 text-or transition-transform duration-400 ease-out-expo group-hover:rotate-[5deg]"
-                  strokeWidth={1.5}
-                />
+                <div className="relative z-10 flex h-full flex-col">
+                  <Icon
+                    className="h-12 w-12 text-or transition-transform duration-400 ease-out-expo group-hover:rotate-[5deg]"
+                    strokeWidth={1.5}
+                  />
 
-                <h3 className="mt-8 font-display text-2xl font-semibold text-wh">
-                  {title}
-                </h3>
-                <p className="mt-3 flex-1 text-sm leading-relaxed text-gr">
-                  {description}
-                </p>
+                  <h3 className="mt-8 font-display text-2xl font-semibold text-wh">
+                    {title}
+                  </h3>
+                  <p className="mt-3 flex-1 text-sm leading-relaxed text-gr">
+                    {description}
+                  </p>
 
-                <span className="mt-8 inline-flex items-center gap-2 text-sm font-medium text-or">
-                  <span className="link-underline">En savoir plus</span>
-                  <ArrowRight className="h-4 w-4 transition-transform duration-400 ease-out-expo group-hover:translate-x-1" />
-                </span>
+                  <span className="mt-8 inline-flex items-center gap-2 text-sm font-medium text-or">
+                    <span className="link-underline">En savoir plus</span>
+                    <ArrowRight className="h-4 w-4 transition-transform duration-400 ease-out-expo group-hover:translate-x-1" />
+                  </span>
+                </div>
               </Link>
             </motion.div>
           ))}
