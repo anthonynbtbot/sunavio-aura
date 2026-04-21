@@ -21,6 +21,8 @@ export function useLenis() {
         node.closest?.("a") !== null,
     });
 
+    (window as unknown as { __lenis?: unknown }).__lenis = lenis;
+
     let rafId: number;
     const raf = (time: number) => {
       lenis.raf(time);
@@ -31,6 +33,7 @@ export function useLenis() {
     return () => {
       cancelAnimationFrame(rafId);
       lenis.destroy();
+      delete (window as unknown as { __lenis?: unknown }).__lenis;
     };
   }, []);
 }
