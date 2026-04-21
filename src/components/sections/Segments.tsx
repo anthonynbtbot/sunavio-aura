@@ -111,7 +111,7 @@ export function Segments() {
                 to={`/services#${slug}`}
                 className="group relative isolate flex h-full flex-col rounded-xl border border-line bg-bg2 bg-cover bg-center bg-no-repeat p-8 outline-none transform-gpu [backface-visibility:hidden] [will-change:transform] [clip-path:inset(0_round_0.75rem)] [transition:transform_400ms_var(--ease-out-expo),border-color_400ms_var(--ease-out-expo),box-shadow_400ms_var(--ease-out-expo)] hover:-translate-y-2 hover:border-or hover:shadow-[0_0_60px_-10px_hsl(var(--or)/0.35)] focus-visible:outline-2 focus-visible:outline-or"
                 style={{
-                  backgroundImage: `linear-gradient(135deg, hsl(var(--bg2) / 0.84), hsl(var(--bg2) / 0.92) 52%, hsl(var(--bg2) / 0.98)), radial-gradient(circle at 78% 14%, hsl(var(--or) / 0.12), transparent 36%), url(${solarTexture})`,
+                  backgroundImage: `linear-gradient(135deg, hsl(var(--bg3) / 0.94), hsl(var(--bg3) / 0.97) 52%, hsl(var(--bg3))), radial-gradient(circle at 78% 14%, hsl(var(--or) / 0.10), transparent 36%), url(${solarTexture})`,
                 }}
               >
                 <div className="relative z-10 flex h-full flex-col">
