@@ -5,6 +5,7 @@ import { Eyebrow } from "@/components/atoms/Eyebrow";
 import { AnimatedText } from "@/components/atoms/AnimatedText";
 import { Reveal } from "@/components/atoms/Reveal";
 import { SunavioButton } from "@/components/atoms/SunavioButton";
+import solarTexture from "@/assets/solar-texture.jpg";
 
 const EASE = [0.22, 1, 0.36, 1] as const;
 
@@ -12,8 +13,23 @@ export function Simulator() {
   const reduced = useReducedMotion();
 
   return (
-    <section className="relative bg-bg3 py-24 md:py-32 lg:py-40">
-      <Container size="wide">
+    <section className="relative overflow-hidden bg-bg3 py-24 md:py-32 lg:py-40">
+      {/* Texture solaire en fond */}
+      <img
+        src={solarTexture}
+        alt=""
+        aria-hidden
+        loading="lazy"
+        decoding="async"
+        width={1600}
+        height={896}
+        className="pointer-events-none absolute inset-0 h-full w-full object-cover opacity-[0.15] mix-blend-luminosity"
+      />
+      <div
+        aria-hidden
+        className="pointer-events-none absolute inset-0 bg-gradient-to-b from-bg3 via-bg3/70 to-bg3"
+      />
+      <Container size="wide" className="relative z-10">
         <div className="grid items-center gap-16 lg:grid-cols-2 lg:gap-24">
           {/* Texte */}
           <div>

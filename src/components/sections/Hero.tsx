@@ -5,12 +5,32 @@ import { Eyebrow } from "@/components/atoms/Eyebrow";
 import { AnimatedText } from "@/components/atoms/AnimatedText";
 import { SunavioButton } from "@/components/atoms/SunavioButton";
 import { Link } from "react-router-dom";
+import heroBg from "@/assets/hero-villa-solar.jpg";
 
 const EASE = [0.22, 1, 0.36, 1] as const;
 
 export function Hero() {
   return (
     <section className="relative isolate flex min-h-[100svh] items-center overflow-hidden pt-24 md:pt-0">
+      {/* Image de fond — villa solaire Marrakech au crépuscule */}
+      <img
+        src={heroBg}
+        alt="Villa marocaine de prestige avec panneaux solaires monocristallins au crépuscule, vue sur les montagnes de l'Atlas"
+        fetchPriority="high"
+        decoding="async"
+        width={1920}
+        height={1080}
+        className="pointer-events-none absolute inset-0 h-full w-full object-cover"
+      />
+      {/* Overlay sombre pour lisibilité du texte */}
+      <div
+        aria-hidden
+        className="pointer-events-none absolute inset-0"
+        style={{
+          background:
+            "linear-gradient(to bottom, hsl(var(--bg) / 0.80) 0%, hsl(var(--bg) / 0.65) 50%, hsl(var(--bg) / 0.95) 100%)",
+        }}
+      />
       {/* Halo orange en haut-droite, pulsé */}
       <div
         aria-hidden
