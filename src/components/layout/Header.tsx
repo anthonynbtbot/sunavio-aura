@@ -9,6 +9,7 @@ import logo from "@/assets/sunavio-logo-white.png";
 
 const NAV = [
   { to: "/", label: "Accueil" },
+  { to: "/services", label: "Services" },
   { to: "/a-propos", label: "À propos" },
   { to: "/contact", label: "Contact" },
 ];
