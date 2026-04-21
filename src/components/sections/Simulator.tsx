@@ -1,5 +1,5 @@
 import { motion, useReducedMotion } from "framer-motion";
-import { ArrowRight, Sun, Zap, TrendingUp } from "lucide-react";
+import { Sun, Zap, TrendingUp } from "lucide-react";
 import { Container } from "@/components/atoms/Container";
 import { Reveal } from "@/components/atoms/Reveal";
 import { SectionHeader } from "@/components/atoms/SectionHeader";
@@ -43,7 +43,7 @@ export function Simulator() {
               <div className="mt-10">
                 <SunavioButton size="lg" asChild>
                   <a href="https://estimer.sunavio.com">
-                    Lancer le simulateur <ArrowRight />
+                    Lancer le simulateur
                   </a>
                 </SunavioButton>
               </div>

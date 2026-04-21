@@ -1,4 +1,4 @@
-import { ArrowRight } from "lucide-react";
+
 import { Link } from "react-router-dom";
 import { Container } from "@/components/atoms/Container";
 import { AnimatedText } from "@/components/atoms/AnimatedText";
@@ -38,7 +38,7 @@ export function FinalCTA() {
             <div className="mt-12 flex flex-col items-center justify-center gap-4 sm:flex-row">
               <SunavioButton size="lg" asChild>
                 <a href="https://estimer.sunavio.com">
-                  Estimer mon projet <ArrowRight />
+                  Estimer mon projet
                 </a>
               </SunavioButton>
               <SunavioButton size="lg" variant="secondary" asChild>

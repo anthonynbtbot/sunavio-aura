@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { ArrowRight } from "lucide-react";
+
 import { Container } from "@/components/atoms/Container";
 import { Eyebrow } from "@/components/atoms/Eyebrow";
 import { AnimatedText } from "@/components/atoms/AnimatedText";
@@ -84,7 +84,7 @@ export function Hero() {
           >
             <SunavioButton size="lg" asChild>
               <a href="https://estimer.sunavio.com">
-                Estimer mon projet <ArrowRight />
+                Estimer mon projet
               </a>
             </SunavioButton>
             <SunavioButton size="lg" variant="secondary" asChild>
