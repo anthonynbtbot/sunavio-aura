@@ -1,5 +1,6 @@
+import { useEffect } from "react";
 import { ArrowRight, Check } from "lucide-react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { useLenis } from "@/hooks/useLenis";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
@@ -168,6 +169,17 @@ const SEGMENTS: Segment[] = [
 
 const Services = () => {
   useLenis();
+  const { hash } = useLocation();
+
+  useEffect(() => {
+    if (!hash) return;
+    const id = hash.replace("#", "");
+    const el = document.getElementById(id);
+    if (el) {
+      // petit délai pour laisser la page monter
+      setTimeout(() => el.scrollIntoView({ behavior: "smooth", block: "start" }), 80);
+    }
+  }, [hash]);
 
   return (
     <div className="min-h-screen bg-bg text-wh">
