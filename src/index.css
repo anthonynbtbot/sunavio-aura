@@ -221,4 +221,26 @@
     transition: transform 0.5s var(--ease-out-expo);
   }
   .link-underline:hover::after { transform: scaleX(1); }
+
+  /* Legal pages prose */
+  .legal-prose h2 {
+    @apply font-display text-3xl font-semibold text-wh mt-12 mb-4;
+  }
+  .legal-prose h2:first-child { @apply mt-0; }
+  .legal-prose h3 {
+    @apply font-display text-xl font-semibold text-wh mt-8 mb-3;
+  }
+  .legal-prose p {
+    @apply text-[17px] leading-[1.7] text-gr;
+  }
+  .legal-prose strong { @apply text-wh font-semibold; }
+  .legal-prose ul {
+    @apply mt-3 space-y-2 pl-5 text-[17px] leading-[1.7] text-gr list-disc marker:text-or;
+  }
+  .legal-prose a {
+    @apply text-or underline underline-offset-4 decoration-or/40 hover:decoration-or transition-colors;
+  }
+  .legal-prose hr {
+    @apply my-12 border-line;
+  }
 }
