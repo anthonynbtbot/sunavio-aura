@@ -376,8 +376,6 @@ const About = () => {
                 <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
                   <a
                     href="https://estimer.sunavio.com"
-                    target="_blank"
-                    rel="noopener noreferrer"
                     className={sunavioButtonVariants({ variant: "primary", size: "lg" })}
                   >
                     Estimer mon projet

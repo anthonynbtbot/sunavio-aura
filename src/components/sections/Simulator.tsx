@@ -42,7 +42,7 @@ export function Simulator() {
             <Reveal delay={0.3}>
               <div className="mt-10">
                 <SunavioButton size="lg" asChild>
-                  <a href="https://estimer.sunavio.com" target="_blank" rel="noreferrer">
+                  <a href="https://estimer.sunavio.com">
                     Lancer le simulateur <ArrowRight />
                   </a>
                 </SunavioButton>

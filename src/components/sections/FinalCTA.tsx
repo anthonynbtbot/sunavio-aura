@@ -37,7 +37,7 @@ export function FinalCTA() {
           <Reveal delay={0.3}>
             <div className="mt-12 flex flex-col items-center justify-center gap-4 sm:flex-row">
               <SunavioButton size="lg" asChild>
-                <a href="https://estimer.sunavio.com" target="_blank" rel="noreferrer">
+                <a href="https://estimer.sunavio.com">
                   Estimer mon projet <ArrowRight />
                 </a>
               </SunavioButton>

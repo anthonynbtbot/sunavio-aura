@@ -76,7 +76,7 @@ export function Header() {
 
             <div className="hidden md:block">
               <SunavioButton size="sm" asChild>
-                <a href="https://estimer.sunavio.com" target="_blank" rel="noopener noreferrer">
+                <a href="https://estimer.sunavio.com">
                   Estimer mon projet
                 </a>
               </SunavioButton>
@@ -140,7 +140,7 @@ export function Header() {
                 transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1], delay: 0.5 }}
               >
                 <SunavioButton size="lg" asChild className="w-full">
-                  <a href="https://estimer.sunavio.com" target="_blank" rel="noopener noreferrer">
+                  <a href="https://estimer.sunavio.com">
                     Estimer mon projet
                   </a>
                 </SunavioButton>
