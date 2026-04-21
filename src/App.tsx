@@ -7,6 +7,10 @@ import Index from "./pages/Index.tsx";
 import Contact from "./pages/Contact.tsx";
 import About from "./pages/About.tsx";
 import Services from "./pages/Services.tsx";
+import LegalMentions from "./pages/LegalMentions.tsx";
+import PrivacyPolicy from "./pages/PrivacyPolicy.tsx";
+import TermsOfUse from "./pages/TermsOfUse.tsx";
+import CookiePolicy from "./pages/CookiePolicy.tsx";
 import NotFound from "./pages/NotFound.tsx";
 
 const queryClient = new QueryClient();
@@ -22,6 +26,10 @@ const App = () => (
           <Route path="/contact" element={<Contact />} />
           <Route path="/a-propos" element={<About />} />
           <Route path="/services" element={<Services />} />
+          <Route path="/mentions-legales" element={<LegalMentions />} />
+          <Route path="/confidentialite" element={<PrivacyPolicy />} />
+          <Route path="/cgu" element={<TermsOfUse />} />
+          <Route path="/cookies" element={<CookiePolicy />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
