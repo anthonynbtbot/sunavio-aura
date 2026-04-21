@@ -1,4 +1,4 @@
-import { ArrowRight, Clock, Mail, Map, MapPin, MessageCircle, Phone } from "lucide-react";
+import { Clock, Mail, Map, MapPin, MessageCircle, Phone } from "lucide-react";
 import { useLenis } from "@/hooks/useLenis";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
@@ -103,7 +103,7 @@ const Contact = () => {
                   className={sunavioButtonVariants({ variant: "primary", size: "lg" })}
                 >
                   <span className="relative z-10 inline-flex items-center gap-2">
-                    Lancer le simulateur <ArrowRight className="h-4 w-4" />
+                    Lancer le simulateur
                   </span>
                 </a>
                 <p className="text-xs text-gr2">Estimation gratuite, sans engagement.</p>
@@ -252,7 +252,7 @@ const Contact = () => {
                     className={sunavioButtonVariants({ variant: "primary", size: "lg" })}
                   >
                     <span className="relative z-10 inline-flex items-center gap-2">
-                      Estimer mon projet <ArrowRight className="h-4 w-4" />
+                      Estimer mon projet
                     </span>
                   </a>
                   <a

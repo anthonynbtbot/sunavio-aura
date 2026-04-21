@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { ArrowRight, Check } from "lucide-react";
+import { Check } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
 import { useLenis } from "@/hooks/useLenis";
 import { Header } from "@/components/layout/Header";
@@ -272,7 +272,6 @@ const Services = () => {
                         className={sunavioButtonVariants({ variant: "primary", size: "md" })}
                       >
                         {s.ctaLabel}
-                        <ArrowRight />
                       </Link>
                     </div>
                   </Reveal>
@@ -331,7 +330,6 @@ const Services = () => {
                     className={sunavioButtonVariants({ variant: "primary", size: "lg" })}
                   >
                     Estimer mon projet
-                    <ArrowRight />
                   </a>
                   <Link
                     to="/contact"

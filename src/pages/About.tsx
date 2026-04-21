@@ -1,4 +1,4 @@
-import { ArrowRight, Building, Compass, Eye, FileText, Globe, ShieldCheck } from "lucide-react";
+import { Building, Compass, Eye, FileText, Globe, ShieldCheck } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useLenis } from "@/hooks/useLenis";
 import { Header } from "@/components/layout/Header";
@@ -379,7 +379,6 @@ const About = () => {
                     className={sunavioButtonVariants({ variant: "primary", size: "lg" })}
                   >
                     Estimer mon projet
-                    <ArrowRight />
                   </a>
                   <Link
                     to="/contact"
