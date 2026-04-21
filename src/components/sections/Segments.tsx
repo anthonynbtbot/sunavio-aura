@@ -109,7 +109,7 @@ export function Segments() {
             >
               <Link
                 to={`/services#${slug}`}
-                className="group relative flex h-full flex-col overflow-hidden rounded-xl border border-line bg-bg2 p-8 transition-all duration-400 ease-out-expo hover:-translate-y-2 hover:border-or hover:shadow-card-hover"
+                className="group relative flex h-full flex-col overflow-hidden rounded-xl border border-line bg-bg2 p-8 transition-[transform,border-color,box-shadow] duration-400 ease-out-expo hover:-translate-y-2 hover:border-or hover:shadow-card-hover"
               >
                 {/* Texture solaire commune */}
                 <img
