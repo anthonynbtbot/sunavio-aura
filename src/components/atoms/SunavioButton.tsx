@@ -25,13 +25,13 @@ const sunavioButtonVariants = cva(
           "bg-or text-bg border border-or",
           "hover:shadow-cta",
           // overlay or2 qui scale-x au hover
-          "before:absolute before:inset-0 before:bg-or2 before:origin-left before:scale-x-0 before:transition-transform before:duration-500 before:ease-out-expo",
+          "before:pointer-events-none before:absolute before:inset-0 before:bg-or2 before:origin-left before:scale-x-0 before:transition-transform before:duration-500 before:ease-out-expo",
           "hover:before:scale-x-100",
         ],
         secondary: [
           "bg-transparent text-wh border border-line",
           "hover:border-or hover:text-or",
-          "before:absolute before:inset-0 before:bg-or/5 before:origin-left before:scale-x-0 before:transition-transform before:duration-500 before:ease-out-expo",
+          "before:pointer-events-none before:absolute before:inset-0 before:bg-or/5 before:origin-left before:scale-x-0 before:transition-transform before:duration-500 before:ease-out-expo",
           "hover:before:scale-x-100",
         ],
         ghost: [
