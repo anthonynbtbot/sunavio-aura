@@ -1,16 +1,30 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import { useLenis } from "@/hooks/useLenis";
+import { Header } from "@/components/layout/Header";
+import { Footer } from "@/components/layout/Footer";
+import { Hero } from "@/components/sections/Hero";
 
-// IMPORTANT: Fully REPLACE this with your own code
-const PlaceholderIndex = () => {
-  // PLACEHOLDER: Replace this entire return statement with the user's app.
-  // The inline background color is intentionally not part of the design system.
+const Index = () => {
+  useLenis();
+
   return (
-    <div className="flex min-h-screen items-center justify-center" style={{ backgroundColor: '#fcfbf8' }}>
-      <img data-lovable-blank-page-placeholder="REMOVE_THIS" src="/placeholder.svg" alt="Your app will live here!" />
+    <div className="min-h-screen bg-bg text-wh">
+      <Header />
+      <main>
+        <Hero />
+        {/* Sections suivantes : Simulateur, Segments, Approche, Cas clients,
+            Pourquoi SUNAVIO, CTA final — à venir dans la prochaine itération. */}
+        <section className="py-32">
+          <div className="mx-auto max-w-3xl px-5 text-center">
+            <p className="text-eyebrow">Suite à venir</p>
+            <p className="mt-4 text-body text-gr2">
+              Les sections complètes (simulateur, segments, cas clients…) seront ajoutées dans la prochaine itération.
+            </p>
+          </div>
+        </section>
+      </main>
+      <Footer />
     </div>
   );
 };
-
-const Index = PlaceholderIndex;
 
 export default Index;
