@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { Container } from "@/components/atoms/Container";
+import logo from "@/assets/sunavio-logo.jpeg";
 
 const SERVICES = [
   { label: "Hôtellerie & Hospitality", to: "/services#hospitality" },
@@ -32,9 +33,16 @@ export function Footer() {
           <div className="lg:col-span-1">
             <Link
               to="/"
-              className="font-display text-2xl font-semibold tracking-tight text-wh"
+              className="inline-flex items-center"
+              aria-label="SUNAVIO — accueil"
             >
-              SUNAVIO
+              <img
+                src={logo}
+                alt="SUNAVIO"
+                className="h-10 w-auto"
+                style={{ mixBlendMode: "screen" }}
+                draggable={false}
+              />
             </Link>
             <p className="mt-4 max-w-xs text-sm leading-relaxed text-gr2">
               Solutions solaires sur-mesure pour villas, hôtels et domaines d'exception. Ingénierie marocaine, exigence internationale.

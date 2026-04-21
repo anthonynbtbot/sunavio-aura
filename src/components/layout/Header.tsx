@@ -5,6 +5,7 @@ import { Menu, X } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { Container } from "@/components/atoms/Container";
 import { SunavioButton } from "@/components/atoms/SunavioButton";
+import logo from "@/assets/sunavio-logo.jpeg";
 
 const NAV = [
   { to: "/", label: "Accueil" },
@@ -44,10 +45,16 @@ export function Header() {
           <div className="flex h-16 items-center justify-between md:h-20">
             <Link
               to="/"
-              className="font-display text-xl font-semibold tracking-tight text-wh transition-colors hover:text-or md:text-2xl"
+              className="flex items-center transition-opacity hover:opacity-80"
               aria-label="SUNAVIO — accueil"
             >
-              SUNAVIO
+              <img
+                src={logo}
+                alt="SUNAVIO"
+                className="h-9 w-auto md:h-11"
+                style={{ mixBlendMode: "screen" }}
+                draggable={false}
+              />
             </Link>
 
             <nav className="hidden items-center gap-10 md:flex" aria-label="Navigation principale">
