@@ -76,8 +76,6 @@ export function Footer() {
                   <li key={c.label}>
                     <a
                       href={c.href}
-                      target="_blank"
-                      rel="noreferrer"
                       className="text-sm text-gr transition-colors hover:text-or"
                     >
                       {c.label}
