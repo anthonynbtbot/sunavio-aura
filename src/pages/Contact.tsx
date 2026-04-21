@@ -100,8 +100,6 @@ const Contact = () => {
               <div className="flex flex-col items-start gap-3">
                 <a
                   href="https://estimer.sunavio.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
                   className={sunavioButtonVariants({ variant: "primary", size: "lg" })}
                 >
                   <span className="relative z-10 inline-flex items-center gap-2">
@@ -251,8 +249,6 @@ const Contact = () => {
                 <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
                   <a
                     href="https://estimer.sunavio.com"
-                    target="_blank"
-                    rel="noopener noreferrer"
                     className={sunavioButtonVariants({ variant: "primary", size: "lg" })}
                   >
                     <span className="relative z-10 inline-flex items-center gap-2">

@@ -83,7 +83,7 @@ export function Hero() {
             className="mt-10 flex flex-col gap-4 sm:flex-row"
           >
             <SunavioButton size="lg" asChild>
-              <a href="https://estimer.sunavio.com" target="_blank" rel="noopener noreferrer">
+              <a href="https://estimer.sunavio.com">
                 Estimer mon projet <ArrowRight />
               </a>
             </SunavioButton>
