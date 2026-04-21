@@ -7,7 +7,7 @@ import { Eyebrow } from "@/components/atoms/Eyebrow";
 import { AnimatedText } from "@/components/atoms/AnimatedText";
 import { Reveal } from "@/components/atoms/Reveal";
 import { SectionHeader } from "@/components/atoms/SectionHeader";
-import { SunavioButton } from "@/components/atoms/SunavioButton";
+import { sunavioButtonVariants } from "@/components/atoms/SunavioButton";
 import solarTexture from "@/assets/solar-texture.jpg";
 
 interface PersonCard {
@@ -98,11 +98,16 @@ const Contact = () => {
             />
             <Reveal delay={0.3} className="mt-10">
               <div className="flex flex-col items-start gap-3">
-                <SunavioButton variant="primary" size="lg" asChild>
-                  <a href="https://estimer.sunavio.com" target="_blank" rel="noreferrer">
-                    Lancer le simulateur <ArrowRight />
-                  </a>
-                </SunavioButton>
+                <a
+                  href="https://estimer.sunavio.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={sunavioButtonVariants({ variant: "primary", size: "lg" })}
+                >
+                  <span className="relative z-10 inline-flex items-center gap-2">
+                    Lancer le simulateur <ArrowRight className="h-4 w-4" />
+                  </span>
+                </a>
                 <p className="text-xs text-gr2">Estimation gratuite, sans engagement.</p>
               </div>
             </Reveal>
@@ -128,21 +133,32 @@ const Contact = () => {
                     <p className="mt-2 text-sm text-gr2">{p.subtitle}</p>
 
                     <div className="mt-8 flex flex-col gap-3">
-                      <SunavioButton variant="primary" asChild>
-                        <a href={p.whatsapp} target="_blank" rel="noreferrer">
-                          <MessageCircle /> WhatsApp
-                        </a>
-                      </SunavioButton>
-                      <SunavioButton variant="secondary" asChild>
-                        <a href={`mailto:${p.email}`}>
-                          <Mail /> {p.email}
-                        </a>
-                      </SunavioButton>
-                      <SunavioButton variant="ghost" asChild>
-                        <a href={p.phoneHref}>
-                          <Phone /> {p.phoneDisplay}
-                        </a>
-                      </SunavioButton>
+                      <a
+                        href={p.whatsapp}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className={sunavioButtonVariants({ variant: "primary" })}
+                      >
+                        <span className="relative z-10 inline-flex items-center gap-2">
+                          <MessageCircle className="h-4 w-4" /> WhatsApp
+                        </span>
+                      </a>
+                      <a
+                        href={`mailto:${p.email}`}
+                        className={sunavioButtonVariants({ variant: "secondary" })}
+                      >
+                        <span className="relative z-10 inline-flex items-center gap-2">
+                          <Mail className="h-4 w-4" /> {p.email}
+                        </span>
+                      </a>
+                      <a
+                        href={p.phoneHref}
+                        className={sunavioButtonVariants({ variant: "ghost" })}
+                      >
+                        <span className="relative z-10 inline-flex items-center gap-2">
+                          <Phone className="h-4 w-4" /> {p.phoneDisplay}
+                        </span>
+                      </a>
                     </div>
                   </article>
                 </Reveal>
@@ -233,16 +249,26 @@ const Contact = () => {
               </Reveal>
               <Reveal delay={0.3}>
                 <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
-                  <SunavioButton variant="primary" size="lg" asChild>
-                    <a href="https://estimer.sunavio.com" target="_blank" rel="noreferrer">
-                      Estimer mon projet <ArrowRight />
-                    </a>
-                  </SunavioButton>
-                  <SunavioButton variant="secondary" size="lg" asChild>
-                    <a href="https://wa.me/212663284424" target="_blank" rel="noreferrer">
-                      <MessageCircle /> WhatsApp Anthony
-                    </a>
-                  </SunavioButton>
+                  <a
+                    href="https://estimer.sunavio.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={sunavioButtonVariants({ variant: "primary", size: "lg" })}
+                  >
+                    <span className="relative z-10 inline-flex items-center gap-2">
+                      Estimer mon projet <ArrowRight className="h-4 w-4" />
+                    </span>
+                  </a>
+                  <a
+                    href="https://wa.me/212663284424"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={sunavioButtonVariants({ variant: "secondary", size: "lg" })}
+                  >
+                    <span className="relative z-10 inline-flex items-center gap-2">
+                      <MessageCircle className="h-4 w-4" /> WhatsApp Anthony
+                    </span>
+                  </a>
                 </div>
               </Reveal>
             </div>

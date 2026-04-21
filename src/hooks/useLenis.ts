@@ -15,6 +15,10 @@ export function useLenis() {
       easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
       smoothWheel: true,
       touchMultiplier: 1.2,
+      // Ne pas intercepter les liens (externes, mailto, tel, target=_blank)
+      prevent: (node) =>
+        node.tagName === "A" ||
+        node.closest?.("a") !== null,
     });
 
     let rafId: number;
