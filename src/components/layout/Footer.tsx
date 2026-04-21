@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { Container } from "@/components/atoms/Container";
-import logo from "@/assets/sunavio-logo.jpeg";
+import logo from "@/assets/sunavio-logo.png";
 
 const SERVICES = [
   { label: "Hôtellerie & Hospitality", to: "/services#hospitality" },
@@ -40,7 +40,6 @@ export function Footer() {
                 src={logo}
                 alt="SUNAVIO"
                 className="h-10 w-auto"
-                style={{ mixBlendMode: "screen" }}
                 draggable={false}
               />
             </Link>
