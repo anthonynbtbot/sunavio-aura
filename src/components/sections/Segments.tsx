@@ -11,9 +11,7 @@ import {
 } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Container } from "@/components/atoms/Container";
-import { Eyebrow } from "@/components/atoms/Eyebrow";
-import { AnimatedText } from "@/components/atoms/AnimatedText";
-import { Reveal } from "@/components/atoms/Reveal";
+import { SectionHeader } from "@/components/atoms/SectionHeader";
 import solarTexture from "@/assets/solar-texture.jpg";
 
 const EASE = [0.22, 1, 0.36, 1] as const;
@@ -76,23 +74,12 @@ export function Segments() {
   return (
     <section className="relative bg-bg py-24 md:py-32 lg:py-40">
       <Container size="wide">
-        <div className="max-w-3xl">
-          <Reveal>
-            <Eyebrow>Nos expertises</Eyebrow>
-          </Reveal>
-          <AnimatedText
-            as="h2"
-            text="Des solutions pour chaque projet."
-            accentWords={["chaque", "projet"]}
-            className="mt-6 font-display text-display-section text-wh"
-          />
-          <Reveal delay={0.2}>
-            <p className="mt-6 text-body text-gr">
-              Six expertises distinctes, une exigence commune : produire réellement,
-              durablement, sans compromis sur la qualité d'intégration.
-            </p>
-          </Reveal>
-        </div>
+        <SectionHeader
+          eyebrow="Nos expertises"
+          title="Des solutions pour chaque projet."
+          accentWords={["chaque", "projet"]}
+          intro="Six expertises distinctes, une exigence commune : produire réellement, durablement, sans compromis sur la qualité d'intégration."
+        />
 
         <motion.div
           initial="hidden"

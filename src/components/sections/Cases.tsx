@@ -1,8 +1,6 @@
 import { motion, useReducedMotion } from "framer-motion";
 import { Container } from "@/components/atoms/Container";
-import { Eyebrow } from "@/components/atoms/Eyebrow";
-import { AnimatedText } from "@/components/atoms/AnimatedText";
-import { Reveal } from "@/components/atoms/Reveal";
+import { SectionHeader } from "@/components/atoms/SectionHeader";
 import { KPINumber } from "@/components/atoms/KPINumber";
 import villaInstall from "@/assets/villa-installation.jpg";
 
@@ -66,20 +64,12 @@ export function Cases() {
   return (
     <section className="relative bg-bg py-24 md:py-32 lg:py-40">
       <Container size="wide">
-        <div className="max-w-3xl">
-          <Reveal>
-            <Eyebrow>Réalisations</Eyebrow>
-          </Reveal>
-          <AnimatedText
-            as="h2"
-            text="Des projets qui produisent réellement."
-            accentWords={["produisent"]}
-            className="mt-6 font-display text-display-section text-wh"
-          />
-          <Reveal delay={0.2}>
-            <p className="mt-6 text-sm text-gr2">Cas anonymisés, chiffres réels.</p>
-          </Reveal>
-        </div>
+        <SectionHeader
+          eyebrow="Réalisations"
+          title="Des projets qui produisent réellement."
+          accentWords={["produisent"]}
+          intro="Cas anonymisés, chiffres réels — mesurés en exploitation."
+        />
 
         <motion.div
           initial="hidden"

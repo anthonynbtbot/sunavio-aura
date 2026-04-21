@@ -1,9 +1,8 @@
 import { motion, useReducedMotion } from "framer-motion";
 import { ArrowRight, Sun, Zap, TrendingUp } from "lucide-react";
 import { Container } from "@/components/atoms/Container";
-import { Eyebrow } from "@/components/atoms/Eyebrow";
-import { AnimatedText } from "@/components/atoms/AnimatedText";
 import { Reveal } from "@/components/atoms/Reveal";
+import { SectionHeader } from "@/components/atoms/SectionHeader";
 import { SunavioButton } from "@/components/atoms/SunavioButton";
 import solarTexture from "@/assets/solar-texture.jpg";
 
@@ -33,25 +32,12 @@ export function Simulator() {
         <div className="grid items-center gap-16 lg:grid-cols-2 lg:gap-24">
           {/* Texte */}
           <div>
-            <Reveal>
-              <Eyebrow>Estimation instantanée</Eyebrow>
-            </Reveal>
-
-            <AnimatedText
-              as="h2"
-              text="Combien peut produire votre toit ?"
+            <SectionHeader
+              eyebrow="Estimation instantanée"
+              title="Combien peut produire votre toit ?"
               accentWords={["votre", "toit"]}
-              className="mt-6 font-display text-display-section text-wh"
+              intro="Une estimation technique précise en 2 minutes : puissance installable, production annuelle, économies réalisées, retour sur investissement. Notre simulateur utilise les données ONEE, l'ensoleillement réel Marrakech et les tarifs équipements actualisés."
             />
-
-            <Reveal delay={0.2}>
-              <p className="mt-8 max-w-xl text-body text-gr">
-                Une estimation technique précise en 2 minutes : puissance installable,
-                production annuelle, économies réalisées, retour sur investissement.
-                Notre simulateur utilise les données ONEE, l'ensoleillement réel
-                Marrakech et les tarifs équipements actualisés.
-              </p>
-            </Reveal>
 
             <Reveal delay={0.3}>
               <div className="mt-10">
