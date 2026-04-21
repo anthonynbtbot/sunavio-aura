@@ -109,7 +109,7 @@ export function Segments() {
             >
               <Link
                 to={`/services#${slug}`}
-                className="group relative flex h-full flex-col overflow-hidden rounded-xl border border-line bg-bg2 p-8 transition-[transform,border-color,box-shadow] duration-400 ease-out-expo hover:-translate-y-2 hover:border-or hover:shadow-card-hover"
+                className="group relative flex h-full flex-col overflow-hidden rounded-xl border border-line bg-bg2 p-8 transform-gpu [transition:transform_400ms_var(--ease-out-expo),border-color_400ms_var(--ease-out-expo),box-shadow_400ms_var(--ease-out-expo)] hover:-translate-y-2 hover:border-or hover:shadow-[0_0_60px_-10px_hsl(var(--or)/0.35)]"
               >
                 {/* Texture solaire commune */}
                 <img
