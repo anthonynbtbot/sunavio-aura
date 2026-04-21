@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { Container } from "@/components/atoms/Container";
-import logo from "@/assets/sunavio-logo.png";
+import logo from "@/assets/sunavio-logo-white.png";
 
 const SERVICES = [
   { label: "Hôtellerie & Hospitality", to: "/services#hospitality" },
@@ -38,8 +38,9 @@ export function Footer() {
             >
               <img
                 src={logo}
-                alt="SUNAVIO"
-                className="h-10 w-auto"
+                alt="SUNAVIO — Énergie solaire premium Marrakech"
+                className="h-12 w-auto"
+                loading="eager"
                 draggable={false}
               />
             </Link>
