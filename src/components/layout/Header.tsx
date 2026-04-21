@@ -5,7 +5,7 @@ import { Menu, X } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { Container } from "@/components/atoms/Container";
 import { SunavioButton } from "@/components/atoms/SunavioButton";
-import logo from "@/assets/sunavio-logo.jpeg";
+import logo from "@/assets/sunavio-logo.png";
 
 const NAV = [
   { to: "/", label: "Accueil" },
@@ -52,7 +52,6 @@ export function Header() {
                 src={logo}
                 alt="SUNAVIO"
                 className="h-9 w-auto md:h-11"
-                style={{ mixBlendMode: "screen" }}
                 draggable={false}
               />
             </Link>
