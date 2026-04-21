@@ -109,7 +109,7 @@ export function Segments() {
             >
               <Link
                 to={`/services#${slug}`}
-                className="group relative flex h-full flex-col overflow-hidden rounded-xl border border-line bg-bg2 p-8 transform-gpu [transition:transform_400ms_var(--ease-out-expo),border-color_400ms_var(--ease-out-expo),box-shadow_400ms_var(--ease-out-expo)] hover:-translate-y-2 hover:border-or hover:shadow-[0_0_60px_-10px_hsl(var(--or)/0.35)]"
+                className="group relative isolate flex h-full flex-col overflow-hidden rounded-xl border border-line bg-bg2 p-8 outline-none transform-gpu [backface-visibility:hidden] [will-change:transform] [-webkit-mask-image:-webkit-radial-gradient(white,black)] [transition:transform_400ms_var(--ease-out-expo),border-color_400ms_var(--ease-out-expo),box-shadow_400ms_var(--ease-out-expo)] hover:-translate-y-2 hover:border-or hover:shadow-[0_0_60px_-10px_hsl(var(--or)/0.35)] focus-visible:outline-2 focus-visible:outline-or"
               >
                 {/* Texture solaire commune */}
                 <img
@@ -126,10 +126,13 @@ export function Segments() {
                   aria-hidden
                   className="pointer-events-none absolute inset-0 bg-gradient-to-br from-bg2/85 via-bg2/90 to-bg2"
                 />
-                {/* Halo orange au hover */}
                 <div
                   aria-hidden
-                  className="pointer-events-none absolute -right-16 -top-16 h-48 w-48 rounded-full bg-or/20 opacity-0 blur-3xl transition-opacity duration-500 group-hover:opacity-100"
+                  className="pointer-events-none absolute inset-0 rounded-[inherit] opacity-0 transition-opacity duration-500 group-hover:opacity-100"
+                  style={{
+                    background:
+                      "radial-gradient(circle at 78% 14%, hsl(var(--or) / 0.18), transparent 42%)",
+                  }}
                 />
 
                 <div className="relative z-10 flex h-full flex-col">
