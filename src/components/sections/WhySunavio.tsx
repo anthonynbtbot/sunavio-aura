@@ -1,8 +1,6 @@
 import { motion, useReducedMotion } from "framer-motion";
 import { Container } from "@/components/atoms/Container";
-import { Eyebrow } from "@/components/atoms/Eyebrow";
-import { AnimatedText } from "@/components/atoms/AnimatedText";
-import { Reveal } from "@/components/atoms/Reveal";
+import { SectionHeader } from "@/components/atoms/SectionHeader";
 import solarTexture from "@/assets/solar-texture.jpg";
 
 const EASE = [0.22, 1, 0.36, 1] as const;
@@ -50,17 +48,12 @@ export function WhySunavio() {
         className="pointer-events-none absolute inset-0 bg-gradient-to-b from-bg3 via-bg3/60 to-bg3"
       />
       <Container size="wide" className="relative z-10">
-        <div className="max-w-3xl">
-          <Reveal>
-            <Eyebrow>Pourquoi SUNAVIO</Eyebrow>
-          </Reveal>
-          <AnimatedText
-            as="h2"
-            text="La rigueur de l'ingénieur, l'exigence du client."
-            accentWords={["l'exigence", "du", "client"]}
-            className="mt-6 font-display text-display-section text-wh"
-          />
-        </div>
+        <SectionHeader
+          eyebrow="Pourquoi SUNAVIO"
+          title="La rigueur de l'ingénieur, l'exigence du client."
+          accentWords={["l'exigence", "du", "client"]}
+          intro="Quatre engagements qui guident chaque décision technique et commerciale."
+        />
 
         <motion.div
           initial="hidden"

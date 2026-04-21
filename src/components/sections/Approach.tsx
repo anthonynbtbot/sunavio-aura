@@ -1,9 +1,7 @@
 import { motion, useReducedMotion } from "framer-motion";
 import { Network, Battery, Gauge, type LucideIcon } from "lucide-react";
 import { Container } from "@/components/atoms/Container";
-import { Eyebrow } from "@/components/atoms/Eyebrow";
-import { AnimatedText } from "@/components/atoms/AnimatedText";
-import { Reveal } from "@/components/atoms/Reveal";
+import { SectionHeader } from "@/components/atoms/SectionHeader";
 
 const EASE = [0.22, 1, 0.36, 1] as const;
 
@@ -40,17 +38,12 @@ export function Approach() {
   return (
     <section className="relative bg-bg3 py-24 md:py-32 lg:py-40">
       <Container size="wide">
-        <div className="max-w-3xl">
-          <Reveal>
-            <Eyebrow>Notre approche</Eyebrow>
-          </Reveal>
-          <AnimatedText
-            as="h2"
-            text="Une ingénierie au millimètre."
-            accentWords={["au", "millimètre"]}
-            className="mt-6 font-display text-display-section text-wh"
-          />
-        </div>
+        <SectionHeader
+          eyebrow="Notre approche"
+          title="Une ingénierie au millimètre."
+          accentWords={["au", "millimètre"]}
+          intro="Trois piliers structurent chaque projet — du premier relevé à la maintenance long terme."
+        />
 
         <div className="relative mt-20 grid grid-cols-1 gap-12 md:grid-cols-3 md:gap-0">
           {PILLARS.map(({ icon: Icon, title, description }, i) => (
