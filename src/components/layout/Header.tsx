@@ -6,6 +6,7 @@ import { cn } from "@/lib/utils";
 import { Container } from "@/components/atoms/Container";
 import { SunavioButton } from "@/components/atoms/SunavioButton";
 import logo from "@/assets/sunavio-logo-white.png";
+import { trackSimulatorStart } from "@/lib/tracking";
 
 const NAV = [
   { to: "/", label: "Accueil" },
@@ -77,7 +78,7 @@ export function Header() {
 
             <div className="hidden md:block">
               <SunavioButton size="sm" asChild>
-                <a href="https://estimer.sunavio.com">
+                <a href="https://estimer.sunavio.com" onClick={() => trackSimulatorStart()}>
                   Estimer mon projet
                 </a>
               </SunavioButton>
@@ -141,7 +142,7 @@ export function Header() {
                 transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1], delay: 0.5 }}
               >
                 <SunavioButton size="lg" asChild className="w-full">
-                  <a href="https://estimer.sunavio.com">
+                  <a href="https://estimer.sunavio.com" onClick={() => trackSimulatorStart()}>
                     Estimer mon projet
                   </a>
                 </SunavioButton>

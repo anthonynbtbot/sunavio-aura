@@ -5,6 +5,7 @@ import { Reveal } from "@/components/atoms/Reveal";
 import { SectionHeader } from "@/components/atoms/SectionHeader";
 import { SunavioButton } from "@/components/atoms/SunavioButton";
 import solarTexture from "@/assets/solar-texture.jpg";
+import { trackSimulatorStart } from "@/lib/tracking";
 
 const EASE = [0.22, 1, 0.36, 1] as const;
 
@@ -42,7 +43,7 @@ export function Simulator() {
             <Reveal delay={0.3}>
               <div className="mt-10">
                 <SunavioButton size="lg" asChild>
-                  <a href="https://estimer.sunavio.com">
+                  <a href="https://estimer.sunavio.com" onClick={() => trackSimulatorStart()}>
                     Lancer le simulateur
                   </a>
                 </SunavioButton>

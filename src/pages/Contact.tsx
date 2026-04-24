@@ -9,6 +9,7 @@ import { Reveal } from "@/components/atoms/Reveal";
 import { SectionHeader } from "@/components/atoms/SectionHeader";
 import { sunavioButtonVariants } from "@/components/atoms/SunavioButton";
 import solarTexture from "@/assets/solar-texture.jpg";
+import { trackSimulatorStart, trackWhatsAppClick, trackContactClick } from "@/lib/tracking";
 
 interface PersonCard {
   role: string;
@@ -100,6 +101,7 @@ const Contact = () => {
               <div className="flex flex-col items-start gap-3">
                 <a
                   href="https://estimer.sunavio.com"
+                  onClick={() => trackSimulatorStart()}
                   className={sunavioButtonVariants({ variant: "primary", size: "lg" })}
                 >
                   <span className="relative z-10 inline-flex items-center gap-2">
@@ -135,6 +137,7 @@ const Contact = () => {
                         href={p.whatsapp}
                         target="_blank"
                         rel="noopener noreferrer"
+                        onClick={() => trackWhatsAppClick()}
                         className={sunavioButtonVariants({ variant: "primary" })}
                       >
                         <span className="relative z-10 inline-flex items-center gap-2">
@@ -143,6 +146,7 @@ const Contact = () => {
                       </a>
                       <a
                         href={`mailto:${p.email}`}
+                        onClick={() => trackContactClick("email")}
                         className={sunavioButtonVariants({ variant: "secondary" })}
                       >
                         <span className="relative z-10 inline-flex items-center gap-2">
@@ -151,6 +155,7 @@ const Contact = () => {
                       </a>
                       <a
                         href={p.phoneHref}
+                        onClick={() => trackContactClick("telephone")}
                         className={sunavioButtonVariants({ variant: "ghost" })}
                       >
                         <span className="relative z-10 inline-flex items-center gap-2">
@@ -249,6 +254,7 @@ const Contact = () => {
                 <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
                   <a
                     href="https://estimer.sunavio.com"
+                    onClick={() => trackSimulatorStart()}
                     className={sunavioButtonVariants({ variant: "primary", size: "lg" })}
                   >
                     <span className="relative z-10 inline-flex items-center gap-2">
@@ -259,6 +265,7 @@ const Contact = () => {
                     href="https://wa.me/212663284424"
                     target="_blank"
                     rel="noopener noreferrer"
+                    onClick={() => trackWhatsAppClick()}
                     className={sunavioButtonVariants({ variant: "secondary", size: "lg" })}
                   >
                     <span className="relative z-10 inline-flex items-center gap-2">

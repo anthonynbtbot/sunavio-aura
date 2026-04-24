@@ -4,6 +4,7 @@ import { Container } from "@/components/atoms/Container";
 import { AnimatedText } from "@/components/atoms/AnimatedText";
 import { Reveal } from "@/components/atoms/Reveal";
 import { SunavioButton } from "@/components/atoms/SunavioButton";
+import { trackSimulatorStart, trackContactClick } from "@/lib/tracking";
 
 export function FinalCTA() {
   return (
@@ -37,12 +38,12 @@ export function FinalCTA() {
           <Reveal delay={0.3}>
             <div className="mt-12 flex flex-col items-center justify-center gap-4 sm:flex-row">
               <SunavioButton size="lg" asChild>
-                <a href="https://estimer.sunavio.com">
+                <a href="https://estimer.sunavio.com" onClick={() => trackSimulatorStart()}>
                   Estimer mon projet
                 </a>
               </SunavioButton>
               <SunavioButton size="lg" variant="secondary" asChild>
-                <Link to="/contact">Prendre rendez-vous</Link>
+                <Link to="/contact" onClick={() => trackContactClick("rendezvous")}>Prendre rendez-vous</Link>
               </SunavioButton>
             </div>
           </Reveal>

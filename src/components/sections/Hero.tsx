@@ -6,6 +6,7 @@ import { AnimatedText } from "@/components/atoms/AnimatedText";
 import { SunavioButton } from "@/components/atoms/SunavioButton";
 import { Link } from "react-router-dom";
 import heroBg from "@/assets/hero-villa-solar.jpg";
+import { trackSimulatorStart, trackContactClick } from "@/lib/tracking";
 
 const EASE = [0.22, 1, 0.36, 1] as const;
 
@@ -83,12 +84,12 @@ export function Hero() {
             className="mt-10 flex flex-col gap-4 sm:flex-row"
           >
             <SunavioButton size="lg" asChild>
-              <a href="https://estimer.sunavio.com">
+              <a href="https://estimer.sunavio.com" onClick={() => trackSimulatorStart()}>
                 Estimer mon projet
               </a>
             </SunavioButton>
             <SunavioButton size="lg" variant="secondary" asChild>
-              <Link to="/contact">Nous contacter</Link>
+              <Link to="/contact" onClick={() => trackContactClick("rendezvous")}>Nous contacter</Link>
             </SunavioButton>
           </motion.div>
         </div>

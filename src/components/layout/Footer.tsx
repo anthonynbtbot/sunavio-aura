@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { Container } from "@/components/atoms/Container";
 import logo from "@/assets/sunavio-logo-white.png";
+import { trackSimulatorStart, trackContactClick } from "@/lib/tracking";
 
 const SERVICES = [
   { label: "Hôtellerie & Hospitality", to: "/services#hospitality" },
@@ -76,6 +77,7 @@ export function Footer() {
                   <li key={c.label}>
                     <a
                       href={c.href}
+                      onClick={() => trackSimulatorStart()}
                       className="text-sm text-gr transition-colors hover:text-or"
                     >
                       {c.label}
@@ -85,6 +87,7 @@ export function Footer() {
                   <li key={c.label}>
                     <Link
                       to={c.to}
+                      onClick={() => trackContactClick("email")}
                       className="text-sm text-gr transition-colors hover:text-or"
                     >
                       {c.label}
