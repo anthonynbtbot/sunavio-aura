@@ -6,6 +6,9 @@ const PrivacyPolicy = () => (
     title="Politique de confidentialité."
     accentWords={["confidentialité."]}
     updatedAt="Dernière mise à jour : 21 avril 2026"
+    seoTitle="Politique de confidentialité | SUNAVIO Marrakech"
+    seoDescription="Politique de confidentialité SUNAVIO : traitement des données pour nos services de panneaux solaires et installation solaire villa à Marrakech."
+    path="/confidentialite"
   >
     <section>
       <h2>1. Préambule</h2>

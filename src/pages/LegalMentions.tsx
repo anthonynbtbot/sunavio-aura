@@ -6,6 +6,9 @@ const LegalMentions = () => (
     title="Mentions légales."
     accentWords={["légales."]}
     updatedAt="Dernière mise à jour : 21 avril 2026"
+    seoTitle="Mentions légales | SUNAVIO — Panneaux solaires Marrakech"
+    seoDescription="Mentions légales de SUNAVIO, expert en installation solaire villa et énergie solaire premium à Marrakech."
+    path="/mentions-legales"
   >
     <section>
       <h2>1. Éditeur du site</h2>

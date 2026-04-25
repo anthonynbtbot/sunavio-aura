@@ -7,6 +7,9 @@ const TermsOfUse = () => (
     title="Conditions d'utilisation."
     accentWords={["d'utilisation."]}
     updatedAt="Dernière mise à jour : 21 avril 2026"
+    seoTitle="Conditions générales d'utilisation | SUNAVIO Marrakech"
+    seoDescription="Conditions générales d'utilisation du site SUNAVIO, énergie solaire premium et panneaux solaires à Marrakech."
+    path="/cgu"
   >
     <section>
       <h2>1. Objet</h2>
