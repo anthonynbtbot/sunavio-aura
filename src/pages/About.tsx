@@ -1,6 +1,7 @@
 import { Building, Compass, Eye, FileText, Globe, ShieldCheck } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useLenis } from "@/hooks/useLenis";
+import { SEO } from "@/components/SEO";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { Container } from "@/components/atoms/Container";

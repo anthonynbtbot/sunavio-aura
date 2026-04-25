@@ -1,5 +1,6 @@
 import { Clock, Mail, Map, MapPin, MessageCircle, Phone } from "lucide-react";
 import { useLenis } from "@/hooks/useLenis";
+import { SEO } from "@/components/SEO";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { Container } from "@/components/atoms/Container";
