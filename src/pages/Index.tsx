@@ -1,4 +1,5 @@
 import { useLenis } from "@/hooks/useLenis";
+import { SEO } from "@/components/SEO";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { Hero } from "@/components/sections/Hero";
@@ -14,6 +15,11 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-bg text-wh">
+      <SEO
+        title="Panneaux solaires Marrakech | Énergie solaire premium — SUNAVIO"
+        description="Installation solaire villa, hôtel et domaine à Marrakech. Énergie solaire premium sur-mesure : panneaux, stockage batterie, micro-réseaux intelligents."
+        path="/"
+      />
       <Header />
       <main>
         <Hero />

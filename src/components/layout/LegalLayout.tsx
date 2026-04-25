@@ -1,5 +1,6 @@
 import type { ReactNode } from "react";
 import { useLenis } from "@/hooks/useLenis";
+import { SEO } from "@/components/SEO";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { Container } from "@/components/atoms/Container";
@@ -13,6 +14,9 @@ interface LegalLayoutProps {
   accentWords?: string[];
   updatedAt: string;
   children: ReactNode;
+  seoTitle?: string;
+  seoDescription?: string;
+  path?: string;
 }
 
 /**
@@ -24,11 +28,17 @@ export function LegalLayout({
   accentWords = [],
   updatedAt,
   children,
+  seoTitle,
+  seoDescription,
+  path,
 }: LegalLayoutProps) {
   useLenis();
 
   return (
     <div className="min-h-screen bg-bg text-wh">
+      {seoTitle && seoDescription && (
+        <SEO title={seoTitle} description={seoDescription} path={path} />
+      )}
       <Header />
       <main>
         {/* Hero court */}

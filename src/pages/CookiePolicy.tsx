@@ -6,6 +6,9 @@ const CookiePolicy = () => (
     title="Politique cookies."
     accentWords={["cookies."]}
     updatedAt="Dernière mise à jour : 21 avril 2026"
+    seoTitle="Politique cookies | SUNAVIO — Panneaux solaires Marrakech"
+    seoDescription="Politique cookies du site SUNAVIO, spécialiste de l'installation solaire villa et de l'énergie solaire premium à Marrakech."
+    path="/cookies"
   >
     <section>
       <h2>1. Qu'est-ce qu'un cookie ?</h2>

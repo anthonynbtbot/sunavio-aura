@@ -1,5 +1,6 @@
 import { Clock, Mail, Map, MapPin, MessageCircle, Phone } from "lucide-react";
 import { useLenis } from "@/hooks/useLenis";
+import { SEO } from "@/components/SEO";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { Container } from "@/components/atoms/Container";
@@ -47,6 +48,11 @@ const Contact = () => {
 
   return (
     <div className="min-h-screen bg-bg text-wh">
+      <SEO
+        title="Contact SUNAVIO | Devis panneaux solaires à Marrakech"
+        description="Contactez SUNAVIO pour votre installation solaire villa ou hôtel à Marrakech. Estimation gratuite et conseil expert en énergie solaire premium."
+        path="/contact"
+      />
       <Header />
       <main>
         {/* SECTION 1 — Hero court */}

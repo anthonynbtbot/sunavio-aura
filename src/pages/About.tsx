@@ -1,6 +1,7 @@
 import { Building, Compass, Eye, FileText, Globe, ShieldCheck } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useLenis } from "@/hooks/useLenis";
+import { SEO } from "@/components/SEO";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { Container } from "@/components/atoms/Container";
@@ -81,6 +82,11 @@ const About = () => {
 
   return (
     <div className="min-h-screen bg-bg text-wh">
+      <SEO
+        title="À propos — SUNAVIO | Énergie solaire premium à Marrakech"
+        description="SUNAVIO, expert en panneaux solaires à Marrakech. Ingénierie marocaine pour installation solaire villa, hôtel et domaine — énergie solaire premium sur-mesure."
+        path="/a-propos"
+      />
       <Header />
       <main>
         {/* SECTION 1 — Hero */}
