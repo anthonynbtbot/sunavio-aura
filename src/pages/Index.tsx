@@ -3,6 +3,7 @@ import { SEO } from "@/components/SEO";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { Hero } from "@/components/sections/Hero";
+import { TrustBanner } from "@/components/sections/TrustBanner";
 import { Simulator } from "@/components/sections/Simulator";
 import { Segments } from "@/components/sections/Segments";
 import { Approach } from "@/components/sections/Approach";
@@ -23,6 +24,7 @@ const Index = () => {
       <Header />
       <main>
         <Hero />
+        <TrustBanner />
         <Simulator />
         <Segments />
         <Approach />
