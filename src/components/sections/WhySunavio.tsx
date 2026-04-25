@@ -7,24 +7,24 @@ const EASE = [0.22, 1, 0.36, 1] as const;
 
 const POINTS = [
   {
-    title: "Ingénierie marocaine, vision internationale",
+    title: "SARL marocaine immatriculée",
     description:
-      "Équipe formée aux standards européens, implantée à Marrakech, adaptée aux réalités locales : climat, réseau, réglementation.",
+      "SUNAVIO SARL — RC 164901 Marrakech, ICE 003721552000008, IF 66967281. Société légalement constituée au Maroc, fiscalement déclarée, basée à Bab Doukala.",
   },
   {
-    title: "Équipements premium uniquement",
+    title: "Conformité données — CNDP & RGPD",
     description:
-      "Jinko Solar (panneaux tier-1), WeCo (stockage lithium), onduleurs haut rendement. Pas de compromis sur la qualité.",
+      "Déclaration CNDP en cours. Vos données ne sont jamais revendues ni transmises à des tiers commerciaux. Droit d'accès, de rectification et de suppression garantis.",
   },
   {
-    title: "Dimensionnement honnête",
+    title: "Garanties commerciales écrites",
     description:
-      "Études techniques précises, ROI transparent, zéro surdimensionnement commercial. Vous investissez pour ce qui produit réellement.",
+      "Devis détaillés et engageants, garanties équipements jusqu'à 25 ans (panneaux Jinko), 10 ans (onduleurs), 10 ans (stockage WeCo). Contrats clairs, aucune zone grise.",
   },
   {
-    title: "Suivi post-installation",
+    title: "Équipe locale Marrakech",
     description:
-      "Monitoring production, maintenance préventive, garanties équipements jusqu'à 25 ans sur les panneaux.",
+      "Bureau physique à Bab Doukala, équipe technique sur place, interlocuteurs identifiés et joignables. Pas de sous-traitance opaque, pas de centre d'appel délocalisé.",
   },
 ];
 
