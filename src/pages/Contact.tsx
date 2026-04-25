@@ -47,6 +47,11 @@ const Contact = () => {
 
   return (
     <div className="min-h-screen bg-bg text-wh">
+      <SEO
+        title="Contact SUNAVIO | Devis panneaux solaires à Marrakech"
+        description="Contactez SUNAVIO pour votre installation solaire villa ou hôtel à Marrakech. Estimation gratuite et conseil expert en énergie solaire premium."
+        path="/contact"
+      />
       <Header />
       <main>
         {/* SECTION 1 — Hero court */}

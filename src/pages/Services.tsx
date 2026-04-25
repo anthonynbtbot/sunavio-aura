@@ -183,6 +183,11 @@ const Services = () => {
 
   return (
     <div className="min-h-screen bg-bg text-wh">
+      <SEO
+        title="Installation solaire villa & hôtel à Marrakech | Services SUNAVIO"
+        description="Panneaux solaires Marrakech pour villas, hôtels, golfs et tertiaire. Installation solaire premium, stockage batterie et micro-réseaux par SUNAVIO."
+        path="/services"
+      />
       <Header />
       <main>
         {/* SECTION 1 — Hero */}
