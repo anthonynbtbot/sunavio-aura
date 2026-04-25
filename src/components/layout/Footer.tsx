@@ -116,13 +116,48 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="mt-16 flex flex-col gap-4 border-t border-line pt-8 md:flex-row md:items-center md:justify-between">
+        {/* Bloc identité légale — signaux de confiance */}
+        <div className="mt-16 grid gap-8 border-t border-line pt-10 md:grid-cols-2 lg:grid-cols-3">
+          <div>
+            <h3 className="text-eyebrow mb-3">Société</h3>
+            <p className="text-sm leading-relaxed text-gr">
+              <span className="text-wh">SUNAVIO SARL</span><br />
+              Société immatriculée au Maroc<br />
+              <span className="text-gr2">RC :</span> 164901 Marrakech<br />
+              <span className="text-gr2">ICE :</span> 003721552000008<br />
+              <span className="text-gr2">IF :</span> 66967281
+            </p>
+          </div>
+          <div>
+            <h3 className="text-eyebrow mb-3">Adresse</h3>
+            <p className="text-sm leading-relaxed text-gr">
+              Zenith Business Center<br />
+              Rue Mouslim, Lot Boukar<br />
+              3ème étage, Apt N°14<br />
+              Bab Doukala, Marrakech — Maroc
+            </p>
+          </div>
+          <div>
+            <h3 className="text-eyebrow mb-3">Contact</h3>
+            <p className="text-sm leading-relaxed text-gr">
+              <a href="tel:+212663284424" className="transition-colors hover:text-or">
+                +212 6 63 28 44 24
+              </a><br />
+              <a href="mailto:sunavio.contact@gmail.com" className="transition-colors hover:text-or">
+                sunavio.contact@gmail.com
+              </a>
+            </p>
+          </div>
+        </div>
+
+        <div className="mt-10 flex flex-col gap-4 border-t border-line pt-8 md:flex-row md:items-center md:justify-between">
           <p className="text-xs text-gr2">
             © {new Date().getFullYear()} SUNAVIO SARL — Tous droits réservés.
           </p>
-          <p className="text-xs text-gr2">
-            Zenith Business Center · Bab Doukala · Marrakech-Guéliz · Maroc
-          </p>
+          <div className="flex flex-wrap gap-x-5 gap-y-2 text-xs text-gr2">
+            <Link to="/mentions-legales" className="transition-colors hover:text-or">Mentions légales</Link>
+            <Link to="/confidentialite" className="transition-colors hover:text-or">Politique de confidentialité</Link>
+          </div>
         </div>
       </Container>
     </footer>
