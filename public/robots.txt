@@ -1,6 +1,9 @@
 User-agent: *
 Allow: /
-Disallow: /admin
-Disallow: /admin/
 
+# Bloquer les zones admin si elles existent
+Disallow: /admin
+Disallow: /api/
+
+# Sitemap
 Sitemap: https://sunavio.com/sitemap.xml
