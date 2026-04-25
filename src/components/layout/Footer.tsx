@@ -20,7 +20,7 @@ const COMPANY = [
 
 const LEGAL = [
   { label: "Mentions légales",  to: "/mentions-legales" },
-  { label: "Confidentialité",   to: "/confidentialite" },
+  { label: "Politique de confidentialité",   to: "/confidentialite" },
   { label: "CGU",               to: "/cgu" },
   { label: "Cookies",           to: "/cookies" },
 ];
@@ -48,7 +48,7 @@ export function Footer() {
             <p className="mt-4 max-w-xs text-sm leading-relaxed text-gr2">
               Solutions solaires sur-mesure pour villas, hôtels et domaines d'exception. Ingénierie marocaine, exigence internationale.
             </p>
-            <p className="mt-6 text-eyebrow">Marrakech</p>
+            <p className="mt-6 text-eyebrow">Marrakech · Maroc</p>
           </div>
 
           {/* Services */}
