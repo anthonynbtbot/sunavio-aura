@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { Check } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
+import { SEO } from "@/components/SEO";
 import { useLenis } from "@/hooks/useLenis";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
