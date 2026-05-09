@@ -9,7 +9,6 @@ import {
   FileText,
   CheckCircle,
   Check,
-  Phone,
   MessageCircle,
 } from "lucide-react";
 
@@ -18,9 +17,9 @@ import { SEO } from "@/components/SEO";
 import { Container } from "@/components/atoms/Container";
 import { Eyebrow } from "@/components/atoms/Eyebrow";
 import { SunavioButton } from "@/components/atoms/SunavioButton";
+import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { cn } from "@/lib/utils";
-import logo from "@/assets/sunavio-logo-white.png";
 import poolBg from "@/assets/pool-villa-sunset.jpg";
 
 // Endpoint Formspree pour la page kits piscine
