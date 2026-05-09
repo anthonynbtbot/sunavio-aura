@@ -560,6 +560,9 @@ function LeadForm() {
       if (!res.ok) throw new Error("Échec de l'envoi");
       setDone(true);
       form.reset();
+      if (typeof (window as any).fbq !== "undefined") {
+        (window as any).fbq("track", "Lead");
+      }
     } catch {
       setError("Une erreur est survenue. Merci de réessayer ou de nous appeler.");
     } finally {
