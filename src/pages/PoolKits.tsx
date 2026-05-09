@@ -798,7 +798,7 @@ const PoolKits = () => {
       {/* Placeholder pixel Meta Ads — à insérer ici */}
       {/* <meta name="meta-pixel-placeholder" /> */}
 
-      <LandingHeader />
+      <Header />
       <main>
         <Hero />
         <Problem />
