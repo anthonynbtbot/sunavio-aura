@@ -625,13 +625,6 @@ function LeadForm() {
 
     setSubmitting(true);
     try {
-      if (FORMSPREE_ENDPOINT === "ENDPOINT_URL") {
-        // Endpoint pas encore configuré — succès simulé pour démo
-        await new Promise((r) => setTimeout(r, 600));
-        setDone(true);
-        form.reset();
-        return;
-      }
       const res = await fetch(FORMSPREE_ENDPOINT, {
         method: "POST",
         body: data,
