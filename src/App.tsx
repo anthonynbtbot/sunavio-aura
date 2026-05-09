@@ -13,6 +13,7 @@ import PrivacyPolicy from "./pages/PrivacyPolicy.tsx";
 import TermsOfUse from "./pages/TermsOfUse.tsx";
 import CookiePolicy from "./pages/CookiePolicy.tsx";
 import NotFound from "./pages/NotFound.tsx";
+import PoolKits from "./pages/PoolKits.tsx";
 import { ScrollToTop } from "@/components/ScrollToTop";
 import { trackPageView } from "./lib/tracking";
 
