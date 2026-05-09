@@ -13,6 +13,7 @@ import PrivacyPolicy from "./pages/PrivacyPolicy.tsx";
 import TermsOfUse from "./pages/TermsOfUse.tsx";
 import CookiePolicy from "./pages/CookiePolicy.tsx";
 import NotFound from "./pages/NotFound.tsx";
+import PoolKits from "./pages/PoolKits.tsx";
 import { ScrollToTop } from "@/components/ScrollToTop";
 import { trackPageView } from "./lib/tracking";
 
@@ -43,6 +44,7 @@ const App = () => (
           <Route path="/confidentialite" element={<PrivacyPolicy />} />
           <Route path="/cgu" element={<TermsOfUse />} />
           <Route path="/cookies" element={<CookiePolicy />} />
+          <Route path="/kits-piscine" element={<PoolKits />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
