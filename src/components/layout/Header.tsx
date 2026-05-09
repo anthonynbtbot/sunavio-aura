@@ -11,6 +11,7 @@ import { trackSimulatorStart } from "@/lib/tracking";
 const NAV = [
   { to: "/", label: "Accueil" },
   { to: "/services", label: "Services" },
+  { to: "/kits-piscine", label: "Kits piscine" },
   { to: "/a-propos", label: "À propos" },
   { to: "/contact", label: "Contact" },
 ];
