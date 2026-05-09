@@ -26,6 +26,9 @@ const LEGAL = [
 ];
 
 export function Footer() {
+  const { pathname } = useLocation();
+  const isPoolKits = pathname === "/kits-piscine";
+
   return (
     <footer className="relative border-t border-line bg-bg3">
       <Container size="wide" className="py-16 md:py-24">
