@@ -464,50 +464,6 @@ function Method() {
   );
 }
 
-function Reference() {
-  const stats = [
-    "Bureau d'études certifié",
-    "Zone Marrakech-Essaouira-Souss",
-    "Distributeur exclusif WeCo + Jinko",
-  ];
-  return (
-    <section className="relative py-24 md:py-32">
-      <Container size="wide">
-        <FadeIn>
-          <h2 className="text-center font-display text-4xl font-semibold text-wh md:text-5xl">
-            Ils nous font confiance
-          </h2>
-        </FadeIn>
-
-        <FadeIn delay={0.1}>
-          <div className="relative mx-auto mt-14 max-w-3xl bg-bg2 p-10 text-center md:p-14">
-            <GoldCorners active />
-            <div className="text-eyebrow">Référence emblématique</div>
-            <h3 className="mt-4 font-display text-3xl font-semibold text-wh md:text-4xl">
-              Golf Assoufid Marrakech
-            </h3>
-            <p className="mt-4 text-lg text-or">
-              Installation 50 kWc avec stockage 225 kWh
-            </p>
-            <p className="mt-3 text-sm text-gr">
-              Référence emblématique de notre savoir-faire sur les sites premium
-            </p>
-          </div>
-        </FadeIn>
-
-        <div className="mt-14 grid gap-6 md:grid-cols-3">
-          {stats.map((s, i) => (
-            <FadeIn key={s} delay={i * 0.08}>
-              <div className="border border-line bg-bg3 p-6 text-center">
-                <p className="font-display text-lg font-semibold text-or">{s}</p>
-              </div>
-            </FadeIn>
-          ))}
-        </div>
-      </Container>
-    </section>
-  );
-}
 
 function WhySunavioPool() {
   const items = [
@@ -805,7 +761,6 @@ const PoolKits = () => {
         <Solution />
         <Kits />
         <Method />
-        <Reference />
         <WhySunavioPool />
         <LeadForm />
       </main>
