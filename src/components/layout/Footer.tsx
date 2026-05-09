@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { Container } from "@/components/atoms/Container";
 import logo from "@/assets/sunavio-logo-white.png";
 import { trackSimulatorStart, trackContactClick } from "@/lib/tracking";
