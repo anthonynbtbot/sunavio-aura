@@ -23,8 +23,8 @@ import { cn } from "@/lib/utils";
 import logo from "@/assets/sunavio-logo-white.png";
 import poolBg from "@/assets/pool-villa-sunset.jpg";
 
-// TODO: remplacer par l'endpoint Formspree réel
-const FORMSPREE_ENDPOINT = "ENDPOINT_URL";
+// Endpoint Formspree pour la page kits piscine
+const FORMSPREE_ENDPOINT = "https://formspree.io/f/xaqvpgng";
 const PHONE = "+212663429659";
 const PHONE_DISPLAY = "+212 663 429 659";
 const WHATSAPP_URL = `https://wa.me/212663429659?text=${encodeURIComponent(
