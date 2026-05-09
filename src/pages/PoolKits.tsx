@@ -1,4 +1,4 @@
-import { useState, type FormEvent } from "react";
+import { useEffect, useState, type FormEvent } from "react";
 import { motion } from "framer-motion";
 import {
   Sun,
@@ -522,6 +522,14 @@ function LeadForm() {
   const [done, setDone] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
+  // Déclenche l'événement Meta Pixel "Lead" exactement quand le message
+  // de confirmation s'affiche (et une seule fois).
+  useEffect(() => {
+    if (done && typeof window !== "undefined" && typeof (window as any).fbq === "function") {
+      (window as any).fbq("track", "Lead");
+    }
+  }, [done]);
+
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setError(null);
@@ -560,9 +568,6 @@ function LeadForm() {
       if (!res.ok) throw new Error("Échec de l'envoi");
       setDone(true);
       form.reset();
-      if (typeof (window as any).fbq !== "undefined") {
-        (window as any).fbq("track", "Lead");
-      }
     } catch {
       setError("Une erreur est survenue. Merci de réessayer ou de nous appeler.");
     } finally {
