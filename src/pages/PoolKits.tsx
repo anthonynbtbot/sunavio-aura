@@ -9,7 +9,6 @@ import {
   FileText,
   CheckCircle,
   Check,
-  Phone,
   MessageCircle,
 } from "lucide-react";
 
@@ -18,9 +17,9 @@ import { SEO } from "@/components/SEO";
 import { Container } from "@/components/atoms/Container";
 import { Eyebrow } from "@/components/atoms/Eyebrow";
 import { SunavioButton } from "@/components/atoms/SunavioButton";
+import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { cn } from "@/lib/utils";
-import logo from "@/assets/sunavio-logo-white.png";
 import poolBg from "@/assets/pool-villa-sunset.jpg";
 
 // Endpoint Formspree pour la page kits piscine
@@ -36,34 +35,6 @@ const EASE = [0.22, 1, 0.36, 1] as const;
 const scrollToForm = () => {
   document.getElementById("form")?.scrollIntoView({ behavior: "smooth", block: "start" });
 };
-
-/* ---------------- Header dédié landing ---------------- */
-function LandingHeader() {
-  return (
-    <header className="fixed inset-x-0 top-0 z-50 border-b border-or/15 bg-bg/85 backdrop-blur-xl">
-      <Container size="wide">
-        <div className="flex h-16 items-center justify-between md:h-20">
-          <a href="/kits-piscine" className="flex items-center" aria-label="SUNAVIO">
-            <img src={logo} alt="SUNAVIO" className="h-9 w-auto md:h-11" draggable={false} />
-          </a>
-
-          <div className="flex items-center gap-3 md:gap-5">
-            <a
-              href={`tel:${PHONE}`}
-              className="hidden items-center gap-2 text-sm font-medium text-gr transition-colors hover:text-or sm:inline-flex"
-            >
-              <Phone className="h-4 w-4 text-or" />
-              {PHONE_DISPLAY}
-            </a>
-            <SunavioButton size="sm" onClick={scrollToForm}>
-              Devis gratuit
-            </SunavioButton>
-          </div>
-        </div>
-      </Container>
-    </header>
-  );
-}
 
 /* ---------------- Reveal helper ---------------- */
 const FadeIn = ({
@@ -827,7 +798,7 @@ const PoolKits = () => {
       {/* Placeholder pixel Meta Ads — à insérer ici */}
       {/* <meta name="meta-pixel-placeholder" /> */}
 
-      <LandingHeader />
+      <Header />
       <main>
         <Hero />
         <Problem />
