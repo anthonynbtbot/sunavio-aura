@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { Container } from "@/components/atoms/Container";
 import logo from "@/assets/sunavio-logo-white.png";
 import { trackSimulatorStart, trackContactClick } from "@/lib/tracking";
@@ -26,6 +26,9 @@ const LEGAL = [
 ];
 
 export function Footer() {
+  const { pathname } = useLocation();
+  const isPoolKits = pathname === "/kits-piscine";
+
   return (
     <footer className="relative border-t border-line bg-bg3">
       <Container size="wide" className="py-16 md:py-24">
@@ -116,8 +119,7 @@ export function Footer() {
           </div>
         </div>
 
-        {/* Bloc identité légale — signaux de confiance */}
-        <div className="mt-16 grid gap-8 border-t border-line pt-10 md:grid-cols-2 lg:grid-cols-3">
+        <div className={`mt-16 grid gap-8 border-t border-line pt-10 md:grid-cols-2 ${isPoolKits ? "lg:grid-cols-2" : "lg:grid-cols-3"}`}>
           <div>
             <h3 className="text-eyebrow mb-3">Société</h3>
             <p className="text-sm leading-relaxed text-gr">
@@ -128,15 +130,17 @@ export function Footer() {
               <span className="text-gr2">IF :</span> 66967281
             </p>
           </div>
-          <div>
-            <h3 className="text-eyebrow mb-3">Adresse</h3>
-            <p className="text-sm leading-relaxed text-gr">
-              Zenith Business Center<br />
-              Rue Mouslim, Lot Boukar<br />
-              3ème étage, Apt N°14<br />
-              Bab Doukala, Marrakech — Maroc
-            </p>
-          </div>
+          {!isPoolKits && (
+            <div>
+              <h3 className="text-eyebrow mb-3">Adresse</h3>
+              <p className="text-sm leading-relaxed text-gr">
+                Zenith Business Center<br />
+                Rue Mouslim, Lot Boukar<br />
+                3ème étage, Apt N°14<br />
+                Bab Doukala, Marrakech — Maroc
+              </p>
+            </div>
+          )}
           <div>
             <h3 className="text-eyebrow mb-3">Contact</h3>
             <p className="text-sm leading-relaxed text-gr">
