@@ -88,6 +88,9 @@ const Contact = () => {
           </Container>
         </section>
 
+        {/* SECTION — Formulaire de contact (visible dès le premier scroll) */}
+        <ContactForm />
+
         {/* SECTION 2 — Estimation en ligne */}
         <section className="relative overflow-hidden bg-bg3 py-24 md:py-32">
           <img
