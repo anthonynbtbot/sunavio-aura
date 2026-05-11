@@ -522,12 +522,25 @@ function LeadForm() {
   const [done, setDone] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
-  // Déclenche l'événement Meta Pixel "Lead" exactement quand le message
+  // Déclenche les événements de conversion exactement quand le message
   // de confirmation s'affiche (et une seule fois).
   useEffect(() => {
-    if (done && typeof window !== "undefined" && typeof (window as any).fbq === "function") {
-      (window as any).fbq("track", "Lead");
+    if (!done || typeof window === "undefined") return;
+    const w = window as any;
+    if (typeof w.fbq === "function") {
+      w.fbq("track", "Lead");
     }
+    if (typeof w.gtag === "function") {
+      w.gtag("event", "generate_lead", {
+        event_category: "engagement",
+        event_label: "kits_piscine_form",
+      });
+    }
+    w.dataLayer = w.dataLayer || [];
+    w.dataLayer.push({
+      event: "lead_submitted",
+      form_source: "kits-piscine",
+    });
   }, [done]);
 
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
