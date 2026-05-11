@@ -3,6 +3,7 @@ import { useLenis } from "@/hooks/useLenis";
 import { SEO } from "@/components/SEO";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
+import { ContactForm } from "@/components/ContactForm";
 import { Container } from "@/components/atoms/Container";
 import { Eyebrow } from "@/components/atoms/Eyebrow";
 import { AnimatedText } from "@/components/atoms/AnimatedText";
@@ -86,6 +87,9 @@ const Contact = () => {
             </div>
           </Container>
         </section>
+
+        {/* SECTION — Formulaire de contact (visible dès le premier scroll) */}
+        <ContactForm />
 
         {/* SECTION 2 — Estimation en ligne */}
         <section className="relative overflow-hidden bg-bg3 py-24 md:py-32">
@@ -284,6 +288,15 @@ const Contact = () => {
           </Container>
         </section>
       </main>
+      <a
+        href="https://wa.me/212663284424"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Discuter sur WhatsApp"
+        className="fixed bottom-5 right-5 z-50 inline-flex h-14 w-14 items-center justify-center rounded-full bg-[hsl(142_70%_45%)] text-white shadow-lg shadow-black/40 transition-transform hover:scale-105 md:bottom-8 md:right-8"
+      >
+        <MessageCircle className="h-6 w-6" />
+      </a>
       <Footer />
     </div>
   );
