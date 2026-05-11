@@ -69,8 +69,11 @@ export function ContactForm() {
         event_label: "contact_form",
       });
     }
-    // Google Ads conversion : à ajouter ici quand l'ID sera fourni
-    // w.gtag('event', 'conversion', { send_to: 'AW-XXXX/YYYY' });
+    w.dataLayer = w.dataLayer || [];
+    w.dataLayer.push({
+      event: "lead_submitted",
+      form_source: "contact",
+    });
   }, [done]);
 
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
