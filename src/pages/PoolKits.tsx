@@ -783,7 +783,7 @@ const PoolKits = () => {
     <div className="min-h-screen bg-bg text-wh">
       <SEO
         title="SUNAVIO — Kits solaires piscine premium Marrakech"
-        description="Kits solaires clé en main pour piscines de villas premium à Marrakech, Essaouira et Souss. Économisez jusqu'à 19 800 DH par an. Devis gratuit, visite technique offerte."
+        description="Kits solaires clé en main pour piscines de villas premium à Marrakech, Essaouira et Souss. Économisez jusqu'à 20 900 DH par an. Devis gratuit, visite technique offerte."
         path="/kits-piscine"
       />
       {/* Placeholder pixel Meta Ads — à insérer ici */}
