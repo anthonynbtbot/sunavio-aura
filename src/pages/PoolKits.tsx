@@ -131,7 +131,7 @@ function Hero() {
           <FadeIn delay={0.2}>
             <p className="mt-7 max-w-2xl text-lg text-gr md:text-xl">
               Kits solaires clé en main pour villas premium à Marrakech, Essaouira et Souss.
-              Économisez jusqu'à 19 800 DH par an dès la première année.
+              Économisez jusqu'à 20 900 DH par an dès la première année.
             </p>
           </FadeIn>
 
