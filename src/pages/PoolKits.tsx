@@ -404,17 +404,31 @@ function Kits() {
         </div>
 
         <FadeIn delay={0.1}>
+          <div className="mx-auto mt-12 flex max-w-3xl items-start gap-4 border-l-2 border-or/60 pl-5">
+            <p className="text-sm italic leading-relaxed" style={{ color: "#C8C0B4" }}>
+              Configuration standard triphasée — adaptée aux villas premium disposant d'une
+              puissance ONEE souscrite ≥ 12 kVA, le cas le plus courant à Marrakech. Pour une
+              installation monophasée, nous adaptons le matériel et proposons un devis
+              personnalisé sur demande.
+            </p>
+          </div>
+        </FadeIn>
+
+        <FadeIn delay={0.1}>
           <p className="mt-12 text-center text-sm text-gr">
             Paiement échelonné 30/30/40 — Visite technique gratuite — TVA 10% sur les panneaux
           </p>
           <p className="mx-auto mt-6 max-w-4xl text-center text-xs italic leading-relaxed text-gr2">
             Les tarifs présentés sont indicatifs et correspondent à une installation standard
-            sur toiture accessible en zone Marrakech. Le devis définitif est établi après
-            visite technique gratuite et peut varier selon la distance, la complexité
-            d'installation (toiture en pente, accessibilité, longueur de câblage) et les
-            options choisies. Les économies annuelles sont calculées sur la base d'un tarif
-            ONEE moyen de 1,55 DH/kWh et d'un taux d'autoconsommation de 65%. Elles peuvent
-            varier selon votre profil de consommation et l'évolution des tarifs ONEE.
+            sur toiture accessible en zone Marrakech, configuration triphasée. Le devis définitif
+            est établi après visite technique gratuite et peut varier selon la distance, la
+            complexité d'installation (toiture en pente, accessibilité, longueur de câblage, type
+            de couverture), les options choisies et la configuration électrique du site (mono/tri).
+            Les économies annuelles sont calculées sur la base d'un tarif ONEE moyen de 1,55 DH/kWh
+            (villa résidentielle haut de gamme), d'un productible Marrakech de 1 650 kWh/kWc/an, et
+            d'un taux d'autoconsommation de 65% (usage piscine + résidentiel sans batterie). Elles
+            peuvent varier selon votre profil de consommation réel, l'usage de votre piscine,
+            l'orientation de votre toiture et l'évolution des tarifs ONEE.
           </p>
         </FadeIn>
       </Container>
@@ -769,7 +783,7 @@ const PoolKits = () => {
     <div className="min-h-screen bg-bg text-wh">
       <SEO
         title="SUNAVIO — Kits solaires piscine premium Marrakech"
-        description="Kits solaires clé en main pour piscines de villas premium à Marrakech, Essaouira et Souss. Économisez jusqu'à 19 800 DH par an. Devis gratuit, visite technique offerte."
+        description="Kits solaires clé en main pour piscines de villas premium à Marrakech, Essaouira et Souss. Économisez jusqu'à 20 900 DH par an. Devis gratuit, visite technique offerte."
         path="/kits-piscine"
       />
       {/* Placeholder pixel Meta Ads — à insérer ici */}
