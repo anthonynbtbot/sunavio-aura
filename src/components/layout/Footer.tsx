@@ -15,6 +15,7 @@ const SERVICES = [
 const COMPANY = [
   { label: "À propos", to: "/a-propos" },
   { label: "Contact",  to: "/contact" },
+  { label: "Le décret 2.25.100", to: "/decret-2-25-100-autoproduction-maroc" },
   { label: "Simulateur", href: "https://estimer.sunavio.com" },
 ];
 
