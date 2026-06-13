@@ -5,11 +5,11 @@ import { trackSimulatorStart, trackContactClick } from "@/lib/tracking";
 
 const SERVICES = [
   { label: "Hôtellerie & Hospitality", to: "/panneaux-solaires-hotel-marrakech" },
-  { label: "Villas d'exception",       to: "/services#villas" },
-  { label: "Golf & domaines",          to: "/services#golf" },
-  { label: "Tertiaire & bureaux",      to: "/services#tertiaire" },
-  { label: "Industriel",               to: "/services#industriel" },
-  { label: "Piscines & pool houses",   to: "/services#piscines" },
+  { label: "Villas d'exception",       to: "/panneaux-solaires-villa-marrakech" },
+  { label: "Golf & domaines",          to: "/panneaux-solaires-golf-maroc" },
+  { label: "Industrie & tertiaire",    to: "/panneaux-solaires-industrie-maroc" },
+  { label: "Piscines & pool houses",   to: "/kits-piscine" },
+  { label: "Toutes nos solutions",     to: "/services" },
 ];
 
 const COMPANY = [
