@@ -12,6 +12,7 @@ const NAV = [
   { to: "/", label: "Accueil" },
   { to: "/services", label: "Services" },
   { to: "/kits-piscine", label: "Kits piscine" },
+  { to: "/decret-2-25-100-autoproduction-maroc", label: "Le décret" },
   { to: "/a-propos", label: "À propos" },
   { to: "/contact", label: "Contact" },
 ];
