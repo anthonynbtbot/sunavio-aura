@@ -58,10 +58,10 @@ const GolfMaroc = () => (
           "Étude technique, dossier réglementaire, conformité décret 2.25.100, monitoring post-installation.",
       },
     ]}
-    referenceTitle="Golf Assoufid · Marrakech."
+    referenceTitle="Golf type resort · Marrakech."
     referenceAccent={["Marrakech."]}
     referenceParagraphs={[
-      "Nous concevons actuellement la centrale solaire du Golf Assoufid à Marrakech : environ 50 kWc de production couplés à 225 kWh de stockage, dimensionnés pour alimenter une flotte de voiturettes en recharge nocturne.",
+      "Nous concevons actuellement la centrale solaire d'un golf type resort à Marrakech : environ 50 kWc de production couplés à 225 kWh de stockage, dimensionnés pour alimenter une flotte de voiturettes en recharge nocturne.",
       "Projet en cours de conception par notre bureau d'études. L'architecture privilégie l'autonomie nocturne, avec un objectif de quasi-zéro surplus injecté au réseau.",
     ]}
     metrics={[
