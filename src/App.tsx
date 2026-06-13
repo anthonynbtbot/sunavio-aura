@@ -16,6 +16,9 @@ import NotFound from "./pages/NotFound.tsx";
 import PoolKits from "./pages/PoolKits.tsx";
 import DecretAutoproduction from "./pages/DecretAutoproduction.tsx";
 import HotelMarrakech from "./pages/HotelMarrakech.tsx";
+import GolfMaroc from "./pages/GolfMaroc.tsx";
+import VillaMarrakech from "./pages/VillaMarrakech.tsx";
+import IndustrieMaroc from "./pages/IndustrieMaroc.tsx";
 import { ScrollToTop } from "@/components/ScrollToTop";
 import { trackPageView } from "./lib/tracking";
 
@@ -49,6 +52,9 @@ const App = () => (
           <Route path="/kits-piscine" element={<PoolKits />} />
           <Route path="/decret-2-25-100-autoproduction-maroc" element={<DecretAutoproduction />} />
           <Route path="/panneaux-solaires-hotel-marrakech" element={<HotelMarrakech />} />
+          <Route path="/panneaux-solaires-villa-marrakech" element={<VillaMarrakech />} />
+          <Route path="/panneaux-solaires-golf-maroc" element={<GolfMaroc />} />
+          <Route path="/panneaux-solaires-industrie-maroc" element={<IndustrieMaroc />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

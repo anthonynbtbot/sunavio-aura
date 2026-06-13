@@ -1,18 +1,26 @@
 import { useEffect, useState } from "react";
 import { Link, NavLink, useLocation } from "react-router-dom";
 import { AnimatePresence, motion } from "framer-motion";
-import { Menu, X } from "lucide-react";
+import { ChevronDown, Menu, X } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { Container } from "@/components/atoms/Container";
 import { SunavioButton } from "@/components/atoms/SunavioButton";
 import logo from "@/assets/sunavio-logo-white.png";
 import { trackSimulatorStart } from "@/lib/tracking";
 
-const NAV = [
-  { to: "/", label: "Accueil" },
-  { to: "/services", label: "Services" },
-  { to: "/panneaux-solaires-hotel-marrakech", label: "Hôtels" },
+const SOLUTIONS = [
+  { to: "/services", label: "Vue d'ensemble" },
+  { to: "/panneaux-solaires-hotel-marrakech", label: "Hôtels & resorts" },
+  { to: "/panneaux-solaires-villa-marrakech", label: "Villas d'exception" },
+  { to: "/panneaux-solaires-golf-maroc", label: "Golfs & resorts golfiques" },
+  { to: "/panneaux-solaires-industrie-maroc", label: "Industrie & tertiaire" },
   { to: "/kits-piscine", label: "Kits piscine" },
+];
+
+const SOLUTION_PATHS = SOLUTIONS.map((s) => s.to);
+
+const TOP_NAV = [
+  { to: "/", label: "Accueil" },
   { to: "/decret-2-25-100-autoproduction-maroc", label: "Le décret" },
   { to: "/a-propos", label: "À propos" },
   { to: "/contact", label: "Contact" },
@@ -21,6 +29,7 @@ const NAV = [
 export function Header() {
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
+  const [solutionsOpen, setSolutionsOpen] = useState(false);
   const location = useLocation();
 
   useEffect(() => {
@@ -30,10 +39,13 @@ export function Header() {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
-  // Ferme le menu mobile à chaque changement de route
+  // Ferme les menus à chaque changement de route
   useEffect(() => {
     setOpen(false);
+    setSolutionsOpen(false);
   }, [location.pathname]);
+
+  const solutionsActive = SOLUTION_PATHS.includes(location.pathname);
 
   return (
     <>
@@ -62,11 +74,81 @@ export function Header() {
             </Link>
 
             <nav className="hidden items-center gap-10 md:flex" aria-label="Navigation principale">
-              {NAV.map((item) => (
+              {/* Accueil */}
+              <NavLink
+                to="/"
+                end
+                className={({ isActive }) =>
+                  cn(
+                    "link-underline text-sm font-medium tracking-tight transition-colors",
+                    isActive ? "text-or" : "text-gr hover:text-wh",
+                  )
+                }
+              >
+                Accueil
+              </NavLink>
+
+              {/* Solutions dropdown */}
+              <div
+                className="relative"
+                onMouseEnter={() => setSolutionsOpen(true)}
+                onMouseLeave={() => setSolutionsOpen(false)}
+              >
+                <button
+                  type="button"
+                  onClick={() => setSolutionsOpen((v) => !v)}
+                  className={cn(
+                    "link-underline inline-flex items-center gap-1 text-sm font-medium tracking-tight transition-colors",
+                    solutionsActive ? "text-or" : "text-gr hover:text-wh",
+                  )}
+                  aria-expanded={solutionsOpen}
+                  aria-haspopup="true"
+                >
+                  Solutions
+                  <ChevronDown
+                    className={cn(
+                      "h-3.5 w-3.5 transition-transform",
+                      solutionsOpen && "rotate-180",
+                    )}
+                  />
+                </button>
+                <AnimatePresence>
+                  {solutionsOpen && (
+                    <motion.div
+                      initial={{ opacity: 0, y: 8 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      exit={{ opacity: 0, y: 8 }}
+                      transition={{ duration: 0.18, ease: [0.22, 1, 0.36, 1] }}
+                      className="absolute left-1/2 top-full z-50 mt-3 w-72 -translate-x-1/2"
+                    >
+                      <div className="rounded-xl border border-line bg-bg2/95 p-2 shadow-xl backdrop-blur-xl">
+                        {SOLUTIONS.map((s) => (
+                          <NavLink
+                            key={s.to}
+                            to={s.to}
+                            className={({ isActive }) =>
+                              cn(
+                                "block rounded-lg px-4 py-2.5 text-sm transition-colors",
+                                isActive
+                                  ? "bg-or/10 text-or"
+                                  : "text-gr hover:bg-bg3 hover:text-wh",
+                              )
+                            }
+                          >
+                            {s.label}
+                          </NavLink>
+                        ))}
+                      </div>
+                    </motion.div>
+                  )}
+                </AnimatePresence>
+              </div>
+
+              {/* Reste de la navigation */}
+              {TOP_NAV.filter((i) => i.to !== "/").map((item) => (
                 <NavLink
                   key={item.to}
                   to={item.to}
-                  end={item.to === "/"}
                   className={({ isActive }) =>
                     cn(
                       "link-underline text-sm font-medium tracking-tight transition-colors",
@@ -108,48 +190,68 @@ export function Header() {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.3, ease: [0.22, 1, 0.36, 1] }}
-            className="fixed inset-0 z-40 bg-bg/95 backdrop-blur-xl md:hidden"
+            className="fixed inset-0 z-40 overflow-y-auto bg-bg/95 backdrop-blur-xl md:hidden"
           >
-            <Container size="wide" className="flex h-full flex-col justify-center gap-10 pt-20">
-              <ul className="space-y-6">
-                {NAV.map((item, i) => (
-                  <motion.li
-                    key={item.to}
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{
-                      duration: 0.6,
-                      ease: [0.22, 1, 0.36, 1],
-                      delay: 0.1 + i * 0.08,
-                    }}
+            <Container size="wide" className="flex min-h-full flex-col gap-8 pb-12 pt-24">
+              <ul className="space-y-4">
+                <li>
+                  <NavLink
+                    to="/"
+                    end
+                    className={({ isActive }) =>
+                      cn(
+                        "font-display text-3xl font-semibold tracking-tight",
+                        isActive ? "text-or" : "text-wh",
+                      )
+                    }
                   >
+                    Accueil
+                  </NavLink>
+                </li>
+                <li>
+                  <div className="font-display text-3xl font-semibold tracking-tight text-wh">
+                    Solutions
+                  </div>
+                  <ul className="mt-3 space-y-2 border-l border-line pl-4">
+                    {SOLUTIONS.map((s) => (
+                      <li key={s.to}>
+                        <NavLink
+                          to={s.to}
+                          className={({ isActive }) =>
+                            cn(
+                              "text-base",
+                              isActive ? "text-or" : "text-gr",
+                            )
+                          }
+                        >
+                          {s.label}
+                        </NavLink>
+                      </li>
+                    ))}
+                  </ul>
+                </li>
+                {TOP_NAV.filter((i) => i.to !== "/").map((item) => (
+                  <li key={item.to}>
                     <NavLink
                       to={item.to}
-                      end={item.to === "/"}
                       className={({ isActive }) =>
                         cn(
-                          "font-display text-4xl font-semibold tracking-tight",
+                          "font-display text-3xl font-semibold tracking-tight",
                           isActive ? "text-or" : "text-wh",
                         )
                       }
                     >
                       {item.label}
                     </NavLink>
-                  </motion.li>
+                  </li>
                 ))}
               </ul>
 
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1], delay: 0.5 }}
-              >
-                <SunavioButton size="lg" asChild className="w-full">
-                  <a href="https://estimer.sunavio.com" onClick={() => trackSimulatorStart()}>
-                    Estimer mon projet
-                  </a>
-                </SunavioButton>
-              </motion.div>
+              <SunavioButton size="lg" asChild className="w-full">
+                <a href="https://estimer.sunavio.com" onClick={() => trackSimulatorStart()}>
+                  Estimer mon projet
+                </a>
+              </SunavioButton>
             </Container>
           </motion.div>
         )}
