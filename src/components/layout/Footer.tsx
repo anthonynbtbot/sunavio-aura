@@ -4,7 +4,7 @@ import logo from "@/assets/sunavio-logo-white.png";
 import { trackSimulatorStart, trackContactClick } from "@/lib/tracking";
 
 const SERVICES = [
-  { label: "Hôtellerie & Hospitality", to: "/services#hospitality" },
+  { label: "Hôtellerie & Hospitality", to: "/panneaux-solaires-hotel-marrakech" },
   { label: "Villas d'exception",       to: "/services#villas" },
   { label: "Golf & domaines",          to: "/services#golf" },
   { label: "Tertiaire & bureaux",      to: "/services#tertiaire" },

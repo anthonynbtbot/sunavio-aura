@@ -15,6 +15,7 @@ import CookiePolicy from "./pages/CookiePolicy.tsx";
 import NotFound from "./pages/NotFound.tsx";
 import PoolKits from "./pages/PoolKits.tsx";
 import DecretAutoproduction from "./pages/DecretAutoproduction.tsx";
+import HotelMarrakech from "./pages/HotelMarrakech.tsx";
 import { ScrollToTop } from "@/components/ScrollToTop";
 import { trackPageView } from "./lib/tracking";
 
@@ -47,6 +48,7 @@ const App = () => (
           <Route path="/cookies" element={<CookiePolicy />} />
           <Route path="/kits-piscine" element={<PoolKits />} />
           <Route path="/decret-2-25-100-autoproduction-maroc" element={<DecretAutoproduction />} />
+          <Route path="/panneaux-solaires-hotel-marrakech" element={<HotelMarrakech />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

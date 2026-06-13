@@ -11,6 +11,7 @@ import { trackSimulatorStart } from "@/lib/tracking";
 const NAV = [
   { to: "/", label: "Accueil" },
   { to: "/services", label: "Services" },
+  { to: "/panneaux-solaires-hotel-marrakech", label: "Hôtels" },
   { to: "/kits-piscine", label: "Kits piscine" },
   { to: "/decret-2-25-100-autoproduction-maroc", label: "Le décret" },
   { to: "/a-propos", label: "À propos" },
