@@ -180,7 +180,7 @@ const HotelMarrakech = () => {
                     Réserver ma visite technique gratuite
                   </Link>
                   <a
-                    href="https://wa.me/212663284424?text=Bonjour%2C%20je%20dirige%20un%20%C3%A9tablissement%20hôtelier%20%C3%A0%20Marrakech%20et%20je%20souhaite%20une%20%C3%A9tude%20solaire%20SUNAVIO."
+                    href="https://wa.me/212660449150?text=Bonjour%2C%20je%20dirige%20un%20%C3%A9tablissement%20hôtelier%20%C3%A0%20Marrakech%20et%20je%20souhaite%20une%20%C3%A9tude%20solaire%20SUNAVIO."
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() => trackWhatsAppClick()}
@@ -423,7 +423,7 @@ const HotelMarrakech = () => {
                     </span>
                   </Link>
                   <a
-                    href="https://wa.me/212663284424?text=Bonjour%2C%20je%20dirige%20un%20%C3%A9tablissement%20hôtelier%20%C3%A0%20Marrakech%20et%20je%20souhaite%20une%20%C3%A9tude%20solaire%20SUNAVIO."
+                    href="https://wa.me/212660449150?text=Bonjour%2C%20je%20dirige%20un%20%C3%A9tablissement%20hôtelier%20%C3%A0%20Marrakech%20et%20je%20souhaite%20une%20%C3%A9tude%20solaire%20SUNAVIO."
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() => trackWhatsAppClick()}
@@ -441,7 +441,7 @@ const HotelMarrakech = () => {
       </main>
 
       <a
-        href="https://wa.me/212663284424"
+        href="https://wa.me/212660449150"
         target="_blank"
         rel="noopener noreferrer"
         aria-label="Discuter sur WhatsApp"

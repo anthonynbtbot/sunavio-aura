@@ -24,9 +24,9 @@ import poolBg from "@/assets/pool-villa-sunset.jpg";
 
 // Endpoint Formspree pour la page kits piscine
 const FORMSPREE_ENDPOINT = "https://formspree.io/f/xaqvpgng";
-const PHONE = "+212663429659";
-const PHONE_DISPLAY = "+212 663 429 659";
-const WHATSAPP_URL = `https://wa.me/212663429659?text=${encodeURIComponent(
+const PHONE = "+212660449150";
+const PHONE_DISPLAY = "+212 6 60 44 91 50";
+const WHATSAPP_URL = `https://wa.me/212660449150?text=${encodeURIComponent(
   "Bonjour SUNAVIO, je suis intéressé par un kit solaire piscine.",
 )}`;
 

@@ -26,21 +26,12 @@ interface PersonCard {
 const PEOPLE: PersonCard[] = [
   {
     role: "CO-FONDATEUR",
-    name: "Anthony NEBOUT",
+    name: "Thierry NEBOUT",
     subtitle: "Direction technique & projets",
-    whatsapp: "https://wa.me/212663284424",
+    whatsapp: "https://wa.me/212660449150",
     email: "sunavio.contact@gmail.com",
-    phoneDisplay: "+212 663 284 424",
-    phoneHref: "tel:+212663284424",
-  },
-  {
-    role: "COMMERCIAL",
-    name: "Imane ZNIN",
-    subtitle: "Développement commercial & relation client",
-    whatsapp: "https://wa.me/212663429659",
-    email: "contact.sunavio@gmail.com",
-    phoneDisplay: "+212 663 429 659",
-    phoneHref: "tel:+212663429659",
+    phoneDisplay: "+212 6 60 44 91 50",
+    phoneHref: "tel:+212660449150",
   },
 ];
 
@@ -272,14 +263,14 @@ const Contact = () => {
                     </span>
                   </a>
                   <a
-                    href="https://wa.me/212663284424"
+                    href="https://wa.me/212660449150"
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() => trackWhatsAppClick()}
                     className={sunavioButtonVariants({ variant: "secondary", size: "lg" })}
                   >
                     <span className="relative z-10 inline-flex items-center gap-2">
-                      <MessageCircle className="h-4 w-4" /> WhatsApp Anthony
+                      <MessageCircle className="h-4 w-4" /> WhatsApp Thierry
                     </span>
                   </a>
                 </div>
@@ -289,7 +280,7 @@ const Contact = () => {
         </section>
       </main>
       <a
-        href="https://wa.me/212663284424"
+        href="https://wa.me/212660449150"
         target="_blank"
         rel="noopener noreferrer"
         aria-label="Discuter sur WhatsApp"

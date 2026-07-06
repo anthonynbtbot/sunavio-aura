@@ -127,7 +127,7 @@ export function SegmentShell({
   extraCrossLink,
 }: SegmentShellProps) {
   useLenis();
-  const waHref = `https://wa.me/212663284424?text=${encodeURIComponent(whatsappMessage)}`;
+  const waHref = `https://wa.me/212660449150?text=${encodeURIComponent(whatsappMessage)}`;
 
   return (
     <div className="min-h-screen bg-bg text-wh">
@@ -453,7 +453,7 @@ export function SegmentShell({
       </main>
 
       <a
-        href="https://wa.me/212663284424"
+        href="https://wa.me/212660449150"
         target="_blank"
         rel="noopener noreferrer"
         aria-label="Discuter sur WhatsApp"
