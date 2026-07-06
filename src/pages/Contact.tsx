@@ -263,7 +263,7 @@ const Contact = () => {
                     </span>
                   </a>
                   <a
-                    href="https://wa.me/212663284424"
+                    href="https://wa.me/212660449150"
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() => trackWhatsAppClick()}
@@ -280,7 +280,7 @@ const Contact = () => {
         </section>
       </main>
       <a
-        href="https://wa.me/212663284424"
+        href="https://wa.me/212660449150"
         target="_blank"
         rel="noopener noreferrer"
         aria-label="Discuter sur WhatsApp"
