@@ -218,7 +218,7 @@ function Solution() {
     {
       icon: Battery,
       title: "Stockage intelligent",
-      desc: "Batteries WeCo 5K3 EVO, 7 000+ cycles",
+      desc: "Batteries Huawei LUNA2000 LFP, modulaires 5 à 30 kWh",
     },
     {
       icon: Wrench,
