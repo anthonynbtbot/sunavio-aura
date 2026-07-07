@@ -22,7 +22,7 @@ const PILLARS: Pillar[] = [
     icon: Battery,
     title: "Stockage batterie lithium",
     description:
-      "Équipements WeCo haute performance, durée de vie 10+ ans, sécurité thermique maximale. Autonomie garantie même en l'absence totale de réseau.",
+      "Équipements Huawei FusionSolar haute performance, durée de vie 10+ ans, sécurité thermique maximale. Autonomie garantie même en l'absence totale de réseau.",
   },
   {
     icon: Gauge,
