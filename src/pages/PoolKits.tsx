@@ -218,7 +218,7 @@ function Solution() {
     {
       icon: Battery,
       title: "Stockage intelligent",
-      desc: "Batteries WeCo 5K3 EVO, 7 000+ cycles",
+      desc: "Batteries Huawei LUNA2000 LFP, modulaires 5 à 30 kWh",
     },
     {
       icon: Wrench,
@@ -281,7 +281,7 @@ const KITS: Kit[] = [
     ht: "56 990 DH HT",
     features: [
       "13 panneaux Jinko Tiger Neo 630W bifaciaux",
-      "Onduleur hybride WeCo H-ESY 8K triphasé",
+      "Onduleur hybride Huawei SUN2000-8KTL-M1 triphasé",
       "Structure aluminium et pose incluses",
       "Mise en service garantie",
     ],
@@ -296,7 +296,7 @@ const KITS: Kit[] = [
     ht: "65 970 DH HT",
     features: [
       "16 panneaux Jinko Tiger Neo 630W bifaciaux",
-      "Onduleur hybride WeCo H-ESY 10K triphasé",
+      "Onduleur hybride Huawei SUN2000-10KTL-M1 triphasé",
       "Structure aluminium et pose incluses",
       "Mise en service garantie",
     ],
@@ -313,7 +313,7 @@ const KITS: Kit[] = [
     ht: "79 350 DH HT",
     features: [
       "20 panneaux Jinko Tiger Neo 630W bifaciaux",
-      "Onduleur hybride WeCo H-ESY 12K triphasé",
+      "Onduleur hybride Huawei SUN2000-12KTL-M1 triphasé",
       "Structure aluminium et pose incluses",
       "Mise en service garantie",
     ],
@@ -489,7 +489,7 @@ function WhySunavioPool() {
     {
       icon: Shield,
       title: "Matériel premium uniquement",
-      desc: "Jinko Tiger Neo + WeCo",
+      desc: "Jinko Tiger Neo + Huawei FusionSolar",
     },
     {
       icon: Wrench,

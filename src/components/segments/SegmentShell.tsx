@@ -33,15 +33,15 @@ const EQUIPMENT = [
   },
   {
     icon: Wrench,
-    title: "Onduleurs WeCo",
+    title: "Onduleurs Huawei SUN2000",
     description:
-      "Plateforme robuste, pilotage fin de l'autoconsommation, compatible monophasé et triphasé.",
+      "Plateforme FusionSolar robuste, rendement jusqu'à 98,6%, pilotage fin de l'autoconsommation, compatible monophasé et triphasé.",
   },
   {
     icon: Battery,
-    title: "Stockage WeCo / A-KOOL 7X",
+    title: "Stockage Huawei LUNA2000",
     description:
-      "Batteries dimensionnées sur votre courbe de charge réelle pour absorber les pics et sécuriser l'alimentation.",
+      "Batteries LFP modulaires (5 à 30 kWh), sécurité au niveau cellule, dimensionnées sur votre courbe de charge réelle pour absorber les pics et sécuriser l'alimentation.",
   },
   {
     icon: ShieldCheck,

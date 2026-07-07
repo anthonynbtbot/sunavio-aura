@@ -26,7 +26,7 @@ const APPROACH = [
   {
     title: "Installation premium",
     description:
-      "Équipements tier-1 uniquement (Jinko Solar, WeCo, onduleurs haut rendement). Intégration architecturale soignée, câblage conforme aux normes internationales, mise en service supervisée par un ingénieur.",
+      "Équipements tier-1 uniquement (Jinko Solar, Huawei FusionSolar, onduleurs haut rendement). Intégration architecturale soignée, câblage conforme aux normes internationales, mise en service supervisée par un ingénieur.",
   },
   {
     title: "Suivi dans la durée",
@@ -64,10 +64,10 @@ const PARTNERS = [
       "Leader mondial des panneaux photovoltaïques monocristallins tier-1. Rendements jusqu'à 22%, garantie produit 15 ans, garantie production 25 ans. Technologie N-Type dernière génération.",
   },
   {
-    badge: "STOCKAGE",
-    name: "WeCo",
+    badge: "STOCKAGE & ONDULEURS",
+    name: "Huawei FusionSolar",
     description:
-      "Stockage lithium LiFePO4 haute performance. Sécurité thermique maximale, durée de vie 10+ ans, profondeur de décharge 95%, compatibilité multi-usages (résidentiel, tertiaire, industriel).",
+      "Onduleurs hybrides SUN2000 (rendement jusqu'à 98,6%) et batteries LUNA2000 en technologie LFP. Modularité 5 à 30 kWh, sécurité au niveau cellule, monitoring FusionSolar temps réel et garantie 10 ans.",
   },
   {
     badge: "ONDULEURS & BOS",
