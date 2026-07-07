@@ -489,7 +489,7 @@ function WhySunavioPool() {
     {
       icon: Shield,
       title: "Matériel premium uniquement",
-      desc: "Jinko Tiger Neo + WeCo",
+      desc: "Jinko Tiger Neo + Huawei FusionSolar",
     },
     {
       icon: Wrench,
