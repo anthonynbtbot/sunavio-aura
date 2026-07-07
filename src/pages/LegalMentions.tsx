@@ -83,7 +83,7 @@ const LegalMentions = () => (
         interdite et constitue une contrefaçon.
       </p>
       <p>
-        Les marques citées à titre de référence (Jinko Solar, WeCo, etc.) restent la
+        Les marques citées à titre de référence (Jinko Solar, Huawei, etc.) restent la
         propriété de leurs détenteurs respectifs.
       </p>
     </section>
