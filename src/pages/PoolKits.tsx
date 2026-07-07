@@ -281,7 +281,7 @@ const KITS: Kit[] = [
     ht: "56 990 DH HT",
     features: [
       "13 panneaux Jinko Tiger Neo 630W bifaciaux",
-      "Onduleur hybride WeCo H-ESY 8K triphasé",
+      "Onduleur hybride Huawei SUN2000-8KTL-M1 triphasé",
       "Structure aluminium et pose incluses",
       "Mise en service garantie",
     ],
