@@ -26,7 +26,7 @@ const APPROACH = [
   {
     title: "Installation premium",
     description:
-      "Équipements tier-1 uniquement (Jinko Solar, WeCo, onduleurs haut rendement). Intégration architecturale soignée, câblage conforme aux normes internationales, mise en service supervisée par un ingénieur.",
+      "Équipements tier-1 uniquement (Jinko Solar, Huawei FusionSolar, onduleurs haut rendement). Intégration architecturale soignée, câblage conforme aux normes internationales, mise en service supervisée par un ingénieur.",
   },
   {
     title: "Suivi dans la durée",
