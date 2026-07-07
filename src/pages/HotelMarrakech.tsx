@@ -81,15 +81,15 @@ const EQUIPMENT = [
   },
   {
     icon: Wrench,
-    title: "Onduleurs WeCo",
+    title: "Onduleurs Huawei SUN2000",
     description:
-      "Plateforme robuste pensée pour les configurations triphasées et le pilotage multi-zones d'un établissement hôtelier.",
+      "Plateforme FusionSolar robuste pensée pour les configurations triphasées et le pilotage multi-zones d'un établissement hôtelier.",
   },
   {
     icon: Battery,
-    title: "Stockage WeCo / A-KOOL 7X",
+    title: "Stockage Huawei LUNA2000",
     description:
-      "Batteries dimensionnées sur la courbe réelle de votre hôtel, pour absorber les pics du soir (restauration, SPA, climatisation chambres).",
+      "Batteries LFP modulaires dimensionnées sur la courbe réelle de votre hôtel, pour absorber les pics du soir (restauration, SPA, climatisation chambres).",
   },
   {
     icon: ShieldCheck,
