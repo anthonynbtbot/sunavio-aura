@@ -37,7 +37,7 @@ export function LegalLayout({
   return (
     <div className="min-h-screen bg-bg text-wh">
       {seoTitle && seoDescription && (
-        <SEO title={seoTitle} description={seoDescription} path={path} />
+        <SEO title={seoTitle} description={seoDescription} path={path} noIndex />
       )}
       <Header />
       <main>

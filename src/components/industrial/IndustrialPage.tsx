@@ -7,8 +7,8 @@ import { Footer } from "@/components/layout/Footer";
 import { Container } from "@/components/atoms/Container";
 import { SunavioButton } from "@/components/atoms/SunavioButton";
 
-export function IndustrialPage({ title, eyebrow, intro, path, children }:{title:string;eyebrow:string;intro:string;path:string;children:ReactNode}) {
-  return <div className="min-h-screen bg-bg text-gr"><SEO title={`${title} | SUNAVIO`} description={intro} path={path}/><Header/><main><section className="border-b border-line bg-bg2 pb-16 pt-32 md:pb-20 md:pt-40"><Container size="wide"><p className="text-eyebrow">{eyebrow}</p><h1 className="mt-5 max-w-5xl text-4xl font-bold leading-tight text-wh md:text-6xl">{title}</h1><p className="mt-6 max-w-3xl text-lg leading-8 text-gr2">{intro}</p><div className="mt-8"><SunavioButton asChild size="lg"><Link to="/pre-etude">Demander une pré-étude gratuite <ArrowRight/></Link></SunavioButton></div></Container></section>{children}</main><Footer/></div>;
+export function IndustrialPage({ title, eyebrow, intro, path, children, structuredData }:{title:string;eyebrow:string;intro:string;path:string;children:ReactNode;structuredData?:Record<string,unknown>|Record<string,unknown>[]}) {
+  return <div className="min-h-screen bg-bg text-gr"><SEO title={`${title} | SUNAVIO`} description={intro} path={path} structuredData={structuredData}/><Header/><main><section className="border-b border-line bg-bg2 pb-16 pt-32 md:pb-20 md:pt-40"><Container size="wide"><p className="text-eyebrow">{eyebrow}</p><h1 className="mt-5 max-w-5xl text-4xl font-bold leading-tight text-wh md:text-6xl">{title}</h1><p className="mt-6 max-w-3xl text-lg leading-8 text-gr2">{intro}</p><div className="mt-8"><SunavioButton asChild size="lg"><Link to="/pre-etude">Demander une pré-étude gratuite <ArrowRight/></Link></SunavioButton></div></Container></section>{children}</main><Footer/></div>;
 }
 
 export function Section({ title, intro, children, alt=false, id }:{title:string;intro?:string;children:ReactNode;alt?:boolean;id?:string}) {
