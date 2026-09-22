@@ -10,8 +10,8 @@ import { cn } from "@/lib/utils";
 const sunavioButtonVariants = cva(
   [
     "group relative inline-flex items-center justify-center gap-2 overflow-hidden",
-    "whitespace-nowrap font-medium tracking-tight",
-    "transition-all duration-400 ease-out-expo",
+    "whitespace-nowrap font-semibold",
+    "transition-all duration-150",
     "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-or focus-visible:ring-offset-2 focus-visible:ring-offset-bg",
     "disabled:pointer-events-none disabled:opacity-50",
     "active:scale-[0.98]",
@@ -22,17 +22,15 @@ const sunavioButtonVariants = cva(
     variants: {
       variant: {
         primary: [
-          "bg-or text-bg border border-or",
+          "bg-or text-primary-foreground border border-or hover:bg-or2 hover:border-or2",
           "hover:shadow-cta",
           // overlay or2 qui scale-x au hover
-          "before:pointer-events-none before:absolute before:inset-0 before:bg-or2 before:origin-left before:scale-x-0 before:transition-transform before:duration-500 before:ease-out-expo",
-          "hover:before:scale-x-100",
+          "before:hidden",
         ],
         secondary: [
-          "bg-transparent text-wh border border-line",
+          "bg-transparent text-wh border border-wh/30",
           "hover:border-or hover:text-or",
-          "before:pointer-events-none before:absolute before:inset-0 before:bg-or/5 before:origin-left before:scale-x-0 before:transition-transform before:duration-500 before:ease-out-expo",
-          "hover:before:scale-x-100",
+          "before:hidden",
         ],
         ghost: [
           "bg-transparent text-gr border border-transparent",
