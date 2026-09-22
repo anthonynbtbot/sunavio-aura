@@ -14,7 +14,60 @@ export type Database = {
   }
   public: {
     Tables: {
-      [_ in never]: never
+      pre_etudes: {
+        Row: {
+          created_at: string
+          email: string
+          facture_mensuelle: number | null
+          fichiers: string[]
+          fonction: string | null
+          id: string
+          message: string | null
+          nom: string
+          puissance_souscrite: number | null
+          raccordement: string | null
+          secteur: string
+          societe: string
+          surfaces: string[]
+          telephone: string
+          ville: string
+        }
+        Insert: {
+          created_at?: string
+          email: string
+          facture_mensuelle?: number | null
+          fichiers?: string[]
+          fonction?: string | null
+          id?: string
+          message?: string | null
+          nom: string
+          puissance_souscrite?: number | null
+          raccordement?: string | null
+          secteur: string
+          societe: string
+          surfaces?: string[]
+          telephone: string
+          ville: string
+        }
+        Update: {
+          created_at?: string
+          email?: string
+          facture_mensuelle?: number | null
+          fichiers?: string[]
+          fonction?: string | null
+          id?: string
+          message?: string | null
+          nom?: string
+          puissance_souscrite?: number | null
+          raccordement?: string | null
+          secteur?: string
+          societe?: string
+          surfaces?: string[]
+          telephone?: string
+          ville?: string
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never
