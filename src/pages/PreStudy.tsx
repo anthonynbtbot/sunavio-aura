@@ -175,7 +175,11 @@ const PreStudy = () => {
 
   return (
     <div className="min-h-screen bg-bg text-gr">
-      <SEO path="/pre-etude" />
+        <SEO
+          path="/pre-etude"
+          title="Demander une pré-étude gratuite — SUNAVIO"
+          description="Envoyez vos 12 dernières factures d'électricité : nous revenons sous trois semaines avec une note de calcul, un budget et un temps de retour."
+        />
       <Header />
       <main>
         <section className="border-b border-line bg-bg2 pb-14 pt-32 md:pt-40">
