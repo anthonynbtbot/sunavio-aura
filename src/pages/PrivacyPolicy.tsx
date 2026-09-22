@@ -18,10 +18,9 @@ const PrivacyPolicy = () => (
       </p>
       <p>
         <strong>Principe fondamental :</strong> le site sunavio.com est un site vitrine.
-        Il ne collecte aucune donnée personnelle via formulaire, compte utilisateur ou
-        transaction. Les seules données traitées sont des données techniques de
-        fréquentation, anonymisées et strictement nécessaires au fonctionnement et à
-        l'amélioration du site.
+        Il collecte les informations transmises volontairement dans les formulaires de
+        contact et de pré-étude. Les outils de mesure d'audience et publicitaires ne sont
+        chargés qu'après consentement explicite.
       </p>
     </section>
 
@@ -34,13 +33,13 @@ const PrivacyPolicy = () => (
       </p>
       <p>
         Contact :{" "}
-        <a href="mailto:sunavio.contact@gmail.com">sunavio.contact@gmail.com</a>
+        <a href="mailto:contact@sunavio.com">contact@sunavio.com</a>
       </p>
     </section>
 
     <section>
       <h2>3. Données collectées</h2>
-      <h3>Données techniques de fréquentation (via Umami Analytics)</h3>
+      <h3>Données techniques de fréquentation</h3>
       <ul>
         <li>Pages visitées</li>
         <li>Temps passé sur le site</li>
@@ -49,10 +48,8 @@ const PrivacyPolicy = () => (
         <li>Pays d'origine (via géolocalisation IP approximative)</li>
       </ul>
       <p>
-        Ces données sont <strong>agrégées et anonymisées</strong>. Aucune adresse IP n'est
-        stockée. Aucun identifiant permettant de vous reconnaître personnellement n'est
-        utilisé. Aucun cookie de tracking tiers (Google Analytics, Meta Pixel, etc.) n'est
-        déployé sur ce site.
+        Google Tag Manager, Google Analytics et Meta Pixel sont activés uniquement après
+        acceptation dans le bandeau cookies. Le refus n'empêche pas l'utilisation du site.
       </p>
 
       <h3>Données de contact direct</h3>
@@ -112,7 +109,7 @@ const PrivacyPolicy = () => (
       <p>
         Pour exercer ces droits, écrivez à :{" "}
         <strong>
-          <a href="mailto:sunavio.contact@gmail.com">sunavio.contact@gmail.com</a>
+        <a href="mailto:contact@sunavio.com">contact@sunavio.com</a>
         </strong>
       </p>
       <p>

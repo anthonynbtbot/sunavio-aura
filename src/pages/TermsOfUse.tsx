@@ -96,7 +96,7 @@ const TermsOfUse = () => (
       <h2>8. Contact</h2>
       <p>
         Pour toute question relative aux présentes conditions :{" "}
-        <a href="mailto:sunavio.contact@gmail.com">sunavio.contact@gmail.com</a>
+        <a href="mailto:contact@sunavio.com">contact@sunavio.com</a>
       </p>
     </section>
   </LegalLayout>

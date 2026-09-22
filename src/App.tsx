@@ -7,7 +7,6 @@ import { useEffect } from "react";
 import Index from "./pages/Index.tsx";
 import Contact from "./pages/Contact.tsx";
 import About from "./pages/About.tsx";
-import Services from "./pages/Services.tsx";
 import LegalMentions from "./pages/LegalMentions.tsx";
 import PrivacyPolicy from "./pages/PrivacyPolicy.tsx";
 import TermsOfUse from "./pages/TermsOfUse.tsx";

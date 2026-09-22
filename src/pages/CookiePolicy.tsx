@@ -102,7 +102,7 @@ const CookiePolicy = () => (
       <h2>6. Contact</h2>
       <p>
         Pour toute question relative aux cookies :{" "}
-        <a href="mailto:sunavio.contact@gmail.com">sunavio.contact@gmail.com</a>
+        <a href="mailto:contact@sunavio.com">contact@sunavio.com</a>
       </p>
     </section>
   </LegalLayout>
