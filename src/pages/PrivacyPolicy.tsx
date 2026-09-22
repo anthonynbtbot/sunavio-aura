@@ -57,7 +57,8 @@ const PrivacyPolicy = () => (
         Si vous choisissez de nous contacter via WhatsApp, email ou téléphone depuis notre
         page Contact, les données que vous nous communiquez volontairement (nom,
         coordonnées, contenu du message) sont traitées uniquement pour vous répondre.
-        Elles ne sont jamais partagées avec des tiers.
+        Elles sont transmises à notre prestataire de formulaires Formspree, agissant comme
+        sous-traitant technique, puis utilisées par SUNAVIO uniquement pour traiter la demande.
       </p>
 
       <h3>Estimation de projet</h3>

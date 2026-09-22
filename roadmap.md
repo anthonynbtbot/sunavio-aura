@@ -11,4 +11,4 @@
 - [x] Ajouter le consentement préalable GTM/Meta
 - [x] Uniformiser téléphone et e-mail
 - [x] Mettre à jour sitemap et métadonnées
-- [ ] Vérifier desktop et mobile
+- [x] Vérifier desktop et mobile
