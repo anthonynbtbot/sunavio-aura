@@ -59,6 +59,7 @@ export function ContactForm() {
   // Tracking conversions à l'affichage du message de confirmation
   useEffect(() => {
     if (!done || typeof window === "undefined") return;
+    if (window.localStorage.getItem("sunavio-cookie-consent") !== "accepted") return;
     const w = window as any;
     if (typeof w.fbq === "function") {
       w.fbq("track", "Lead");
