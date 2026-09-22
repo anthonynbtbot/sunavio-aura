@@ -11,34 +11,6 @@ interface SEOProps {
 const SITE_URL = "https://sunavio.com";
 const SOCIAL_IMAGE = `${SITE_URL}/og/sunavio-og.jpg`;
 
-const ORGANIZATION_SCHEMA = {
-  "@context": "https://schema.org",
-  "@type": ["Organization", "LocalBusiness", "ProfessionalService"],
-  name: "SUNAVIO SARL",
-  url: SITE_URL,
-  logo: `${SITE_URL}/logo.png`,
-  image: SOCIAL_IMAGE,
-  description:
-    "Bureau d'études et intégrateur photovoltaïque : centrales solaires en autoconsommation, stockage et micro-réseaux pour l'industrie, l'hôtellerie et l'agriculture.",
-  telephone: "+212663284424",
-  email: "contact@sunavio.com",
-  address: {
-    "@type": "PostalAddress",
-    streetAddress: "Zenith Business Center, Bab Doukala",
-    addressLocality: "Marrakech",
-    addressCountry: "MA",
-  },
-  areaServed: "MA",
-  slogan: "L'excellence solaire",
-  knowsAbout: [
-    "photovoltaïque",
-    "autoconsommation",
-    "stockage d'énergie",
-    "micro-réseaux",
-    "loi 82-21",
-  ],
-};
-
 const PAGE_META: Record<string, { title: string; description: string }> = {
   "/": {
     title: "SUNAVIO — Photovoltaïque en autoconsommation pour l'industrie | Marrakech",
@@ -109,7 +81,7 @@ export function SEO({ title, description, path = "/", noIndex = false, structure
   const normalizedPath = path === "/" ? "/" : path.replace(/\/+$/, "");
   const meta = PAGE_META[normalizedPath] ?? { title, description };
   const url = `${SITE_URL}${normalizedPath === "/" ? "" : normalizedPath}`;
-  const schemas = [ORGANIZATION_SCHEMA, ...(Array.isArray(structuredData) ? structuredData : structuredData ? [structuredData] : [])];
+  const schemas = Array.isArray(structuredData) ? structuredData : structuredData ? [structuredData] : [];
   return (
     <Helmet>
       <title>{meta.title}</title>
@@ -128,7 +100,9 @@ export function SEO({ title, description, path = "/", noIndex = false, structure
       <meta name="twitter:title" content={meta.title} />
       <meta name="twitter:description" content={meta.description} />
       <meta name="twitter:image" content={SOCIAL_IMAGE} />
-      <script type="application/ld+json">{JSON.stringify(schemas.length === 1 ? schemas[0] : schemas)}</script>
+      {schemas.map((schema, index) => (
+        <script key={index} type="application/ld+json">{JSON.stringify(schema)}</script>
+      ))}
     </Helmet>
   );
 }

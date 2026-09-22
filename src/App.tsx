@@ -28,6 +28,7 @@ import References from "./pages/References";
 import Resources from "./pages/Resources";
 import ResourceArticle from "./pages/ResourceArticle";
 import PreStudy from "./pages/PreStudy";
+import { SiteStructuredData } from "@/components/SiteStructuredData";
 
 const queryClient = new QueryClient();
 
@@ -45,6 +46,7 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter>
+        <SiteStructuredData />
         <PageTracker />
         <ScrollToTop />
         <CookieConsent />
