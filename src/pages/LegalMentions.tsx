@@ -40,10 +40,10 @@ const LegalMentions = () => (
       </p>
       <ul>
         <li>
-          Email : <a href="mailto:sunavio.contact@gmail.com">sunavio.contact@gmail.com</a>
+          Email : <a href="mailto:contact@sunavio.com">contact@sunavio.com</a>
         </li>
         <li>
-        Téléphone : <a href="tel:+212660449150">+212 6 60 44 91 50</a>
+        Téléphone : <a href="tel:+212663284424">+212 6 63 28 44 24</a>
         </li>
       </ul>
     </section>

@@ -21,13 +21,12 @@ const CookiePolicy = () => (
     </section>
 
     <section>
-      <h2>2. Notre approche : minimale et transparente</h2>
+      <h2>2. Notre approche : consentement préalable</h2>
       <p>
-        Le site sunavio.com applique une politique cookies <strong>minimale</strong>.
-        Nous n'utilisons aucun cookie marketing, aucun cookie de tracking tiers, aucun
-        cookie publicitaire.
+        Le site sunavio.com ne charge aucun outil de mesure ou publicitaire avant votre
+        accord. Votre choix est conservé localement et le refus n'empêche pas la navigation.
       </p>
-      <p>Les seuls cookies présents sur ce site sont :</p>
+      <p>Les catégories susceptibles d'être utilisées sont :</p>
 
       <h3>a) Cookies strictement nécessaires</h3>
       <p>
@@ -39,29 +38,23 @@ const CookiePolicy = () => (
         <li>Session utilisateur sur les pages interactives</li>
       </ul>
 
-      <h3>b) Cookies de mesure d'audience (Umami Analytics)</h3>
+      <h3>b) Mesure d'audience et publicité, après accord</h3>
       <p>
-        Nous utilisons <strong>Umami Analytics</strong>, une solution d'analyse
-        d'audience respectueuse de la vie privée, auto-hébergée, et conforme RGPD par
-        conception. Umami ne dépose <strong>aucun cookie persistant</strong>. Les données
-        collectées sont anonymisées, agrégées, et ne permettent pas de vous identifier.
+        Après acceptation, Google Tag Manager, Google Analytics et Meta Pixel peuvent
+        mesurer les visites et les demandes envoyées afin d'évaluer nos campagnes.
       </p>
       <p>
-        <strong>Aucun consentement n'est donc requis</strong> pour ces analytics
-        respectueux.
+        <strong>Votre consentement est requis</strong> avant leur chargement.
       </p>
     </section>
 
     <section>
-      <h2>3. Ce que nous n'utilisons PAS</h2>
-      <p>Par transparence, voici ce que nous <strong>n'utilisons pas</strong> :</p>
+      <h2>3. Ce que nous n'utilisons pas sans accord</h2>
+      <p>Avant acceptation, les outils suivants restent désactivés :</p>
       <ul>
-        <li>Google Analytics (aucun cookie Google)</li>
+        <li>Google Analytics et Google Tag Manager</li>
         <li>Meta Pixel / Facebook Pixel</li>
-        <li>Cookies publicitaires programmatiques</li>
-        <li>Trackers réseaux sociaux</li>
-        <li>Fingerprinting</li>
-        <li>Retargeting</li>
+        <li>Cookies publicitaires ou de conversion</li>
       </ul>
     </section>
 
@@ -102,7 +95,7 @@ const CookiePolicy = () => (
       <h2>6. Contact</h2>
       <p>
         Pour toute question relative aux cookies :{" "}
-        <a href="mailto:sunavio.contact@gmail.com">sunavio.contact@gmail.com</a>
+        <a href="mailto:contact@sunavio.com">contact@sunavio.com</a>
       </p>
     </section>
   </LegalLayout>

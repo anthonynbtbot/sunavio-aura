@@ -1,88 +1,13 @@
-import { TrendingDown, Factory, LineChart } from "lucide-react";
-import { SegmentShell } from "@/components/segments/SegmentShell";
-import ogImage from "@/assets/og-industrie-maroc.jpg";
+import { IndustrialPage, Section, FinalCTA } from "@/components/industrial/IndustrialPage";
 
-const IndustrieMaroc = () => (
-  <SegmentShell
-    path="/panneaux-solaires-industrie-maroc"
-    seoTitle="Solaire industriel & tertiaire au Maroc | Autoconsommation | SUNAVIO"
-    seoDescription="Réduisez vos coûts énergétiques par l'autoconsommation solaire. Étude sur factures moyenne tension, dimensionnement rigoureux, conformité décret 2.25.100. Marrakech & axe Souss."
-    ogImage={ogImage}
-    eyebrow="INDUSTRIE & TERTIAIRE · MARRAKECH–SOUSS"
-    heroTitle="Votre poste énergie pèse sur vos marges. Reprenez le contrôle."
-    heroAccentWords={["Reprenez", "le", "contrôle."]}
-    heroSubtitle="Tarification moyenne tension, exigences de décarbonation de vos donneurs d'ordre : l'autoproduction solaire devient un levier de compétitivité. SUNAVIO le rend rentable et conforme."
-    whatsappMessage="Bonjour, je dirige un site industriel ou tertiaire au Maroc et je souhaite une étude d'autoconsommation solaire SUNAVIO."
-    painTitle="Le tarif MT n'est pas neutre."
-    painAccent={["n'est", "pas", "neutre."]}
-    pains={[
-      {
-        icon: TrendingDown,
-        title: "Pointe, pleines, creuses : un tarif qui sanctionne",
-        description:
-          "La structure horaire du tarif moyenne tension fait exploser le coût du kWh en heures de pointe — précisément quand votre process tourne à plein.",
-      },
-      {
-        icon: Factory,
-        title: "Une pression compétitive permanente",
-        description:
-          "Marges sous tension, prix du kWh ONEE en hausse continue : sans levier sur l'énergie, c'est votre compétitivité qui se dégrade chaque année.",
-      },
-      {
-        icon: LineChart,
-        title: "Donneurs d'ordre et financeurs vous attendent sur la RSE",
-        description:
-          "Bilan carbone, scope 2, exigences ESG : l'autoproduction n'est plus une option de communication, c'est un prérequis contractuel.",
-      },
-    ]}
-    approachIntro="L'industriel ne s'équipe pas comme un particulier. Le calcul se fait sur la facture MT, heure par heure."
-    approach={[
-      {
-        title: "Étude tarifaire détaillée",
-        description:
-          "Décomposition de votre facture ONEE par tranche horaire (pointe, pleines, creuses), identification des postes les plus pénalisés, calcul du coût réel du kWh consommé.",
-      },
-      {
-        title: "Dimensionnement optimisé pour l'autoconsommation",
-        description:
-          "Centrale calibrée pour maximiser l'autoconsommation pendant les heures les plus chères, sans surdimensionner ni générer de surplus inutile.",
-      },
-      {
-        title: "Dossier de raccordement conforme",
-        description:
-          "Montage complet du dossier réglementaire au titre du décret 2.25.100, gestion des échanges avec le gestionnaire de réseau régional jusqu'à l'accord.",
-      },
-      {
-        title: "Monitoring temps réel post-installation",
-        description:
-          "Suivi de production, alertes, rapports mensuels : vous pilotez votre installation comme un actif industriel, pas comme un équipement passif.",
-      },
-    ]}
-    referenceTitle="Sites tertiaires & industriels · axe Marrakech–Souss."
-    referenceAccent={["axe", "Marrakech–Souss."]}
-    referenceParagraphs={[
-      "SUNAVIO accompagne des sites tertiaires et industriels sur l'axe Marrakech–Souss : bâtiments logistiques, ateliers, sièges régionaux, agro-industrie.",
-      "L'objectif commun : une réduction durable du coût du kWh autoproduit, mesurable dès la première année et garantie sur la durée par le monitoring.",
-    ]}
-    metrics={[
-      { k: "Cible tarifaire", v: "Heures pointe & pleines en priorité" },
-      { k: "Autoconsommation", v: "Optimisée — généralement > 90%" },
-      { k: "Conformité", v: "Décret 2.25.100" },
-      { k: "Pilotage", v: "Monitoring temps réel inclus" },
-    ]}
-    metricsNote="Fourchettes indicatives. Le gain réel dépend de votre profil de charge, de votre tarif MT et de la surface exploitable."
-    ctaTitle="Faites du solaire un actif industriel."
-    ctaAccent={["actif", "industriel."]}
-    ctaIntro="Un ingénieur SUNAVIO analyse votre facture MT, modélise votre courbe de charge et chiffre votre rentabilité. L'étude est gratuite, le monitoring est inclus."
-    extraCrossLink={{
-      eyebrow: "FINANCEMENT VERT",
-      title: "Votre projet peut être éligible aux financements verts.",
-      description:
-        "Lignes de crédit bancaires dédiées à la transition énergétique, dispositifs de soutien sectoriels : nous vous orientons vers les bons interlocuteurs pendant l'étude.",
-      to: "/contact",
-      label: "En parler avec un ingénieur",
-    }}
-  />
-);
-
+const fit=[["Charges de process en journée","Production solaire consommée directement"],["Une ou deux équipes, six jours sur sept","Taux d'autoconsommation généralement élevé"],["Grandes toitures et réserves foncières","Puissance évolutive selon structure et raccordement"],["Raccordement MT 22 kV et tarif tri-horaire","Ciblage des plages les plus coûteuses"],["Poussière et températures élevées","Modules Anti-Dust et plan de nettoyage"],["Plusieurs sites","Architecture standardisée et supervision centralisée"]];
+const ranges=[["Unité de production moyenne","0,5 à 1,5 GWh/an","100 à 300 kWc","0,7 à 1,9 MDH HT","0,14 à 0,42 MDH/an","4,5 à 6 ans"],["Grand site","2 à 5 GWh/an","400 kWc à 1 MWc","2,4 à 6,5 MDH HT","0,55 à 1,4 MDH/an","4,5 à 5,5 ans"],["Plateforme HTA","> 20 GWh/an","Plusieurs MWc au sol","6,0 à 6,5 DH/Wc","Selon profil","≈ 5 ans"]];
+const faq=[["Faut-il une batterie ?","Pas systématiquement. Elle est retenue seulement si la simulation horaire démontre une valeur sur le surplus, la pointe, la puissance souscrite ou le process."],["Que se passe-t-il les jours d'arrêt ?","La régulation réduit la production pour respecter la consigne d'injection. Le stockage peut être étudié si les arrêts créent un surplus récurrent."],["Le PV dégrade-t-il mon facteur de puissance ?","L'étude vérifie les flux réactifs, les réglages des onduleurs et la compensation existante avant raccordement."],["Quelle surface pour 300 kWc ?","La surface dépend des modules, des reculs, des obstacles et des circulations techniques. Elle est confirmée après relevé et plan d'implantation."],["Quels délais administratifs ?","Ils dépendent de la puissance, de la tension et du gestionnaire. Le dossier réglementaire est mené en parallèle de l'étude détaillée."],["Qui assure la maintenance ?","SUNAVIO organise la supervision, les inspections, le nettoyage planifié et le suivi des performances."]];
+const IndustrieMaroc=()=> <IndustrialPage path="/panneaux-solaires-industrie-maroc" eyebrow="INDUSTRIE" title="Panneaux solaires pour usines et sites industriels au Maroc" intro="Une centrale dimensionnée sur la courbe de charge, le tarif MT et les contraintes d'exploitation du site — pas sur sa seule surface de toiture.">
+  <Section title="Pourquoi l'industrie est adaptée à l'autoconsommation"><div className="overflow-x-auto"><table className="technical-table"><thead><tr><th>Caractéristique du site</th><th>Conséquence pour le photovoltaïque</th></tr></thead><tbody>{fit.map(r=><tr key={r[0]}><td>{r[0]}</td><td>{r[1]}</td></tr>)}</tbody></table></div></Section>
+  <Section alt title="Ordres de grandeur" intro="Scénarios indicatifs à confirmer par l'analyse des factures et de la courbe de charge."><div className="overflow-x-auto"><table className="technical-table"><thead><tr><th>Profil</th><th>Consommation</th><th>Centrale</th><th>Investissement</th><th>Économie annuelle</th><th>Retour simple</th></tr></thead><tbody>{ranges.map(r=><tr key={r[0]}>{r.map(c=><td key={c}>{c}</td>)}</tr>)}</tbody></table></div></Section>
+  <Section title="Ce qu'il faut pour figer les chiffres"><ul className="grid gap-4 md:grid-cols-2">{["12 factures d'électricité","Courbes de charge au pas de 10 minutes","Schéma unifilaire et caractéristiques des transformateurs","Plans de toiture et rapport de structure","Visite technique d'une demi-journée"].map(x=><li key={x} className="flex gap-3 border border-line p-5"><span className="font-bold text-or">✓</span><span>{x}</span></li>)}</ul></Section>
+  <Section alt title="Cadre réglementaire"><div className="info-panel max-w-4xl">La loi 82-21 et le décret 2.25.100, en vigueur depuis juin 2026, structurent l'autoproduction. Le régime dépend de la puissance et de la tension de raccordement. L'excédent peut être injectable dans la limite de 20 % au tarif ANRE, selon le dossier accepté. Le gestionnaire compétent est la SRM ou l'ONEE selon le site.</div></Section>
+  <Section title="Questions fréquentes"><div className="max-w-4xl divide-y divide-line border-y border-line">{faq.map(([q,a])=><details key={q} className="group py-5"><summary className="cursor-pointer list-none font-semibold text-wh">{q}<span className="float-right text-or">+</span></summary><p className="mt-3 max-w-3xl leading-7 text-gr2">{a}</p></details>)}</div></Section><FinalCTA/>
+</IndustrialPage>;
 export default IndustrieMaroc;

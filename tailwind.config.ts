@@ -23,7 +23,7 @@ export default {
     },
     extend: {
       fontFamily: {
-        display: ['"Playfair Display"', "Georgia", "serif"],
+        display: ["Inter", "system-ui", "sans-serif"],
         sans: ["Inter", "system-ui", "sans-serif"],
         mono: ['"JetBrains Mono"', "ui-monospace", "monospace"],
       },
@@ -31,15 +31,15 @@ export default {
         // Hero / sections — clamp() based for fluid typography
         "display-hero": [
           "clamp(2.75rem, 6vw + 1rem, 6rem)",
-          { lineHeight: "1.05", letterSpacing: "-0.02em", fontWeight: "600" },
+          { lineHeight: "1.05", letterSpacing: "0", fontWeight: "700" },
         ],
         "display-section": [
           "clamp(2.25rem, 4vw + 0.5rem, 4rem)",
-          { lineHeight: "1.08", letterSpacing: "-0.02em", fontWeight: "600" },
+          { lineHeight: "1.08", letterSpacing: "0", fontWeight: "700" },
         ],
         "display-sub": [
           "clamp(1.5rem, 1.5vw + 1rem, 2rem)",
-          { lineHeight: "1.2", letterSpacing: "-0.01em", fontWeight: "600" },
+          { lineHeight: "1.2", letterSpacing: "0", fontWeight: "600" },
         ],
         "body-lg": ["1.125rem", { lineHeight: "1.6" }],
         "body":    ["1.0625rem", { lineHeight: "1.6" }],
@@ -57,6 +57,8 @@ export default {
         gr:        "hsl(var(--gr))",
         gr2:       "hsl(var(--gr2))",
         line:      "hsl(var(--line))",
+        navy:      "hsl(var(--navy))",
+        info:      "hsl(var(--info))",
 
         // === Shadcn semantic tokens ===
         border: "hsl(var(--border))",

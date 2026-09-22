@@ -1,40 +1,26 @@
-import { useLenis } from "@/hooks/useLenis";
+import { Link } from "react-router-dom";
+import { ArrowRight, Building2, CheckCircle2, Factory, Hotel, Leaf, Network, ShieldCheck, Warehouse } from "lucide-react";
 import { SEO } from "@/components/SEO";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
-import { Hero } from "@/components/sections/Hero";
-import { TrustBanner } from "@/components/sections/TrustBanner";
-import { Simulator } from "@/components/sections/Simulator";
-import { Segments } from "@/components/sections/Segments";
-import { Approach } from "@/components/sections/Approach";
-import { Cases } from "@/components/sections/Cases";
-import { WhySunavio } from "@/components/sections/WhySunavio";
-import { FinalCTA } from "@/components/sections/FinalCTA";
+import { Container } from "@/components/atoms/Container";
+import { SunavioButton } from "@/components/atoms/SunavioButton";
+import { Section, CardGrid, FinalCTA } from "@/components/industrial/IndustrialPage";
+import hero from "@/assets/industrial-rooftop-hero.webp";
 
-const Index = () => {
-  useLenis();
+const metrics=[["20 – 35 %","de la consommation couverte par le solaire, sans stockage"],["0,25 – 0,35 DH","coût du kWh solaire sur 25 ans, contre 0,85 à 1,20 DH/kWh acheté en MT"],["4 – 6 ans","temps de retour simple, maintenance comprise"],["25 ans","de production, garantie de performance des modules"]];
+const method=[["Collecte","12 factures, courbes de charge, unifilaire et visite — 1 semaine"],["Pré-étude","Note de calcul, options avec et sans stockage, budget ± 10 % — 3 semaines"],["Étude détaillée","SmartDesign / PVsyst, plans et devis fournisseurs — 3 à 4 semaines"],["Réglementaire","Loi 82-21, décret 2.25.100, raccordement SRM / ONEE — en parallèle"],["Réalisation","Fourniture, montage, câblage, protections et essais — 2 à 4 mois"],["Exploitation","Mise en service, supervision FusionSolar, maintenance et bilan à 12 mois"]];
+const refs=["Usine de préfabrication béton · 303 kWc, variante 405 kWc + 482 kWh","Site MT à deux points de livraison · 405 kWc","Entrepôt frigorifique · 101 kWc","Infrastructure aéroportuaire · avant-projet 171 kWc","Ombrières agrivoltaïques · 314 kWc, variante 602 kWc + 964 kWh","Domaine à Tameslouht · 46,6 kWc, villa 13,9 kWc"];
 
-  return (
-    <div className="min-h-screen bg-bg text-wh">
-      <SEO
-        title="Panneaux solaires Marrakech | Énergie solaire premium — SUNAVIO"
-        description="Installation solaire villa, hôtel et domaine à Marrakech. Énergie solaire premium sur-mesure : panneaux, stockage batterie, micro-réseaux intelligents."
-        path="/"
-      />
-      <Header />
-      <main>
-        <Hero />
-        <TrustBanner />
-        <Simulator />
-        <Segments />
-        <Approach />
-        <Cases />
-        <WhySunavio />
-        <FinalCTA />
-      </main>
-      <Footer />
-    </div>
-  );
-};
-
+const Index=()=> <div className="min-h-screen bg-bg text-gr"><SEO title="Photovoltaïque industriel à Marrakech | SUNAVIO" description="Bureau d'études et intégrateur photovoltaïque pour usines, hôtels, exploitations agricoles et sites institutionnels au Maroc." path="/"/><Header/><main>
+  <section className="pt-16 lg:pt-20"><div className="grid min-h-[720px] lg:grid-cols-[1.05fr_.95fr]"><div className="flex items-center px-4 py-16 sm:px-8 lg:px-12 xl:px-[max(3rem,calc((100vw-1400px)/2))]"><div className="max-w-3xl"><p className="text-eyebrow">PHOTOVOLTAÏQUE C&I · STOCKAGE · MICRO-RÉSEAUX</p><h1 className="mt-6 text-4xl font-bold leading-[1.08] text-wh md:text-6xl">Réduisez durablement la facture électrique de votre site industriel</h1><p className="mt-6 max-w-2xl text-lg leading-8 text-gr2">SUNAVIO conçoit, dimensionne et réalise des centrales photovoltaïques en autoconsommation pour les usines, entrepôts, hôtels et exploitations agricoles de la région de Marrakech. Bureau d'études intégré, installateur certifié Huawei Smart PV, zéro injection garanti.</p><div className="mt-8 flex flex-col gap-3 sm:flex-row"><SunavioButton asChild size="lg"><Link to="/pre-etude">Demander une pré-étude gratuite</Link></SunavioButton><Link to="/contact" className="inline-flex h-14 items-center justify-center rounded-md border border-line px-8 font-semibold text-wh hover:border-or">Recevoir notre plaquette</Link></div><div className="mt-8 flex flex-col gap-3 text-sm text-gr2 sm:flex-row sm:flex-wrap">{["Installateur certifié Huawei Smart PV","Bureau d'études intégré","Marrakech · tout le Maroc"].map(x=><span key={x} className="inline-flex items-center gap-2"><CheckCircle2 className="h-4 w-4 text-or"/>{x}</span>)}</div></div></div><img src={hero} alt="Centrale photovoltaïque sur la toiture d'un site industriel près de Marrakech" width={1600} height={1104} className="h-full min-h-[380px] w-full object-cover"/></div></section>
+  <section className="border-y border-line bg-bg2 py-10"><Container size="wide"><div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">{metrics.map(([v,l])=><div key={v}><p className="text-3xl font-bold text-or">{v}</p><p className="mt-2 text-sm leading-6 text-gr2">{l}</p></div>)}</div><p className="mt-8 text-xs text-gr2">Ordres de grandeur issus de nos études industrielles 2026 dans la région de Marrakech ; les valeurs exactes sont établies sur vos factures et vos courbes de charge.</p></Container></section>
+  <Section title="Des sites qui consomment le jour, sous l'un des meilleurs ensoleillements du Maroc"><CardGrid items={[{title:"Industrie et logistique",description:"Usines, unités de production, entrepôts frigorifiques, plateformes logistiques, carrières et cimenteries.",to:"/panneaux-solaires-industrie-maroc"},{title:"Hôtellerie",description:"Hôtels, riads de grande capacité, golfs et resorts : climatisation, piscines et blanchisserie en journée.",to:"/panneaux-solaires-hotel-marrakech"},{title:"Agriculture",description:"Ombrières agrivoltaïques, pompage solaire, stations de conditionnement et chambres froides.",to:"/agriculture-pompage-solaire"},{title:"Infrastructures",description:"Plateformes aéroportuaires, sites publics, administrations et sites isolés.",to:"/contact"}]}/><Link to="/panneaux-solaires-villa-marrakech" className="mt-7 inline-flex items-center gap-2 text-sm font-semibold text-or">Vous êtes un particulier ? Offre résidentielle premium <ArrowRight className="h-4 w-4"/></Link></Section>
+  <Section alt title="Nos solutions"><CardGrid items={[{title:"Photovoltaïque en autoconsommation",description:"Toiture bac acier, ombrières ou champ au sol, raccordés au TGBT et dimensionnés sur le profil de charge réel."},{title:"Stockage Huawei LUNA2000",description:"Écrêtage, surplus, puissance souscrite ou bus critique uniquement lorsqu'une simulation horaire démontre sa valeur."},{title:"Micro-réseaux et pompage",description:"Hybridation PV, batteries et groupe électrogène pour sites isolés ; pompage pour forages, bassins et irrigation."}]}/><SunavioButton asChild className="mt-8"><Link to="/solutions">Voir toutes nos solutions</Link></SunavioButton></Section>
+  <Section title="Une note de calcul avant tout engagement"><div className="grid gap-5 md:grid-cols-2 lg:grid-cols-3">{method.map(([t,d],i)=><div key={t} className="border-t-2 border-or pt-5"><span className="text-sm font-bold text-or">0{i+1}</span><h3 className="mt-3 text-xl font-semibold text-wh">{t}</h3><p className="mt-2 leading-7 text-gr2">{d}</p></div>)}</div><div className="info-panel mt-10"><strong>Méthode SUNAVIO — </strong>La facture est réconciliée avec la consommation et la grille tarifaire avant tout calcul de retour. Toute hypothèse est nommée et confirmée en visite technique. Lorsque le stockage ne se justifie pas, nous le disons.</div></Section>
+  <Section alt title="Zéro injection garanti"><CardGrid items={[{title:"1 — Régulation",description:"SmartLogger et mesure au point de livraison pour réduire instantanément la puissance des onduleurs."},{title:"2 — Fail-safe",description:"Repli automatique en cas de perte de mesure ou de communication."},{title:"3 — Protection indépendante",description:"Relais de retour de puissance 32R commandant le disjoncteur PV selon les prescriptions réseau."}]}/><p className="mt-7 text-gr2">Les essais de réception sont réalisés en présence du gestionnaire de réseau avant mise sous tension.</p></Section>
+  <Section title="Études et projets en cours"><div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">{refs.map((r,i)=><article key={r} className="border border-line bg-bg p-5"><p className="text-xs font-semibold uppercase text-or">{["Industrie","Industrie","Distribution","Infrastructure","Agriculture","Résidentiel premium"][i]}</p><p className="mt-3 font-semibold leading-6 text-wh">{r}</p></article>)}</div><p className="mt-6 text-sm text-gr2">Noms des clients communiqués sur demande, avec leur accord.</p><SunavioButton asChild variant="secondary" className="mt-7"><Link to="/references">Toutes nos références</Link></SunavioButton></Section>
+  <Section alt title="Partenaires et équipements"><div className="grid gap-4 md:grid-cols-3">{[[ShieldCheck,"Huawei Smart PV","SUN2000, LUNA2000 et supervision FusionSolar"],[Building2,"Jinko Solar","Modules Tiger Neo N-type"],[Network,"Green Power Technologie","Distributeur Huawei Maroc"]].map(([Icon,t,d])=>{const I=Icon as typeof Factory;return <div key={String(t)} className="border border-line bg-bg p-6"><I className="h-7 w-7 text-or"/><h3 className="mt-4 text-lg font-semibold text-wh">{String(t)}</h3><p className="mt-2 text-sm text-gr2">{String(d)}</p></div>})}</div></Section>
+  <Section title="Ressources"><CardGrid items={[{title:"Décret 2.25.100",description:"Comprendre le nouveau cadre de l'autoproduction au Maroc.",to:"/decret-2-25-100-autoproduction-maroc"},{title:"Zéro injection",description:"Choisir entre zéro injection et injection limitée.",to:"/ressources/zero-injection"},{title:"Stockage industriel",description:"Identifier les situations où la batterie crée de la valeur.",to:"/ressources/stockage-batteries-industrie"}]}/></Section><FinalCTA/>
+</main><Footer/></div>;
 export default Index;

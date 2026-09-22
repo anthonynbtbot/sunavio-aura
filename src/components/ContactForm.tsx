@@ -27,7 +27,7 @@ const TIMINGS = [
 ];
 
 const inputCls =
-  "block w-full rounded-md border border-[#444444] bg-[#1A1A1A] px-4 py-3 text-sm text-wh placeholder:text-gr2 focus:border-or focus:outline-none focus:ring-1 focus:ring-or";
+  "block w-full rounded-md border border-line bg-bg px-4 py-3 text-sm text-gr placeholder:text-gr2 focus:border-or focus:outline-none focus:ring-1 focus:ring-or";
 
 function Field({
   label,
@@ -59,6 +59,7 @@ export function ContactForm() {
   // Tracking conversions à l'affichage du message de confirmation
   useEffect(() => {
     if (!done || typeof window === "undefined") return;
+    if (window.localStorage.getItem("sunavio-cookie-consent") !== "accepted") return;
     const w = window as any;
     if (typeof w.fbq === "function") {
       w.fbq("track", "Lead");
@@ -111,7 +112,6 @@ export function ContactForm() {
       "_subject",
       `Contact général SUNAVIO - ${projectType || "Non précisé"}`,
     );
-    data.append("_cc", "sunavio.contact@gmail.com,Contact.sunavio@gmail.com");
 
     setSubmitting(true);
     try {
@@ -131,10 +131,10 @@ export function ContactForm() {
   };
 
   return (
-    <section id="contact-form" className="relative py-20 md:py-28">
-      <Container size="wide">
+    <section id="contact-form" className="relative">
+      <Container size="wide" className="px-0">
         <Reveal>
-          <div className="mx-auto max-w-2xl text-center">
+          <div className="max-w-2xl">
             <Eyebrow>FORMULAIRE DE CONTACT</Eyebrow>
             <h2 className="mt-5 font-display text-4xl font-semibold text-wh md:text-5xl">
               Décrivez-nous votre projet
@@ -146,7 +146,7 @@ export function ContactForm() {
         </Reveal>
 
         <Reveal delay={0.1}>
-          <div className="relative mx-auto mt-10 max-w-3xl rounded-2xl border border-or/60 bg-[#2A2A2A] p-6 shadow-[0_20px_60px_-30px_rgba(0,0,0,0.6)] md:p-10">
+          <div className="relative mt-8 max-w-3xl rounded-md border border-line bg-bg p-6 shadow-sm md:p-8">
             {done ? (
               <div className="py-10 text-center">
                 <div className="mx-auto inline-flex h-16 w-16 items-center justify-center rounded-full bg-or/10">
@@ -210,6 +210,11 @@ export function ContactForm() {
                     </Field>
                   </div>
                 </div>
+
+                <label className="flex items-start gap-3 text-sm text-gr2">
+                  <input type="checkbox" name="consent" required className="mt-1" />
+                  J'accepte que SUNAVIO utilise ces informations pour répondre à ma demande.
+                </label>
 
                 {/* BLOC 2 — Projet */}
                 <div>

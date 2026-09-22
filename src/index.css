@@ -2,36 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
-/* SUNAVIO Design System
-   All colors MUST be HSL.
-   Dark mode only — no light theme.
-*/
-
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
+/* SUNAVIO — système clair, technique et industriel. */
 
 @layer base {
   :root {
-    /* === SUNAVIO PALETTE (HSL) === */
-    /* bg #1A1A1A */
-    --bg: 0 0% 10%;
-    /* bg2 #2A2A2A */
-    --bg2: 0 0% 16.5%;
-    /* bg3 #0F0F0F */
-    --bg3: 0 0% 6%;
-    /* or #E8A84C */
-    --or: 36 78% 60%;
-    /* or2 #D4943C */
-    --or2: 33 64% 53%;
-    /* or-glow rgba(232,168,76,0.15) — kept as raw rgba via util */
-    --or-glow: 36 78% 60%;
-    /* wh #F5F0E8 */
-    --wh: 36 41% 93%;
-    /* gr #C8C0B4 */
-    --gr: 36 19% 75%;
-    /* gr2 #7A7468 */
-    --gr2: 38 8% 44%;
-    /* line #3A3A3A */
-    --line: 0 0% 23%;
+    --bg: 0 0% 100%;
+    --bg2: 220 14% 97%;
+    --bg3: 220 14% 97%;
+    --or: 31 77% 56%;
+    --or2: 29 64% 50%;
+    --or-glow: 31 77% 56%;
+    --wh: 216 20% 21%;
+    --gr: 0 0% 13%;
+    --gr2: 220 5% 44%;
+    --line: 220 13% 90%;
+    --navy: 216 20% 21%;
+    --info: 36 100% 95%;
 
     /* === SHADCN SEMANTIC TOKENS (mapped to SUNAVIO) === */
     --background: var(--bg);
@@ -44,7 +30,7 @@
     --popover-foreground: var(--wh);
 
     --primary: var(--or);
-    --primary-foreground: var(--bg);
+    --primary-foreground: 0 0% 100%;
 
     --secondary: var(--bg2);
     --secondary-foreground: var(--wh);
@@ -87,15 +73,15 @@
     );
 
     /* === SHADOWS === */
-    --shadow-cta: 0 0 40px hsl(var(--or) / 0.3);
-    --shadow-card-hover: 0 20px 60px -20px hsl(var(--or) / 0.25);
-    --shadow-elevated: 0 30px 80px -30px hsl(0 0% 0% / 0.6);
+    --shadow-cta: 0 6px 16px hsl(var(--or) / 0.18);
+    --shadow-card-hover: 0 10px 30px -18px hsl(var(--navy) / 0.22);
+    --shadow-elevated: 0 14px 40px -24px hsl(var(--navy) / 0.25);
 
     /* === TRANSITIONS / EASINGS === */
     --ease-out-expo: cubic-bezier(0.22, 1, 0.36, 1);
     --ease-out-quart: cubic-bezier(0.16, 1, 0.3, 1);
-    --transition-micro: 0.4s var(--ease-out-expo);
-    --transition-macro: 0.7s var(--ease-out-expo);
+    --transition-micro: 0.15s ease;
+    --transition-macro: 0.15s ease;
 
     /* sidebar (kept for shadcn sidebar component compatibility) */
     --sidebar-background: var(--bg3);
@@ -108,7 +94,6 @@
     --sidebar-ring: var(--or);
   }
 
-  /* Dark mode mirrors root — site is dark-only */
   .dark {
     --background: var(--bg);
     --foreground: var(--wh);
@@ -137,18 +122,17 @@
     color: hsl(var(--bg));
   }
 
-  /* Headings default to display font */
   h1, h2 {
-    font-family: 'Playfair Display', Georgia, serif;
-    font-weight: 600;
-    letter-spacing: -0.02em;
+    font-family: 'Inter', system-ui, sans-serif;
+    font-weight: 700;
+    letter-spacing: 0;
     line-height: 1.05;
   }
 
   h3, h4, h5, h6 {
     font-family: 'Inter', system-ui, sans-serif;
     font-weight: 600;
-    letter-spacing: -0.01em;
+    letter-spacing: 0;
   }
 
   /* Tabular numerals for KPIs via .font-mono */
@@ -175,16 +159,16 @@
 
 @layer utilities {
   /* === Typography utilities === */
-  .font-display { font-family: 'Playfair Display', Georgia, serif; }
+  .font-display { font-family: 'Inter', system-ui, sans-serif; }
   .font-sans    { font-family: 'Inter', system-ui, sans-serif; }
   .font-mono    { font-family: 'JetBrains Mono', ui-monospace, monospace; }
 
   .text-eyebrow {
-    font-family: 'JetBrains Mono', ui-monospace, monospace;
+    font-family: 'Inter', system-ui, sans-serif;
     font-size: 0.75rem;
     line-height: 1;
     text-transform: uppercase;
-    letter-spacing: 0.15em;
+    letter-spacing: 0.08em;
     color: hsl(var(--or));
   }
 
@@ -243,4 +227,14 @@
   .legal-prose hr {
     @apply my-12 border-line;
   }
+
+  .technical-table {
+    @apply w-full border-collapse overflow-hidden rounded-md border border-line text-left text-sm;
+  }
+  .technical-table th {
+    @apply border-b border-or bg-wh px-4 py-4 font-semibold text-bg;
+  }
+  .technical-table td { @apply border-b border-line px-4 py-4 align-top text-gr; }
+  .technical-table tbody tr:nth-child(even) { @apply bg-bg2; }
+  .info-panel { @apply border-l-[3px] border-or bg-[hsl(var(--info))] p-6 text-gr; }
 }
