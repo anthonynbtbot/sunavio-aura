@@ -1,0 +1,8 @@
+import { IndustrialPage, Section, CardGrid, FinalCTA } from "@/components/industrial/IndustrialPage";
+import image from "@/assets/agriculture-solar.webp";
+const Agriculture = () => <IndustrialPage path="/agriculture-pompage-solaire" eyebrow="AGRICULTURE" title="Agrivoltaïque et pompage solaire pour les exploitations agricoles" intro="Production photovoltaïque, pompage et froid agricole conçus autour des cycles hydrauliques et des consommations réelles de l'exploitation.">
+  <section><img src={image} alt="Installation de pompage solaire sur une exploitation agricole près de Marrakech" width={1408} height={912} className="h-[360px] w-full object-cover md:h-[520px]"/></section>
+  <Section title="Des usages complémentaires"><CardGrid items={[{title:"Ombrières agrivoltaïques",description:"Production électrique et protection des cultures, avec étude des circulations et de l'impact agronomique."},{title:"Pompage et irrigation",description:"Forages, bassins et réseaux d'irrigation pilotés selon les besoins hydrauliques et les heures solaires."},{title:"Froid et conditionnement",description:"Chambres froides, stations de conditionnement et process de jour couverts en autoconsommation."}]}/></Section>
+  <Section alt title="Étude en cours : 314 à 602 kWc" intro="Une ombrière agrivoltaïque est étudiée dans une première configuration de 314 kWc et une variante de 602 kWc couplée à 964 kWh de stockage. Les valeurs définitives restent soumises à l'étude détaillée." ><div className="info-panel">La pré-étude rapproche besoins d'irrigation, courbe électrique, disponibilité foncière et saisonnalité avant tout choix d'équipement.</div></Section><FinalCTA/>
+</IndustrialPage>;
+export default Agriculture;
