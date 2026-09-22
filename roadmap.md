@@ -1,5 +1,10 @@
 # Refonte SUNAVIO industrie
 
+- [x] Harmoniser toutes les métadonnées SEO et données structurées
+- [x] Ajouter l'image sociale 1200 × 630 et le logo public
+- [x] Mettre les pages légales et la page 404 en noindex
+- [x] Régénérer le sitemap public sans pages légales
+
 - [x] Refaire le système visuel global (blanc, orange, bleu nuit, Inter)
 - [x] Refaire navigation, footer et barre mobile
 - [x] Refaire la page d’accueil

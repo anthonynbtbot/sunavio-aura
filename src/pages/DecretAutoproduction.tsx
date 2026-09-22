@@ -47,8 +47,8 @@ const DecretAutoproduction = () => {
   return (
     <div className="min-h-screen bg-bg text-wh">
       <SEO
-        title="Décret 2.25.100 : autoproduction solaire au Maroc — ce qui change | SUNAVIO"
-        description="Le décret 2.25.100 autorise enfin l'autoproduction d'électricité au Maroc depuis juin 2026. Villa, hôtel, golf, industrie : SUNAVIO gère votre étude technique et votre dossier de raccordement à Marrakech."
+        title="Décret 2.25.100 : ce qui change pour l'autoproduction au Maroc — SUNAVIO"
+        description="Comprendre le décret 2.25.100, les règles de raccordement et l'injection du surplus pour un projet d'autoproduction solaire au Maroc."
         path="/decret-2-25-100-autoproduction-maroc"
       />
       <Header />
