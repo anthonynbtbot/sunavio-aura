@@ -542,7 +542,7 @@ function LeadForm() {
     if (!done || typeof window === "undefined") return;
     const w = window as any;
     if (typeof w.fbq === "function") {
-      w.fbq("track", "Lead");
+      w.fbq("track", "Lead", { content_name: "formulaire" });
     }
     if (typeof w.gtag === "function") {
       w.gtag("event", "generate_lead", {
