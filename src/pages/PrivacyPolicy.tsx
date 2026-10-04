@@ -18,9 +18,10 @@ const PrivacyPolicy = () => (
       </p>
       <p>
         <strong>Principe fondamental :</strong> le site sunavio.com est un site vitrine.
-        Il collecte les informations transmises volontairement dans les formulaires de
-        contact et de pré-étude. Les outils de mesure d'audience et publicitaires ne sont
-        chargés qu'après consentement explicite.
+        Il ne collecte aucune donnée personnelle via formulaire, compte utilisateur ou
+        transaction. Les seules données traitées sont des données techniques de
+        fréquentation, anonymisées et strictement nécessaires au fonctionnement et à
+        l'amélioration du site.
       </p>
     </section>
 
@@ -33,13 +34,13 @@ const PrivacyPolicy = () => (
       </p>
       <p>
         Contact :{" "}
-        <a href="mailto:contact@sunavio.com">contact@sunavio.com</a>
+        <a href="mailto:sunavio.contact@gmail.com">sunavio.contact@gmail.com</a>
       </p>
     </section>
 
     <section>
       <h2>3. Données collectées</h2>
-      <h3>Données techniques de fréquentation</h3>
+      <h3>Données techniques de fréquentation (via Umami Analytics)</h3>
       <ul>
         <li>Pages visitées</li>
         <li>Temps passé sur le site</li>
@@ -48,8 +49,10 @@ const PrivacyPolicy = () => (
         <li>Pays d'origine (via géolocalisation IP approximative)</li>
       </ul>
       <p>
-        Google Tag Manager, Google Analytics et Meta Pixel sont activés uniquement après
-        acceptation dans le bandeau cookies. Le refus n'empêche pas l'utilisation du site.
+        Ces données sont <strong>agrégées et anonymisées</strong>. Aucune adresse IP n'est
+        stockée. Aucun identifiant permettant de vous reconnaître personnellement n'est
+        utilisé. Aucun cookie de tracking tiers (Google Analytics, Meta Pixel, etc.) n'est
+        déployé sur ce site.
       </p>
 
       <h3>Données de contact direct</h3>
@@ -57,8 +60,7 @@ const PrivacyPolicy = () => (
         Si vous choisissez de nous contacter via WhatsApp, email ou téléphone depuis notre
         page Contact, les données que vous nous communiquez volontairement (nom,
         coordonnées, contenu du message) sont traitées uniquement pour vous répondre.
-        Elles sont transmises à notre prestataire de formulaires Formspree, agissant comme
-        sous-traitant technique, puis utilisées par SUNAVIO uniquement pour traiter la demande.
+        Elles ne sont jamais partagées avec des tiers.
       </p>
 
       <h3>Estimation de projet</h3>
@@ -110,7 +112,7 @@ const PrivacyPolicy = () => (
       <p>
         Pour exercer ces droits, écrivez à :{" "}
         <strong>
-        <a href="mailto:contact@sunavio.com">contact@sunavio.com</a>
+          <a href="mailto:sunavio.contact@gmail.com">sunavio.contact@gmail.com</a>
         </strong>
       </p>
       <p>

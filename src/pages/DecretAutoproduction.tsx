@@ -47,8 +47,8 @@ const DecretAutoproduction = () => {
   return (
     <div className="min-h-screen bg-bg text-wh">
       <SEO
-        title="Décret 2.25.100 : ce qui change pour l'autoproduction au Maroc — SUNAVIO"
-        description="Comprendre le décret 2.25.100, les règles de raccordement et l'injection du surplus pour un projet d'autoproduction solaire au Maroc."
+        title="Décret 2.25.100 : autoproduction solaire au Maroc — ce qui change | SUNAVIO"
+        description="Le décret 2.25.100 autorise enfin l'autoproduction d'électricité au Maroc depuis juin 2026. Villa, hôtel, golf, industrie : SUNAVIO gère votre étude technique et votre dossier de raccordement à Marrakech."
         path="/decret-2-25-100-autoproduction-maroc"
       />
       <Header />
@@ -234,7 +234,7 @@ const DecretAutoproduction = () => {
                     </span>
                   </Link>
                   <a
-                    href="https://wa.me/212663284424?text=Bonjour%2C%20je%20souhaite%20une%20%C3%A9tude%20pour%20mon%20projet%20d%27autoproduction%20solaire%20(d%C3%A9cret%202.25.100)."
+                    href="https://wa.me/212660449150?text=Bonjour%2C%20je%20souhaite%20une%20%C3%A9tude%20pour%20mon%20projet%20d%27autoproduction%20solaire%20(d%C3%A9cret%202.25.100)."
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() => trackWhatsAppClick()}
@@ -251,7 +251,7 @@ const DecretAutoproduction = () => {
         </section>
       </main>
       <a
-        href="https://wa.me/212663284424"
+        href="https://wa.me/212660449150"
         target="_blank"
         rel="noopener noreferrer"
         aria-label="Discuter sur WhatsApp"

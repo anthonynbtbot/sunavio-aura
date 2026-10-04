@@ -1,5 +1,5 @@
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { BrowserRouter, Navigate, Route, Routes, useLocation } from "react-router-dom";
+import { BrowserRouter, Route, Routes, useLocation } from "react-router-dom";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -7,6 +7,7 @@ import { useEffect } from "react";
 import Index from "./pages/Index.tsx";
 import Contact from "./pages/Contact.tsx";
 import About from "./pages/About.tsx";
+import Services from "./pages/Services.tsx";
 import LegalMentions from "./pages/LegalMentions.tsx";
 import PrivacyPolicy from "./pages/PrivacyPolicy.tsx";
 import TermsOfUse from "./pages/TermsOfUse.tsx";
@@ -20,15 +21,6 @@ import VillaMarrakech from "./pages/VillaMarrakech.tsx";
 import IndustrieMaroc from "./pages/IndustrieMaroc.tsx";
 import { ScrollToTop } from "@/components/ScrollToTop";
 import { trackPageView } from "./lib/tracking";
-import { CookieConsent } from "@/components/CookieConsent";
-import { MobileActions } from "@/components/MobileActions";
-import Solutions from "./pages/Solutions";
-import Agriculture from "./pages/Agriculture";
-import References from "./pages/References";
-import Resources from "./pages/Resources";
-import ResourceArticle from "./pages/ResourceArticle";
-import PreStudy from "./pages/PreStudy";
-import { SiteStructuredData } from "@/components/SiteStructuredData";
 
 const queryClient = new QueryClient();
 
@@ -46,22 +38,13 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter>
-        <SiteStructuredData />
         <PageTracker />
         <ScrollToTop />
-        <CookieConsent />
-        <MobileActions />
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/a-propos" element={<About />} />
-          <Route path="/services" element={<Navigate to="/solutions" replace />} />
-          <Route path="/solutions" element={<Solutions />} />
-          <Route path="/agriculture-pompage-solaire" element={<Agriculture />} />
-          <Route path="/references" element={<References />} />
-          <Route path="/ressources" element={<Resources />} />
-          <Route path="/ressources/:slug" element={<ResourceArticle />} />
-          <Route path="/pre-etude" element={<PreStudy />} />
+          <Route path="/services" element={<Services />} />
           <Route path="/mentions-legales" element={<LegalMentions />} />
           <Route path="/confidentialite" element={<PrivacyPolicy />} />
           <Route path="/cgu" element={<TermsOfUse />} />

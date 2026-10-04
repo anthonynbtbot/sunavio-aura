@@ -24,9 +24,9 @@ import poolBg from "@/assets/pool-villa-sunset.jpg";
 
 // Endpoint Formspree pour la page kits piscine
 const FORMSPREE_ENDPOINT = "https://formspree.io/f/xaqvpgng";
-const PHONE = "+212663284424";
-const PHONE_DISPLAY = "+212 6 63 28 44 24";
-const WHATSAPP_URL = `https://wa.me/212663284424?text=${encodeURIComponent(
+const PHONE = "+212660449150";
+const PHONE_DISPLAY = "+212 6 60 44 91 50";
+const WHATSAPP_URL = `https://wa.me/212660449150?text=${encodeURIComponent(
   "Bonjour SUNAVIO, je suis intéressé par un kit solaire piscine.",
 )}`;
 
@@ -583,6 +583,7 @@ function LeadForm() {
     }
 
     data.append("_subject", "Nouveau lead — Kit solaire piscine SUNAVIO");
+    data.append("_cc", "sunavio.contact@gmail.com,Contact.sunavio@gmail.com");
 
     setSubmitting(true);
     try {
@@ -781,8 +782,8 @@ const PoolKits = () => {
   return (
     <div className="min-h-screen bg-bg text-wh">
       <SEO
-        title="Kits solaires pour piscine à Marrakech — SUNAVIO"
-        description="Kits photovoltaïques pour la filtration et le chauffage des piscines résidentielles à Marrakech. Étude et installation SUNAVIO."
+        title="SUNAVIO — Kits solaires piscine premium Marrakech"
+        description="Kits solaires clé en main pour piscines de villas premium à Marrakech, Essaouira et Souss. Économisez jusqu'à 20 900 DH par an. Devis gratuit, visite technique offerte."
         path="/kits-piscine"
       />
       {/* Placeholder pixel Meta Ads — à insérer ici */}
