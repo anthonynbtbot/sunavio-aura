@@ -1,3 +1,4 @@
+import { PHONE_BUSINESS } from "@/lib/phones";
 import { TrendingDown, Factory, LineChart } from "lucide-react";
 import { SegmentShell } from "@/components/segments/SegmentShell";
 import ogImage from "@/assets/og-industrie-maroc.jpg";
@@ -12,6 +13,7 @@ const IndustrieMaroc = () => (
     heroTitle="Votre poste énergie pèse sur vos marges. Reprenez le contrôle."
     heroAccentWords={["Reprenez", "le", "contrôle."]}
     heroSubtitle="Tarification moyenne tension, exigences de décarbonation de vos donneurs d'ordre : l'autoproduction solaire devient un levier de compétitivité. SUNAVIO le rend rentable et conforme."
+    phone={PHONE_BUSINESS}
     whatsappMessage="Bonjour, je dirige un site industriel ou tertiaire au Maroc et je souhaite une étude d'autoconsommation solaire SUNAVIO."
     painTitle="Le tarif MT n'est pas neutre."
     painAccent={["n'est", "pas", "neutre."]}

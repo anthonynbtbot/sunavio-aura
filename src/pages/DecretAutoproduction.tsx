@@ -1,3 +1,4 @@
+import { PHONE_BUSINESS } from "@/lib/phones";
 import { CheckCircle2, FileCheck, Gauge, Scale, MessageCircle } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useLenis } from "@/hooks/useLenis";
@@ -234,7 +235,7 @@ const DecretAutoproduction = () => {
                     </span>
                   </Link>
                   <a
-                    href="https://wa.me/212660449150?text=Bonjour%2C%20je%20souhaite%20une%20%C3%A9tude%20pour%20mon%20projet%20d%27autoproduction%20solaire%20(d%C3%A9cret%202.25.100)."
+                    href={`${PHONE_BUSINESS.whatsapp}?text=Bonjour%2C%20je%20souhaite%20une%20%C3%A9tude%20pour%20mon%20projet%20d%27autoproduction%20solaire%20(d%C3%A9cret%202.25.100).`}
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() => trackWhatsAppClick()}
@@ -251,7 +252,7 @@ const DecretAutoproduction = () => {
         </section>
       </main>
       <a
-        href="https://wa.me/212660449150"
+        href={PHONE_BUSINESS.whatsapp}
         target="_blank"
         rel="noopener noreferrer"
         aria-label="Discuter sur WhatsApp"

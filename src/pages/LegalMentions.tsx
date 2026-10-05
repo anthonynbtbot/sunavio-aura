@@ -1,3 +1,4 @@
+import { PHONE_BUSINESS } from "@/lib/phones";
 import { LegalLayout } from "@/components/layout/LegalLayout";
 
 const LegalMentions = () => (
@@ -43,7 +44,7 @@ const LegalMentions = () => (
           Email : <a href="mailto:sunavio.contact@gmail.com">sunavio.contact@gmail.com</a>
         </li>
         <li>
-        Téléphone : <a href="tel:+212660449150">+212 6 60 44 91 50</a>
+        Téléphone : <a href={PHONE_BUSINESS.tel}>{PHONE_BUSINESS.display}</a>
         </li>
       </ul>
     </section>

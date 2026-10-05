@@ -1,3 +1,4 @@
+import type { PhoneNumber } from "@/lib/phones";
 import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 import {
@@ -81,6 +82,8 @@ export interface SegmentShellProps {
   heroAccentWords: string[];
   heroSubtitle: string;
   whatsappMessage: string;
+  /** Numéro utilisé pour les boutons WhatsApp de la page. */
+  phone: PhoneNumber;
   // Sections
   painTitle: string;
   painAccent: string[];
@@ -110,6 +113,7 @@ export function SegmentShell({
   heroAccentWords,
   heroSubtitle,
   whatsappMessage,
+  phone,
   painTitle,
   painAccent,
   painIntro,
@@ -127,7 +131,7 @@ export function SegmentShell({
   extraCrossLink,
 }: SegmentShellProps) {
   useLenis();
-  const waHref = `https://wa.me/212660449150?text=${encodeURIComponent(whatsappMessage)}`;
+  const waHref = `${phone.whatsapp}?text=${encodeURIComponent(whatsappMessage)}`;
 
   return (
     <div className="min-h-screen bg-bg text-wh">
@@ -453,7 +457,7 @@ export function SegmentShell({
       </main>
 
       <a
-        href="https://wa.me/212660449150"
+        href={phone.whatsapp}
         target="_blank"
         rel="noopener noreferrer"
         aria-label="Discuter sur WhatsApp"
