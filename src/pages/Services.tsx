@@ -62,7 +62,7 @@ const SEGMENTS: Segment[] = [
     accent: ["résidences", "de", "prestige."],
     paragraphs: [
       "Une villa d'exception ne se contente pas d'une installation standard. Les propriétés de prestige ont des exigences spécifiques : autonomie énergétique totale pour les séjours de plusieurs mois, alimentation de piscines chauffées et spas, gestion de maisons intelligentes, éclairage extérieur étendu, systèmes de sécurité actifs 24/7.",
-      "Nos solutions villa combinent micro-réseau solaire, stockage batterie haute capacité (20-80 kWh selon les besoins), et gestion intelligente de la consommation. L'objectif n'est pas seulement de produire de l'énergie : c'est de vous assurer une alimentation de secours en cas de coupure du réseau, selon la configuration.",
+      "Nos solutions villa combinent micro-réseau solaire, stockage batterie haute capacité (20-80 kWh selon les besoins), et gestion intelligente de la consommation. L'objectif n'est pas seulement de produire de l'énergie : c'est de vous assurer une alimentation de secours de circuits choisis en cas de coupure du réseau, avec onduleur hybride, batterie et boîtier de secours, selon la configuration.",
       "Nous intervenons sur tous les types de résidences premium : villas neuves en construction (intégration dès la conception), villas existantes (rénovation énergétique soignée), riads traditionnels (défi technique que nous savons relever sans dénaturer le patrimoine).",
     ],
     cardTitle: "Ce que nous livrons",
