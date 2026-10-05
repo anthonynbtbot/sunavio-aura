@@ -10,7 +10,8 @@ import { AnimatedText } from "@/components/atoms/AnimatedText";
 import { Reveal } from "@/components/atoms/Reveal";
 import { SectionHeader } from "@/components/atoms/SectionHeader";
 import { sunavioButtonVariants } from "@/components/atoms/SunavioButton";
-import solarTexture from "@/assets/solar-texture.jpg";
+import solarTexture from "@/assets/solar-texture.webp";
+import solarTextureMobile from "@/assets/solar-texture-828.webp";
 
 const APPROACH = [
   {
@@ -93,8 +94,14 @@ const About = () => {
         <section className="relative flex min-h-[60vh] items-center pt-32 pb-20">
           <img
             src={solarTexture}
+            srcSet={`${solarTextureMobile} 828w, ${solarTexture} 1600w`}
+            sizes="100vw"
             alt=""
             aria-hidden
+            fetchPriority="high"
+            decoding="async"
+            width={1600}
+            height={896}
             className="pointer-events-none absolute inset-0 -z-10 h-full w-full object-cover opacity-[0.15]"
           />
           <div
@@ -107,7 +114,7 @@ const About = () => {
           />
           <Container size="wide">
             <div className="max-w-3xl">
-              <Reveal>
+              <Reveal instant>
                 <Eyebrow>À PROPOS</Eyebrow>
               </Reveal>
               <AnimatedText
@@ -117,7 +124,7 @@ const About = () => {
                 accentWords={["vision", "internationale."]}
                 className="mt-6 font-display text-display-hero text-wh"
               />
-              <Reveal delay={0.2}>
+              <Reveal instant>
                 <p className="mt-6 max-w-2xl text-body text-gr">
                   SUNAVIO conçoit, dimensionne et installe des solutions solaires premium
                   pour les acteurs les plus exigeants du Royaume. Micro-réseaux intelligents,
