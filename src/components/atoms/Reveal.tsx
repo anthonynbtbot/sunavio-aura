@@ -26,10 +26,11 @@ export function Reveal({
   y = 40,
   staggerChildren = 0,
   amount = 0.2,
+  instant = false,
 }: RevealProps) {
   const reduced = useReducedMotion();
 
-  if (reduced) return <div className={className}>{children}</div>;
+  if (reduced || instant) return <div className={className}>{children}</div>;
 
   return (
     <motion.div
