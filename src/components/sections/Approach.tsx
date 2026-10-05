@@ -16,7 +16,7 @@ const PILLARS: Pillar[] = [
     icon: Network,
     title: "Micro-réseaux intelligents",
     description:
-      "Architecture résiliente pour s'affranchir des coupures ONEE. Gestion intelligente de la production, de la consommation et du stockage en temps réel.",
+      "Architecture avec alimentation de secours des circuits choisis en cas de coupure du réseau. Gestion intelligente de la production, de la consommation et du stockage en temps réel.",
   },
   {
     icon: Battery,

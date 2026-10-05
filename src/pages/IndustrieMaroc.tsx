@@ -3,7 +3,7 @@ import { TrendingDown, Factory, LineChart } from "lucide-react";
 import { SegmentShell } from "@/components/segments/SegmentShell";
 import ogImage from "@/assets/og-industrie-maroc.jpg";
 
-const ROWS: [string, string, string][] = [["Consommation annuelle du site", "entre 1 et 1,5 GWh", "entre 1 et 1,5 GWh"], ["Centrale en toiture, sans batterie", "environ 300 kWc", "environ 400 kWc"], ["Production simulée", "environ 500 MWh par an", "environ 650 MWh par an"], ["Part consommée sur place", "environ 90 %", "environ 85 %"], ["Économie simulée sur l'électricité achetée", "environ 350 000 DH HT par an", "environ 450 000 DH HT par an"], ["Retour simple simulé", "environ 5 à 6 ans", "environ 5 à 6 ans"]];
+const ROWS: [string, string, string][] = [["Consommation annuelle du site", "entre 1 et 1,5 GWh", "entre 1 et 1,5 GWh"], ["Centrale en toiture, sans batterie", "environ 300 kWc", "environ 400 kWc"], ["Production simulée", "environ 500 MWh par an", "environ 650 MWh par an"], ["Part consommée sur place", "environ 90 %", "environ 85 %"], ["Économie simulée sur l'électricité achetée", "environ 350 000 DH HT par an", "environ 450 000 DH HT par an"], ["Retour simple simulé", "environ 5 à 6 ans", "environ 5 à 6 ans"]];
 
 const IndustrieMaroc = () => (
   <SegmentShell

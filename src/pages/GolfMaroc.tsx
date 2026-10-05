@@ -22,7 +22,7 @@ const GolfMaroc = () => (
         icon: Battery,
         title: "Une flotte qui dort branchée",
         description:
-          "Vos voiturettes électriques se rechargent la nuit, précisément quand le solaire ne produit plus. Sans stockage, vous tirez l'intégralité de cette consommation du réseau ONEE au tarif plein.",
+          "Vos voiturettes électriques se rechargent la nuit, quand le solaire ne produit plus. Sans stockage, toute cette consommation est tirée du réseau.",
       },
       {
         icon: Droplets,
@@ -37,7 +37,7 @@ const GolfMaroc = () => (
           "Cuisine, climatisation, vestiaires, éclairage du practice : la consommation ne s'arrête jamais vraiment.",
       },
     ]}
-    approachIntro="Le défi d'un golf, c'est la nuit. La solution est dans le dimensionnement du stockage."
+    approachIntro="Le défi d'un golf, c'est la nuit. Notre étude chiffre sur vos factures ce que le stockage peut couvrir."
     approach={[
       {
         title: "Audit de la flotte et des équipements",
@@ -47,7 +47,7 @@ const GolfMaroc = () => (
       {
         title: "Dimensionnement du stockage",
         description:
-          "Capacité calibrée pour couvrir la recharge nocturne de la flotte sans tirer sur le réseau. Quasi-zéro surplus, autonomie maximale.",
+          "Capacité calculée sur la recharge nocturne mesurée de la flotte et sur le surplus solaire disponible en journée ; l'intérêt du stockage est chiffré sur vos factures.",
       },
       {
         title: "Architecture micro-réseau décentralisée",
@@ -75,7 +75,7 @@ const GolfMaroc = () => (
     metricsNote="Chiffres projet en cours de conception. Les valeurs définitives seront arrêtées à l'issue de l'étude détaillée."
     ctaTitle="Faisons rouler votre golf au soleil."
     ctaAccent={["au", "soleil."]}
-    ctaIntro="Un ingénieur SUNAVIO se déplace, mesure votre courbe nocturne et dimensionne le couple production + stockage qui rend votre exploitation autonome."
+    ctaIntro="Un ingénieur SUNAVIO se déplace, mesure votre courbe nocturne et dimensionne la production solaire, avec le stockage si votre exploitation le justifie."
   />
 );
 

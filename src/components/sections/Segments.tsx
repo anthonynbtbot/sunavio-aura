@@ -28,7 +28,7 @@ const SEGMENTS: Segment[] = [
     icon: Hotel,
     title: "Hôtellerie & Hospitality",
     description:
-      "Autonomie énergétique pour resorts et boutique-hôtels exigeants.",
+      "Énergie solaire et stockage pour resorts et boutique-hôtels exigeants.",
     slug: "hospitality",
   },
   {

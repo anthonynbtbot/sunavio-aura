@@ -293,7 +293,7 @@ const HotelMarrakech = () => {
             <div className="grid gap-16 lg:grid-cols-2 lg:gap-24">
               <div>
                 <Reveal>
-                  <Eyebrow>RÉALISATION DE RÉFÉRENCE</Eyebrow>
+                  <Eyebrow>PROFIL TYPE</Eyebrow>
                 </Reveal>
                 <AnimatedText
                   as="h2"
@@ -303,7 +303,7 @@ const HotelMarrakech = () => {
                 />
                 <Reveal delay={0.2}>
                   <p className="mt-6 text-body text-gr">
-                    Établissement classé 5 étoiles à Marrakech, consommation annuelle 2,5 à 4 GWh.
+                    Établissement hôtelier à Marrakech.
                     Configuration multi-zones : toitures techniques, parkings ombrés et pergolas
                     de service.
                   </p>
@@ -319,7 +319,7 @@ const HotelMarrakech = () => {
               </div>
               <div className="space-y-6">
                 {[
-                  { k: "Centrale", v: "250 à 400 kWc multi-zones + stockage" },
+                  { k: "Centrale", v: "Puissance et stockage dimensionnés sur votre courbe de charge" },
                 ].map((row, i) => (
                   <Reveal key={row.k} delay={i * 0.08}>
                     <div className="flex items-baseline justify-between gap-6 border-b border-line pb-5">
@@ -330,7 +330,7 @@ const HotelMarrakech = () => {
                 ))}
                 <Reveal delay={0.4}>
                   <p className="text-sm italic text-gr2">
-                    Fourchette indicative. La puissance réelle dépend de votre courbe de charge, des
+                    La puissance réelle dépend de votre courbe de charge, des
                     surfaces exploitables et de l'étude technique sur site.
                   </p>
                 </Reveal>
