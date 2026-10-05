@@ -5,7 +5,7 @@ import { Reveal } from "@/components/atoms/Reveal";
 import { cn } from "@/lib/utils";
 
 interface SectionHeaderProps {
-  eyebrow: string;
+  eyebrow?: string;
   title: string;
   accentWords?: string[];
   intro?: string;
@@ -34,14 +34,16 @@ export function SectionHeader({
         className,
       )}
     >
-      <Reveal>
-        <Eyebrow>{eyebrow}</Eyebrow>
-      </Reveal>
+      {eyebrow && (
+        <Reveal>
+          <Eyebrow>{eyebrow}</Eyebrow>
+        </Reveal>
+      )}
       <AnimatedText
         as="h2"
         text={title}
         accentWords={accentWords}
-        className="mt-6 font-display text-display-section text-wh"
+        className={cn(eyebrow && "mt-6", "font-display text-display-section text-wh")}
       />
       {intro && (
         <Reveal delay={0.2}>
