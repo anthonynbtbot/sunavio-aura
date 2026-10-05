@@ -147,7 +147,7 @@ function Hero() {
               <div className="relative px-5 py-3">
                 <GoldCorners />
                 <div className="font-display text-2xl font-semibold text-or md:text-3xl">
-                  Garantie 25 ans
+                  Garantie constructeur
                 </div>
                 <div className="text-eyebrow mt-1">Panneaux Jinko</div>
               </div>
@@ -228,7 +228,7 @@ function Solution() {
     {
       icon: Shield,
       title: "Garanties premium",
-      desc: "25 ans panneaux, 10 ans onduleur, 10 ans batteries",
+      desc: "Garanties constructeur écrites sur panneaux, onduleurs et batteries",
     },
   ];
   return (

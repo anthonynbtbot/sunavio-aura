@@ -31,7 +31,7 @@ const APPROACH = [
   {
     title: "Suivi dans la durée",
     description:
-      "Monitoring temps réel de la production, maintenance préventive annuelle, garanties constructeur jusqu'à 25 ans sur les panneaux. Nos clients ne sont pas abandonnés après la livraison.",
+      "Monitoring temps réel de la production, maintenance préventive annuelle, garanties constructeur écrites sur les panneaux. Nos clients ne sont pas abandonnés après la livraison.",
   },
 ];
 
@@ -52,7 +52,7 @@ const VALUES = [
     icon: ShieldCheck,
     title: "Durabilité exigée",
     description:
-      "Un système solaire, c'est un investissement sur 25 ans. Nous ne posons rien qui ne tiendrait pas cette durée. Équipements premium, installation aux standards européens, suivi rigoureux.",
+      "Un système solaire, c'est un investissement de long terme. Nous choisissons chaque équipement en conséquence. Équipements premium, installation aux standards européens, suivi rigoureux.",
   },
 ];
 
@@ -61,19 +61,19 @@ const PARTNERS = [
     badge: "PANNEAUX",
     name: "Jinko Solar",
     description:
-      "Leader mondial des panneaux photovoltaïques monocristallins tier-1. Rendements jusqu'à 22%, garantie produit 15 ans, garantie production 25 ans. Technologie N-Type dernière génération.",
+      "Leader mondial des panneaux photovoltaïques monocristallins tier-1. Rendements jusqu'à 22%, garanties constructeur écrites, produit et production. Technologie N-Type dernière génération.",
   },
   {
     badge: "STOCKAGE & ONDULEURS",
     name: "Huawei FusionSolar",
     description:
-      "Onduleurs hybrides SUN2000 (rendement jusqu'à 98,6%) et batteries LUNA2000 en technologie LFP. Modularité 5 à 30 kWh, sécurité au niveau cellule, monitoring FusionSolar temps réel et garantie 10 ans.",
+      "Onduleurs hybrides SUN2000 (rendement jusqu'à 98,6%) et batteries LUNA2000 en technologie LFP. Modularité 5 à 30 kWh, sécurité au niveau cellule, monitoring FusionSolar temps réel.",
   },
   {
     badge: "ONDULEURS & BOS",
     name: "Équipements électriques",
     description:
-      "Onduleurs hybrides haut rendement (98%+), disjoncteurs DC/AC certifiés, câblage conforme normes internationales. Chaque composant électrique est sélectionné pour tenir 25 ans minimum.",
+      "Onduleurs hybrides haut rendement (98%+), disjoncteurs DC/AC certifiés, câblage conforme normes internationales. Chaque composant électrique est sélectionné pour sa durabilité.",
   },
 ];
 

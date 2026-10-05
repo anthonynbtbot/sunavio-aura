@@ -62,7 +62,7 @@ const IndustrieMaroc = () => (
     referenceAccent={["axe", "Marrakech–Souss."]}
     referenceParagraphs={[
       "SUNAVIO accompagne des sites tertiaires et industriels sur l'axe Marrakech–Souss : bâtiments logistiques, ateliers, sièges régionaux, agro-industrie.",
-      "L'objectif commun : une réduction durable du coût du kWh autoproduit, mesurable dès la première année et garantie sur la durée par le monitoring.",
+      "L'objectif commun : une réduction durable du coût du kWh autoproduit, mesurable dès la première année et suivie sur la durée par le monitoring.",
     ]}
     metrics={[
       { k: "Cible tarifaire", v: "Heures pointe & pleines en priorité" },

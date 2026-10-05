@@ -19,7 +19,7 @@ const POINTS = [
   {
     title: "Garanties commerciales écrites",
     description:
-      "Devis détaillés et engageants, garanties équipements jusqu'à 25 ans (panneaux Jinko), 10 ans (onduleurs Huawei), 10 ans (stockage Huawei LUNA2000). Contrats clairs, aucune zone grise.",
+      "Devis détaillés et engageants, garanties constructeur écrites sur les panneaux Jinko, les onduleurs et les batteries Huawei, durée selon le modèle. Contrats clairs, aucune zone grise.",
   },
   {
     title: "Équipe locale Marrakech",
