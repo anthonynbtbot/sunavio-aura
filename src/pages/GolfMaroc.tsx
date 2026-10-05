@@ -1,3 +1,4 @@
+import { PHONE_BUSINESS } from "@/lib/phones";
 import { Battery, Droplets, Zap, Clock } from "lucide-react";
 import { SegmentShell } from "@/components/segments/SegmentShell";
 import ogImage from "@/assets/og-golf-marrakech.jpg";
@@ -12,6 +13,7 @@ const GolfMaroc = () => (
     heroTitle="Votre flotte roule au soleil. Vos charges aussi."
     heroAccentWords={["Vos", "charges", "aussi."]}
     heroSubtitle="Recharge nocturne des voiturettes, pompage et arrosage, club house : un golf consomme en continu. SUNAVIO conçoit un micro-réseau solaire avec stockage adapté à votre rythme d'exploitation."
+    phone={PHONE_BUSINESS}
     whatsappMessage="Bonjour, je gère un golf au Maroc et je souhaite une étude solaire SUNAVIO."
     painTitle="Un golf, ce n'est pas qu'un parcours."
     painAccent={["pas", "qu'un", "parcours."]}

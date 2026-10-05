@@ -1,3 +1,4 @@
+import { PHONE_PRIVATE } from "@/lib/phones";
 import { Waves, Snowflake, Eye } from "lucide-react";
 import { SegmentShell } from "@/components/segments/SegmentShell";
 import ogImage from "@/assets/og-villa-marrakech.jpg";
@@ -12,6 +13,7 @@ const VillaMarrakech = () => (
     heroTitle="L'indépendance énergétique, sans compromis sur l'esthétique de votre villa."
     heroAccentWords={["sans", "compromis"]}
     heroSubtitle="Piscine, climatisation, domotique : votre villa mérite une solution solaire pensée comme une pièce d'architecture, pas un assemblage de panneaux."
+    phone={PHONE_PRIVATE}
     whatsappMessage="Bonjour, je souhaite une étude solaire pour ma villa à Marrakech."
     painTitle="Votre villa consomme comme une PME."
     painAccent={["comme", "une", "PME."]}

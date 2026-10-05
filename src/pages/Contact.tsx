@@ -1,3 +1,4 @@
+import { PHONE_BUSINESS, PHONE_PRIVATE } from "@/lib/phones";
 import { Clock, Mail, Map, MapPin, MessageCircle, Phone } from "lucide-react";
 import { useLenis } from "@/hooks/useLenis";
 import { SEO } from "@/components/SEO";
@@ -19,6 +20,7 @@ interface PersonCard {
   name: string;
   subtitle: string;
   whatsapp: string;
+  whatsappLabel: string;
   email: string;
   phoneDisplay: string;
   phoneHref: string;
@@ -27,12 +29,23 @@ interface PersonCard {
 const PEOPLE: PersonCard[] = [
   {
     role: "CO-FONDATEUR",
-    name: "Thierry NEBOUT",
-    subtitle: "Direction technique & projets",
-    whatsapp: "https://wa.me/212660449150",
+    name: "Anthony NEBOUT",
+    subtitle: "Entreprises et industrie",
+    whatsapp: PHONE_BUSINESS.whatsapp,
+    whatsappLabel: "WhatsApp Anthony",
     email: "sunavio.contact@gmail.com",
-    phoneDisplay: "+212 6 60 44 91 50",
-    phoneHref: "tel:+212660449150",
+    phoneDisplay: PHONE_BUSINESS.display,
+    phoneHref: PHONE_BUSINESS.tel,
+  },
+  {
+    role: "CO-FONDATEUR",
+    name: "Thierry NEBOUT",
+    subtitle: "Particuliers",
+    whatsapp: PHONE_PRIVATE.whatsapp,
+    whatsappLabel: "WhatsApp Thierry",
+    email: "sunavio.contact@gmail.com",
+    phoneDisplay: PHONE_PRIVATE.display,
+    phoneHref: PHONE_PRIVATE.tel,
   },
 ];
 
@@ -142,7 +155,7 @@ const Contact = () => {
                         className={sunavioButtonVariants({ variant: "primary" })}
                       >
                         <span className="relative z-10 inline-flex items-center gap-2">
-                          <MessageCircle className="h-4 w-4" /> WhatsApp
+                          <MessageCircle className="h-4 w-4" /> {p.whatsappLabel}
                         </span>
                       </a>
                       <a
@@ -254,7 +267,7 @@ const Contact = () => {
               <Reveal delay={0.3}>
                 <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
                   <a
-                    href="https://wa.me/212663284424"
+                    href={PHONE_BUSINESS.whatsapp}
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() => trackWhatsAppClick()}
@@ -265,7 +278,7 @@ const Contact = () => {
                     </span>
                   </a>
                   <a
-                    href="https://wa.me/212660449150"
+                    href={PHONE_PRIVATE.whatsapp}
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() => trackWhatsAppClick()}
@@ -282,7 +295,7 @@ const Contact = () => {
         </section>
       </main>
       <a
-        href="https://wa.me/212660449150"
+        href={PHONE_BUSINESS.whatsapp}
         target="_blank"
         rel="noopener noreferrer"
         aria-label="Discuter sur WhatsApp"

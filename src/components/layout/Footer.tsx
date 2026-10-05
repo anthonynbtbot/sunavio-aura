@@ -1,3 +1,4 @@
+import { PHONE_BUSINESS } from "@/lib/phones";
 import { Link } from "react-router-dom";
 import { Container } from "@/components/atoms/Container";
 import logo from "@/assets/sunavio-logo-white.png";
@@ -128,8 +129,8 @@ export function Footer() {
           <div>
             <h3 className="text-eyebrow mb-3">Contact</h3>
             <p className="text-sm leading-relaxed text-gr">
-              <a href="tel:+212660449150" className="transition-colors hover:text-or">
-                +212 6 60 44 91 50
+              <a href={PHONE_BUSINESS.tel} className="transition-colors hover:text-or">
+                {PHONE_BUSINESS.display}
               </a><br />
               <a href="mailto:sunavio.contact@gmail.com" className="transition-colors hover:text-or">
                 sunavio.contact@gmail.com
