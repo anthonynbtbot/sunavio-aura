@@ -14,6 +14,8 @@ interface KPINumberProps {
   className?: string;
   /** Séparateur de milliers. */
   separator?: string;
+  /** Séparateur décimal. */
+  decimalSeparator?: string;
 }
 
 /**
@@ -28,6 +30,7 @@ export function KPINumber({
   duration = 1500,
   className,
   separator = " ",
+  decimalSeparator = ".",
 }: KPINumberProps) {
   const ref = useRef<HTMLSpanElement>(null);
   const inView = useInView(ref, { once: true, amount: 0.5 });
@@ -55,9 +58,10 @@ export function KPINumber({
     return () => cancelAnimationFrame(raf);
   }, [inView, value, duration]);
 
-  const formatted = display
-    .toFixed(decimals)
-    .replace(/\B(?=(\d{3})+(?!\d))/g, separator);
+  const [intPart, decPart] = display.toFixed(decimals).split(".");
+  const formatted =
+    intPart.replace(/\B(?=(\d{3})+(?!\d))/g, separator) +
+    (decPart ? decimalSeparator + decPart : "");
 
   return (
     <span ref={ref} className={cn("font-mono tabular-nums", className)}>

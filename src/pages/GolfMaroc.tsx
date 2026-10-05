@@ -60,19 +60,6 @@ const GolfMaroc = () => (
           "Dimensionnement, dossier au titre du décret 2-25-100, monitoring post-installation.",
       },
     ]}
-    referenceTitle="Golf type resort · Marrakech."
-    referenceAccent={["Marrakech."]}
-    referenceParagraphs={[
-      "Nous concevons actuellement la centrale solaire d'un golf type resort à Marrakech : environ 50 kWc de production couplés à 225 kWh de stockage, dimensionnés pour alimenter une flotte de voiturettes en recharge nocturne.",
-      "Projet en cours de conception par notre bureau d'études. L'architecture privilégie l'autonomie nocturne, avec un objectif de quasi-zéro surplus injecté au réseau.",
-    ]}
-    metrics={[
-      { k: "Production cible", v: "≈ 50 kWc" },
-      { k: "Stockage cible", v: "≈ 225 kWh" },
-      { k: "Usage prioritaire", v: "Recharge nocturne flotte voiturettes" },
-      { k: "Objectif réseau", v: "Quasi-zéro surplus injecté" },
-    ]}
-    metricsNote="Chiffres projet en cours de conception. Les valeurs définitives seront arrêtées à l'issue de l'étude détaillée."
     ctaTitle="Faisons rouler votre golf au soleil."
     ctaAccent={["au", "soleil."]}
     ctaIntro="Un ingénieur SUNAVIO se déplace, mesure votre courbe nocturne et dimensionne la production solaire, avec le stockage si votre exploitation le justifie."

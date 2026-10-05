@@ -77,20 +77,20 @@ const IndustrieMaroc = () => (
           Voici deux exemples de simulation établis à partir de nos études, pour des sites raccordés en moyenne tension : une année de factures d'électricité, une production simulée avec Huawei FusionSolar SmartDesign, des panneaux solaires et des onduleurs Huawei en limitation d'injection (valeurs arrondies).
         </p>
         <div className="mt-8 overflow-x-auto">
-          <table className="w-full min-w-[480px] border-collapse text-left">
+          <table className="w-full border-collapse text-left sm:min-w-[480px]">
             <thead>
-              <tr className="border-b border-line">
-                <th className="pb-4" />
+              <tr className="grid grid-cols-2 border-b border-line sm:table-row">
+                <th className="hidden pb-4 sm:table-cell" />
                 <th className="pb-4 text-eyebrow text-gr2">Exemple 1</th>
                 <th className="pb-4 text-eyebrow text-gr2">Exemple 2</th>
               </tr>
             </thead>
             <tbody>
               {ROWS.map(([k, a, b]) => (
-                <tr key={k} className="border-b border-line">
-                  <th scope="row" className="py-4 pr-4 text-eyebrow font-normal text-gr2">{k}</th>
-                  <td className="py-4 pr-4 font-display text-wh">{a}</td>
-                  <td className="py-4 font-display text-wh">{b}</td>
+                <tr key={k} className="grid grid-cols-2 border-b border-line sm:table-row">
+                  <th scope="row" className="col-span-2 pt-4 sm:py-4 sm:pr-4 text-eyebrow font-normal text-gr2">{k}</th>
+                  <td className="pb-4 pt-2 pr-4 font-display text-wh sm:py-4">{a}</td>
+                  <td className="pb-4 pt-2 font-display text-wh sm:py-4">{b}</td>
                 </tr>
               ))}
             </tbody>
