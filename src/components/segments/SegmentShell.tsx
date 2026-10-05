@@ -30,7 +30,7 @@ const EQUIPMENT = [
     icon: Sun,
     title: "Panneaux Jinko Tiger Neo N-type",
     description:
-      "Rendement haut de gamme, garantie produit 12 ans et garantie de production 30 ans. Conçus pour tenir face à la chaleur marocaine.",
+      "Rendement haut de gamme, garantie produit 12 ans et garantie de production 30 ans.",
   },
   {
     icon: Wrench,
@@ -54,7 +54,7 @@ const EQUIPMENT = [
 
 const GUARANTEES = [
   "Bureau d'études — pas installateur générique",
-  "Dimensionnement sur factures ONEE réelles",
+  "Dimensionnement sur vos factures réelles",
   "Suivi performance après mise en service",
   "Garanties de pose écrites dans votre devis",
 ];
