@@ -10,6 +10,8 @@ interface RevealProps {
   /** Stagger des enfants directs si `staggerChildren` > 0. */
   staggerChildren?: number;
   amount?: number;
+  /** Affiche le contenu immédiatement, sans animation (premier écran). */
+  instant?: boolean;
 }
 
 const EASE = [0.22, 1, 0.36, 1] as const;

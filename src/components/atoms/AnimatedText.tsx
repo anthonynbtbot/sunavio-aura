@@ -39,7 +39,9 @@ export function AnimatedText({
       ? { whileInView: "visible", viewport: { once: true, amount: 0.3 } }
       : { animate: "visible" };
 
-  if (reduced) {
+  // Les titres "mount" (premier écran) s'affichent sans animation,
+  // comme en mode réduction des animations.
+  if (reduced || trigger === "mount") {
     return (
       <Tag className={className}>
         {words.map((word, i) => {
