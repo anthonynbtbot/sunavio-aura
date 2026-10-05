@@ -8,7 +8,6 @@ const SERVICES = [
   { label: "Villas d'exception",       to: "/panneaux-solaires-villa-marrakech" },
   { label: "Golf & domaines",          to: "/panneaux-solaires-golf-maroc" },
   { label: "Industrie & tertiaire",    to: "/panneaux-solaires-industrie-maroc" },
-  { label: "Piscines & pool houses",   to: "/kits-piscine" },
   { label: "Toutes nos solutions",     to: "/services" },
 ];
 

@@ -1,5 +1,5 @@
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { BrowserRouter, Route, Routes, useLocation } from "react-router-dom";
+import { BrowserRouter, Navigate, Route, Routes, useLocation } from "react-router-dom";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -13,7 +13,6 @@ import PrivacyPolicy from "./pages/PrivacyPolicy.tsx";
 import TermsOfUse from "./pages/TermsOfUse.tsx";
 import CookiePolicy from "./pages/CookiePolicy.tsx";
 import NotFound from "./pages/NotFound.tsx";
-import PoolKits from "./pages/PoolKits.tsx";
 import DecretAutoproduction from "./pages/DecretAutoproduction.tsx";
 import HotelMarrakech from "./pages/HotelMarrakech.tsx";
 import GolfMaroc from "./pages/GolfMaroc.tsx";
@@ -49,7 +48,7 @@ const App = () => (
           <Route path="/confidentialite" element={<PrivacyPolicy />} />
           <Route path="/cgu" element={<TermsOfUse />} />
           <Route path="/cookies" element={<CookiePolicy />} />
-          <Route path="/kits-piscine" element={<PoolKits />} />
+          <Route path="/kits-piscine" element={<Navigate to="/panneaux-solaires-villa-marrakech" replace />} />
           <Route path="/decret-2-25-100-autoproduction-maroc" element={<DecretAutoproduction />} />
           <Route path="/panneaux-solaires-hotel-marrakech" element={<HotelMarrakech />} />
           <Route path="/panneaux-solaires-villa-marrakech" element={<VillaMarrakech />} />

@@ -96,7 +96,7 @@ export interface SegmentShellProps {
   ctaTitle: string;
   ctaAccent: string[];
   ctaIntro: string;
-  // Optional cross-link extra (e.g. kits-piscine)
+  // Optional cross-link extra 
   extraCrossLink?: { eyebrow: string; title: string; description: string; to: string; label: string };
 }
 

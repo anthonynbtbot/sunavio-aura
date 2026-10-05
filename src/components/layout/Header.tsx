@@ -13,7 +13,6 @@ const SOLUTIONS = [
   { to: "/panneaux-solaires-villa-marrakech", label: "Villas d'exception" },
   { to: "/panneaux-solaires-golf-maroc", label: "Golfs & resorts golfiques" },
   { to: "/panneaux-solaires-industrie-maroc", label: "Industrie & tertiaire" },
-  { to: "/kits-piscine", label: "Kits piscine" },
 ];
 
 const SOLUTION_PATHS = SOLUTIONS.map((s) => s.to);

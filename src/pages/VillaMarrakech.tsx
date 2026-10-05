@@ -74,14 +74,6 @@ const VillaMarrakech = () => (
     ctaTitle="Votre villa, étudiée comme une pièce unique."
     ctaAccent={["pièce", "unique."]}
     ctaIntro="Un ingénieur SUNAVIO se déplace chez vous, étudie l'architecture et conçoit une installation qui se voit le moins possible — et qui produit le plus possible."
-    extraCrossLink={{
-      eyebrow: "PISCINE",
-      title: "Votre villa a une piscine ? Commencez par là.",
-      description:
-        "Nos kits solaires piscine sont le point d'entrée le plus efficace pour réduire votre facture sans toucher au reste de la villa.",
-      to: "/kits-piscine",
-      label: "Voir les kits piscine",
-    }}
   />
 );
 
