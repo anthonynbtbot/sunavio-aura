@@ -52,9 +52,9 @@ const PAINS = [
 
 const APPROACH = [
   {
-    title: "Audit énergétique réel",
+    title: "Analyse de vos consommations",
     description:
-      "Analyse de vos 12 à 24 derniers mois de factures ONEE, courbes de charge par saison, identification des postes les plus énergivores. Pas d'estimation : on part de vos chiffres.",
+      "Analyse de 12 mois consécutifs de vos factures d'électricité, des courbes de charge quand elles sont disponibles, et repérage des principaux postes de consommation. On part de vos chiffres.",
   },
   {
     title: "Étude multi-zones",
@@ -67,9 +67,9 @@ const APPROACH = [
       "Centrale calibrée pour maximiser l'autoconsommation aux heures de pointe de votre établissement, avec stockage si la courbe le justifie. Pas de surdimensionnement vendeur.",
   },
   {
-    title: "Chantier coordonné, sans gêne client",
+    title: "Chantier coordonné avec votre exploitation",
     description:
-      "Phasage en basse saison, intervention par zones non-accessibles aux clients, coordination directe avec votre direction technique. Aucune interruption de service.",
+      "Phasage choisi avec vous, de préférence en basse saison, travaux organisés par zones, coordination directe avec votre direction technique. La coupure nécessaire au raccordement est planifiée à une heure choisie avec vous.",
   },
 ];
 
@@ -306,14 +306,6 @@ const HotelMarrakech = () => {
                     Établissement hôtelier à Marrakech.
                     Configuration multi-zones : toitures techniques, parkings ombrés et pergolas
                     de service.
-                  </p>
-                </Reveal>
-                <Reveal delay={0.3}>
-                  <p className="mt-6 text-body text-gr">
-                    <span className="text-wh">Bon à savoir —</span> votre projet peut, sous
-                    conditions de classement, être éligible aux dispositifs de soutien à
-                    l'investissement touristique (type Go Siyaha). Nous vous orientons vers les
-                    interlocuteurs compétents pendant l'étude.
                   </p>
                 </Reveal>
               </div>

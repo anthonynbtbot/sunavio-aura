@@ -43,7 +43,7 @@ const SEGMENTS: Segment[] = [
     paragraphs: [
       "Les établissements hôteliers premium ont des profils de consommation complexes : climatisation, cuisines professionnelles, éclairage d'ambiance, piscines, spas, buanderies. Une coupure du réseau en pleine saison se ressent directement sur le confort des clients.",
       "SUNAVIO conçoit des centrales solaires dimensionnées sur votre consommation de journée, quand les clients sont présents et les équipements en marche, avec en option un stockage batterie pour l'alimentation de secours de circuits choisis en cas de coupure du réseau.",
-      "Nos installations sont intégrées architecturalement avec soin : panneaux sur toitures plates (parkings, annexes, terrasses techniques), cheminement des câbles étudié avec le bâti, intégration dans les plans techniques sans compromettre l'esthétique du lieu.",
+      "Pour un hôtel, l'installation est étudiée avec l'architecture : panneaux sur toitures plates (annexes, terrasses techniques) ou en ombrières de parking, cheminement des câbles étudié avec le bâti, intégration dans les plans techniques du lieu.",
     ],
     cardTitle: "Bénéfices concrets",
     benefits: [
@@ -67,7 +67,7 @@ const SEGMENTS: Segment[] = [
     ],
     cardTitle: "Ce que nous livrons",
     benefits: [
-      "Audit énergétique complet sur 12 mois de consommation",
+      "Analyse de 12 mois consécutifs de vos factures d'électricité",
       "Dimensionnement sur-mesure selon usages réels",
       "Monitoring production via app mobile",
       "Intégration esthétique (ombrières de piscine, pergolas solaires, pose discrète en toiture)",

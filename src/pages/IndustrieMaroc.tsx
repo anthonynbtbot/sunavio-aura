@@ -65,7 +65,7 @@ const IndustrieMaroc = () => (
     referenceTitle="Sites tertiaires & industriels · axe Marrakech–Souss."
     referenceAccent={["axe", "Marrakech–Souss."]}
     referenceParagraphs={[
-      "SUNAVIO s'adresse aux sites tertiaires et industriels sur l'axe Marrakech–Souss : bâtiments logistiques, ateliers, sièges régionaux, agro-industrie.",
+      "SUNAVIO s'adresse aux sites tertiaires et industriels de l'axe Marrakech–Souss : bâtiments logistiques, ateliers, sièges régionaux, agro-industrie.",
       "L'objectif commun : produire sur place une partie de l'électricité achetée au réseau, avec une production suivie dans la durée par le monitoring.",
     ]}
     metrics={[]}
