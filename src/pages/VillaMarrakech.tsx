@@ -26,15 +26,15 @@ const VillaMarrakech = () => (
       },
       {
         icon: Snowflake,
-        title: "Climatisation toute l'année",
+        title: "Climatisation été comme hiver",
         description:
-          "Chaleur l'été, fraîcheur des nuits l'hiver : les groupes froid et les PAC tournent presque sans interruption sur les villas modernes.",
+          "Chaleur l'été, nuits fraîches l'hiver : climatisation et pompes à chaleur pèsent sur la facture été comme hiver.",
       },
       {
         icon: Eye,
-        title: "Aucune tolérance pour l'amateurisme visuel",
+        title: "L'intégration visuelle compte",
         description:
-          "Une installation mal intégrée détruit la valeur architecturale de votre bien. La discrétion fait partie du cahier des charges.",
+          "Sur une villa, l'installation doit s'accorder avec l'architecture. La discrétion fait partie du cahier des charges.",
       },
     ]}
     approachIntro="Une villa de prestige ne s'équipe pas avec un kit standard. Chaque toiture est unique, chaque architecture impose ses lignes."
@@ -42,12 +42,12 @@ const VillaMarrakech = () => (
       {
         title: "Lecture architecturale",
         description:
-          "Relevé des toitures, pergolas, dépendances et pool houses. Étude des contraintes esthétiques, des vues et de l'orientation. On cherche la solution la plus discrète, pas la plus visible.",
+          "Relevé des toitures, pergolas, dépendances et pool houses. Étude des contraintes esthétiques, des vues et de l'orientation. On cherche une implantation discrète, qui garde une bonne exposition au soleil.",
       },
       {
         title: "Dimensionnement sur factures réelles",
         description:
-          "Analyse de 12 mois consécutifs de vos factures d'électricité. Identification des postes piscine, clim et domotique. Pas de chiffres théoriques.",
+          "Analyse de 12 mois consécutifs de vos factures d'électricité. Identification des postes piscine, clim et domotique.",
       },
       {
         title: "Stockage en option",

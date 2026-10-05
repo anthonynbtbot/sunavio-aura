@@ -14,7 +14,7 @@ import solarTexture from "@/assets/solar-texture.jpg";
 
 const APPROACH = [
   {
-    title: "Audit énergétique approfondi",
+    title: "Analyse des consommations et du site",
     description:
       "Analyse de consommation sur 12 mois, relevé précis du site (orientation toitures, ombrages, contraintes architecturales), étude de l'existant électrique. Aucun dimensionnement ne se fait sans cette étape.",
   },
@@ -252,9 +252,7 @@ const About = () => {
                   <Reveal delay={0.2}>
                     <p className="text-body text-gr">
                       Nos équipes combinent formation internationale (standards européens
-                      d'ingénierie) et connaissance fine du marché local. Cette double culture
-                      nous permet de servir aussi bien un propriétaire de villa française
-                      installé à la Palmeraie qu'un groupe hôtelier marocain historique.
+                      d'ingénierie) et connaissance fine du marché local.
                     </p>
                   </Reveal>
                   <Reveal delay={0.3}>
