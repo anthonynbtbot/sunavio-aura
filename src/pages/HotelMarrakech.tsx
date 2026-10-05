@@ -298,7 +298,7 @@ const HotelMarrakech = () => {
                 <AnimatedText
                   as="h2"
                   text="Hôtel de prestige · plusieurs zones de pose."
-                  accentWords={["profil", "type."]}
+                  accentWords={["plusieurs", "zones"]}
                   className="mt-6 font-display text-display-section text-wh"
                 />
                 <Reveal delay={0.2}>
