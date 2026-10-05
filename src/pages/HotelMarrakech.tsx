@@ -32,9 +32,9 @@ const PATH = "/panneaux-solaires-hotel-marrakech";
 const PAINS = [
   {
     icon: Wallet,
-    title: "Une facture énergie majeure et saisonnière",
+    title: "Une facture d'électricité importante et saisonnière",
     description:
-      "Climatisation, piscines, SPA, restauration, blanchisserie : la consommation grimpe précisément quand vos clients sont là. La facture ONEE est l'un de vos premiers postes de charge variable.",
+      "Climatisation, piscines, SPA, restauration, blanchisserie : la consommation grimpe précisément quand vos clients sont là. La facture d'électricité est un poste de charge important, qui suit la fréquentation.",
   },
   {
     icon: Sparkles,
@@ -46,7 +46,7 @@ const PAINS = [
     icon: Leaf,
     title: "Une attente RSE des voyageurs",
     description:
-      "Les clientèles internationales valorisent — et de plus en plus exigent — un établissement engagé dans une démarche énergétique sérieuse.",
+      "Une partie des clientèles internationales est attentive à la démarche énergétique de l'établissement.",
   },
 ];
 
@@ -59,12 +59,12 @@ const APPROACH = [
   {
     title: "Étude multi-zones",
     description:
-      "Toitures des communs et de service, parkings abrités, pergolas, ombrières techniques : on cherche la surface utile sans toucher aux zones client ni à votre signature architecturale.",
+      "Toitures des communs et de service, parkings abrités, pergolas, ombrières techniques : on cherche la surface utile en priorité hors des zones client, dans le respect de l'architecture du lieu.",
   },
   {
     title: "Dimensionnement sur-mesure",
     description:
-      "Centrale calibrée pour maximiser l'autoconsommation aux heures de pointe de votre établissement, avec stockage si la courbe le justifie. Pas de surdimensionnement vendeur.",
+      "Centrale dimensionnée pour que sa production soit consommée sur place, pendant les heures de journée de votre établissement, avec stockage si la courbe de charge le justifie. Pas de surdimensionnement vendeur.",
   },
   {
     title: "Chantier coordonné avec votre exploitation",
@@ -78,7 +78,7 @@ const EQUIPMENT = [
     icon: Sun,
     title: "Panneaux Jinko Tiger Neo N-type",
     description:
-      "Rendement haut de gamme, garantie produit 12 ans et garantie de production 30 ans. Conçus pour tenir face à la chaleur de Marrakech.",
+      "Rendement haut de gamme, garantie produit 12 ans et garantie de production 30 ans.",
   },
   {
     icon: Wrench,
@@ -102,7 +102,7 @@ const EQUIPMENT = [
 
 const GUARANTEES = [
   "Bureau d'études — pas installateur générique",
-  "Dimensionnement sur factures ONEE réelles",
+  "Dimensionnement sur vos factures réelles",
   "Suivi performance après mise en service",
   "Garanties de pose écrites dans votre devis",
 ];
@@ -166,9 +166,7 @@ const HotelMarrakech = () => {
               />
               <Reveal delay={0.2}>
                 <p className="mt-8 max-w-2xl text-body-lg text-gr">
-                  Climatisation, piscines, SPA, restauration : l'énergie est l'un de vos premiers
-                  postes de charge. SUNAVIO conçoit une centrale solaire intégrée à votre
-                  architecture, sans compromettre l'expérience client.
+                  Climatisation, piscines, SPA, restauration : l'énergie est un poste de charge important. SUNAVIO conçoit une centrale solaire intégrée à votre architecture, étudiée avec l'expérience de vos clients.
                 </p>
               </Reveal>
               <Reveal delay={0.35}>
@@ -204,7 +202,7 @@ const HotelMarrakech = () => {
               eyebrow="LE CONSTAT"
               title="Un hôtel n'est pas un bureau."
               accentWords={["pas", "un", "bureau."]}
-              intro="Votre courbe de charge ne ressemble à aucune autre. Une étude générique vous coûtera plus cher qu'elle ne vous fera économiser."
+              intro="Chaque établissement a sa propre courbe de charge : l'étude part de la vôtre, pas d'un profil standard."
             />
             <div className="mt-20 grid grid-cols-1 gap-8 md:grid-cols-3">
               {PAINS.map((p, i) => {
@@ -395,7 +393,7 @@ const HotelMarrakech = () => {
               <Reveal delay={0.2}>
                 <p className="mx-auto mt-6 max-w-2xl text-body text-gr">
                   Un ingénieur SUNAVIO se déplace dans votre établissement, relève les zones
-                  exploitables et étudie vos factures ONEE. Vous recevez ensuite une étude chiffrée
+                  exploitables et étudie vos factures d'électricité. Vous recevez ensuite une étude chiffrée
                   sur-mesure.
                 </p>
               </Reveal>
