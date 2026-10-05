@@ -64,8 +64,7 @@ export function Cases() {
                 <p className="mt-2 text-eyebrow text-gr2">{CASE.subtitle}</p>
 
                 <div className="mt-8 space-y-6 rounded-lg border border-line/60 bg-bg2/80 p-5 backdrop-blur">
-                  {c.kpis.map((k) => (
-                    <div key={CASE.kpi.label}>
+                  <div>
                       <KPINumber
                         value={CASE.kpi.value}
                         suffix={CASE.kpi.suffix}
@@ -75,8 +74,8 @@ export function Cases() {
                         className="block text-3xl font-semibold text-wh md:text-4xl"
                       />
                       <p className="mt-1 text-eyebrow text-gr2">{CASE.kpi.label}</p>
-                    </div>
-                        </div>
+                  </div>
+                </div>
               </div>
             </motion.article>
         </motion.div>
