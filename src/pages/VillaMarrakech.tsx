@@ -50,7 +50,7 @@ const VillaMarrakech = () => (
       {
         title: "Stockage pour l'autonomie",
         description:
-          "Batterie calibrée pour absorber les coupures, lisser les pics et garantir une vraie autonomie aux heures critiques.",
+          "Batterie calibrée pour absorber les coupures, lisser les pics et assurer l'alimentation aux heures critiques.",
       },
       {
         title: "Simulation 3D SUNAVIO",

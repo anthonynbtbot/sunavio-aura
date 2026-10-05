@@ -45,9 +45,9 @@ const EQUIPMENT = [
   },
   {
     icon: ShieldCheck,
-    title: "Structure galvanisée — garantie SUNAVIO 10 ans",
+    title: "Structure galvanisée — garanties écrites",
     description:
-      "Visserie inox, galvanisation à chaud, intégration soignée. Notre signature : garantie pose 10 ans.",
+      "Visserie inox, galvanisation à chaud, intégration soignée. Garanties de la structure et de la pose précisées par écrit dans votre devis.",
   },
 ];
 
@@ -55,7 +55,7 @@ const GUARANTEES = [
   "Bureau d'études — pas installateur générique",
   "Dimensionnement sur factures ONEE réelles",
   "Suivi performance après mise en service",
-  "Garantie pose SUNAVIO 10 ans",
+  "Garanties de pose écrites dans votre devis",
 ];
 
 export interface SegmentItem {
