@@ -11,7 +11,7 @@ import { AnimatedText } from "@/components/atoms/AnimatedText";
 import { Reveal } from "@/components/atoms/Reveal";
 import { SectionHeader } from "@/components/atoms/SectionHeader";
 import { sunavioButtonVariants } from "@/components/atoms/SunavioButton";
-import solarTexture from "@/assets/solar-texture.jpg";
+import solarTexture from "@/assets/solar-texture.webp";
 import { Link } from "react-router-dom";
 import { trackWhatsAppClick, trackContactClick } from "@/lib/tracking";
 
@@ -73,7 +73,7 @@ const Contact = () => {
           />
           <Container size="wide">
             <div className="max-w-3xl">
-              <Reveal>
+              <Reveal instant>
                 <Eyebrow>CONTACT</Eyebrow>
               </Reveal>
               <AnimatedText
@@ -83,7 +83,7 @@ const Contact = () => {
                 accentWords={["votre", "projet."]}
                 className="mt-6 font-display text-display-hero text-wh"
               />
-              <Reveal delay={0.2}>
+              <Reveal instant>
                 <p className="mt-6 max-w-2xl text-body text-gr">
                   Une pré-étude sur votre facture, un message direct, ou un rendez-vous sur site.
                   Nous répondons sous 24h ouvrées.
@@ -103,6 +103,9 @@ const Contact = () => {
             alt=""
             aria-hidden
             loading="lazy"
+            decoding="async"
+            width={1600}
+            height={896}
             className="pointer-events-none absolute inset-0 h-full w-full object-cover opacity-[0.15] mix-blend-luminosity"
           />
           <Container size="wide" className="relative">
