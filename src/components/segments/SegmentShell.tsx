@@ -20,7 +20,7 @@ import { AnimatedText } from "@/components/atoms/AnimatedText";
 import { Reveal } from "@/components/atoms/Reveal";
 import { SectionHeader } from "@/components/atoms/SectionHeader";
 import { sunavioButtonVariants } from "@/components/atoms/SunavioButton";
-import solarTexture from "@/assets/solar-texture.jpg";
+import solarTexture from "@/assets/solar-texture.webp";
 import { trackContactClick, trackWhatsAppClick } from "@/lib/tracking";
 
 const SITE_URL = "https://sunavio.com";
@@ -76,6 +76,9 @@ export interface SegmentShellProps {
   seoTitle: string;
   seoDescription: string;
   ogImage: string;
+  /** Photo du haut de page en WebP (version ordinateur et mobile). */
+  heroImage: string;
+  heroImageMobile: string;
   // Hero
   eyebrow: string;
   heroTitle: string;
@@ -112,6 +115,8 @@ export function SegmentShell({
   seoTitle,
   seoDescription,
   ogImage,
+  heroImage,
+  heroImageMobile,
   eyebrow,
   heroTitle,
   heroAccentWords,
@@ -162,9 +167,15 @@ export function SegmentShell({
         {/* HERO */}
         <section className="relative flex min-h-[75vh] items-center pt-32 pb-20">
           <img
-            src={ogImage}
+            src={heroImage}
+            srcSet={`${heroImageMobile} 828w, ${heroImage} 1024w`}
+            sizes="100vw"
             alt=""
             aria-hidden
+            fetchPriority="high"
+            decoding="async"
+            width={1024}
+            height={1024}
             className="pointer-events-none absolute inset-0 -z-10 h-full w-full object-cover opacity-[0.22]"
           />
           <div
@@ -177,7 +188,7 @@ export function SegmentShell({
           />
           <Container size="wide">
             <div className="max-w-4xl">
-              <Reveal>
+              <Reveal instant>
                 <Eyebrow>{eyebrow}</Eyebrow>
               </Reveal>
               <AnimatedText
@@ -187,10 +198,10 @@ export function SegmentShell({
                 accentWords={heroAccentWords}
                 className="mt-6 font-display text-display-hero text-wh"
               />
-              <Reveal delay={0.2}>
+              <Reveal instant>
                 <p className="mt-8 max-w-2xl text-body-lg text-gr">{heroSubtitle}</p>
               </Reveal>
-              <Reveal delay={0.35}>
+              <Reveal instant>
                 <div className="mt-10 flex flex-col gap-4 sm:flex-row">
                   <Link
                     to="/contact"

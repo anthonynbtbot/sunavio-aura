@@ -198,7 +198,7 @@ const Services = () => {
           />
           <Container size="wide">
             <div className="max-w-3xl">
-              <Reveal>
+              <Reveal instant>
                 <Eyebrow>NOS SERVICES</Eyebrow>
               </Reveal>
               <AnimatedText
@@ -208,7 +208,7 @@ const Services = () => {
                 accentWords={["rigueur."]}
                 className="mt-6 font-display text-display-hero text-wh"
               />
-              <Reveal delay={0.2}>
+              <Reveal instant>
                 <p className="mt-6 max-w-2xl text-body text-gr">
                   Chaque segment a ses contraintes, ses usages, ses enjeux. Nos solutions
                   sont dimensionnées spécifiquement pour le vôtre.

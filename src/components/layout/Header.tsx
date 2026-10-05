@@ -5,7 +5,7 @@ import { ChevronDown, Menu, X } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { Container } from "@/components/atoms/Container";
 import { SunavioButton } from "@/components/atoms/SunavioButton";
-import logo from "@/assets/sunavio-logo-white.png";
+import logo from "@/assets/sunavio-logo-white.webp";
 
 const SOLUTIONS = [
   { to: "/services", label: "Vue d'ensemble" },
@@ -66,7 +66,10 @@ export function Header() {
                 src={logo}
                 alt="SUNAVIO — Énergie solaire premium Marrakech"
                 className="h-10 w-auto md:h-12"
+                width={301}
+                height={96}
                 loading="eager"
+                decoding="async"
                 draggable={false}
               />
             </Link>

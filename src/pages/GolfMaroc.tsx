@@ -2,6 +2,8 @@ import { PHONE_BUSINESS } from "@/lib/phones";
 import { Battery, Droplets, Zap, Clock } from "lucide-react";
 import { SegmentShell } from "@/components/segments/SegmentShell";
 import ogImage from "@/assets/og-golf-marrakech.jpg";
+import heroImage from "@/assets/og-golf-marrakech.webp";
+import heroImageMobile from "@/assets/og-golf-marrakech-828.webp";
 
 const GolfMaroc = () => (
   <SegmentShell
@@ -9,6 +11,8 @@ const GolfMaroc = () => (
     seoTitle="Solutions solaires pour golfs & resorts golfiques | SUNAVIO Marrakech"
     seoDescription="Alimentez votre flotte de voiturettes, votre arrosage et votre club house au solaire. Stockage intelligent et recharge nocturne. Bureau d'études solaire à Marrakech."
     ogImage={ogImage}
+    heroImage={heroImage}
+    heroImageMobile={heroImageMobile}
     eyebrow="GOLFS & RESORTS GOLFIQUES · MAROC"
     heroTitle="Votre flotte roule au soleil. Vos charges aussi."
     heroAccentWords={["Vos", "charges", "aussi."]}

@@ -10,6 +10,8 @@ interface RevealProps {
   /** Stagger des enfants directs si `staggerChildren` > 0. */
   staggerChildren?: number;
   amount?: number;
+  /** Affiche le contenu immédiatement, sans animation (premier écran). */
+  instant?: boolean;
 }
 
 const EASE = [0.22, 1, 0.36, 1] as const;
@@ -24,10 +26,11 @@ export function Reveal({
   y = 40,
   staggerChildren = 0,
   amount = 0.2,
+  instant = false,
 }: RevealProps) {
   const reduced = useReducedMotion();
 
-  if (reduced) return <div className={className}>{children}</div>;
+  if (reduced || instant) return <div className={className}>{children}</div>;
 
   return (
     <motion.div

@@ -52,7 +52,7 @@ export function LegalLayout({
             }}
           />
           <Container size="narrow">
-            <Reveal>
+            <Reveal instant>
               <Eyebrow>{eyebrow}</Eyebrow>
             </Reveal>
             <AnimatedText
@@ -62,7 +62,7 @@ export function LegalLayout({
               accentWords={accentWords}
               className="mt-6 font-display text-display-section text-wh"
             />
-            <Reveal delay={0.2}>
+            <Reveal instant>
               <p className="mt-6 font-mono text-xs uppercase tracking-widest text-gr2">
                 {updatedAt}
               </p>

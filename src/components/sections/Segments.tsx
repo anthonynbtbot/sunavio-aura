@@ -12,7 +12,7 @@ import {
 import { Link } from "react-router-dom";
 import { Container } from "@/components/atoms/Container";
 import { SectionHeader } from "@/components/atoms/SectionHeader";
-import solarTexture from "@/assets/solar-texture.jpg";
+import solarTexture from "@/assets/solar-texture.webp";
 
 const EASE = [0.22, 1, 0.36, 1] as const;
 

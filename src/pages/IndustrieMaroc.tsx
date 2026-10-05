@@ -2,6 +2,8 @@ import { PHONE_BUSINESS } from "@/lib/phones";
 import { TrendingDown, Factory, LineChart } from "lucide-react";
 import { SegmentShell } from "@/components/segments/SegmentShell";
 import ogImage from "@/assets/og-industrie-maroc.jpg";
+import heroImage from "@/assets/og-industrie-maroc.webp";
+import heroImageMobile from "@/assets/og-industrie-maroc-828.webp";
 
 const ROWS: [string, string, string][] = [["Consommation annuelle du site", "entre 1 et 1,5 GWh", "entre 1 et 1,5 GWh"], ["Centrale en toiture, sans batterie", "environ 300 kWc", "environ 400 kWc"], ["Production simulée", "environ 500 MWh par an", "environ 650 MWh par an"], ["Part consommée sur place", "environ 90 %", "environ 85 %"], ["Économie simulée sur l'électricité achetée", "environ 350 000 DH HT par an", "environ 450 000 DH HT par an"], ["Retour simple simulé", "environ 5 à 6 ans", "environ 5 à 6 ans"]];
 
@@ -11,6 +13,8 @@ const IndustrieMaroc = () => (
     seoTitle="Solaire industriel & tertiaire au Maroc | Autoconsommation | SUNAVIO"
     seoDescription="Réduisez vos coûts énergétiques par l'autoconsommation solaire. Étude sur factures moyenne tension, dimensionnement rigoureux, dossier au titre du décret 2-25-100. Marrakech & axe Souss."
     ogImage={ogImage}
+    heroImage={heroImage}
+    heroImageMobile={heroImageMobile}
     eyebrow="INDUSTRIE & TERTIAIRE · MARRAKECH–SOUSS"
     heroTitle="Votre poste énergie pèse sur vos marges. Reprenez le contrôle."
     heroAccentWords={["Reprenez", "le", "contrôle."]}

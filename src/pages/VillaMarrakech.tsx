@@ -2,6 +2,8 @@ import { PHONE_PRIVATE } from "@/lib/phones";
 import { Waves, Snowflake, Eye } from "lucide-react";
 import { SegmentShell } from "@/components/segments/SegmentShell";
 import ogImage from "@/assets/og-villa-marrakech.jpg";
+import heroImage from "@/assets/og-villa-marrakech.webp";
+import heroImageMobile from "@/assets/og-villa-marrakech-828.webp";
 
 const VillaMarrakech = () => (
   <SegmentShell
@@ -9,6 +11,8 @@ const VillaMarrakech = () => (
     seoTitle="Panneaux solaires pour villa de luxe à Marrakech | SUNAVIO"
     seoDescription="Installation solaire premium pour villa : autoconsommation, stockage batterie, piscine. Étude sur-mesure et intégration architecturale discrète. Bureau d'études à Marrakech."
     ogImage={ogImage}
+    heroImage={heroImage}
+    heroImageMobile={heroImageMobile}
     eyebrow="VILLAS D'EXCEPTION · MARRAKECH"
     heroTitle="L'énergie solaire, intégrée à l'architecture de votre villa."
     heroAccentWords={["intégrée"]}

@@ -5,10 +5,9 @@ import { Eyebrow } from "@/components/atoms/Eyebrow";
 import { AnimatedText } from "@/components/atoms/AnimatedText";
 import { SunavioButton } from "@/components/atoms/SunavioButton";
 import { Link } from "react-router-dom";
-import heroBg from "@/assets/hero-villa-solar.jpg";
+import heroBg from "@/assets/hero-villa-solar.webp";
+import heroBgMobile from "@/assets/hero-villa-solar-828.webp";
 import { trackContactClick } from "@/lib/tracking";
-
-const EASE = [0.22, 1, 0.36, 1] as const;
 
 export function Hero() {
   return (
@@ -16,6 +15,8 @@ export function Hero() {
       {/* Image de fond — villa solaire Marrakech au crépuscule */}
       <img
         src={heroBg}
+        srcSet={`${heroBgMobile} 828w, ${heroBg} 1920w`}
+        sizes="100vw"
         alt="Villa marocaine de prestige avec panneaux solaires monocristallins au crépuscule, vue sur les montagnes de l'Atlas"
         fetchPriority="high"
         decoding="async"
@@ -50,13 +51,10 @@ export function Hero() {
 
       <Container size="wide" className="relative z-10">
         <div className="max-w-4xl">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, ease: EASE }}
-          >
+          {/* Premier écran : affiché sans animation d'apparition */}
+          <div>
             <Eyebrow>Énergie solaire premium · Marrakech</Eyebrow>
-          </motion.div>
+          </div>
 
           <AnimatedText
             as="h1"
@@ -67,29 +65,19 @@ export function Hero() {
             className="mt-6 font-display text-display-hero text-wh"
           />
 
-          <motion.p
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, ease: EASE, delay: 0.9 }}
-            className="mt-8 max-w-2xl text-body-lg text-gr"
-          >
+          <p className="mt-8 max-w-2xl text-body-lg text-gr">
             Solutions solaires sur-mesure pour villas, hôtels et domaines d'exception.
             Micro-réseaux intelligents, stockage batterie, ingénierie marocaine.
-          </motion.p>
+          </p>
 
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, ease: EASE, delay: 1.05 }}
-            className="mt-10 flex flex-col gap-4 sm:flex-row"
-          >
+          <div className="mt-10 flex flex-col gap-4 sm:flex-row">
             <SunavioButton size="lg" asChild>
               <Link to="/contact#contact-form">Demander une pré-étude</Link>
             </SunavioButton>
             <SunavioButton size="lg" variant="secondary" asChild>
               <Link to="/contact" onClick={() => trackContactClick("rendezvous")}>Nous contacter</Link>
             </SunavioButton>
-          </motion.div>
+          </div>
         </div>
       </Container>
 
