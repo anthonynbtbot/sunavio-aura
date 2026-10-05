@@ -1,7 +1,7 @@
 import { PHONE_BUSINESS } from "@/lib/phones";
 import { Link } from "react-router-dom";
 import { Container } from "@/components/atoms/Container";
-import logo from "@/assets/sunavio-logo-white.png";
+import logo from "@/assets/sunavio-logo-white.webp";
 import { trackContactClick } from "@/lib/tracking";
 
 const SERVICES = [
@@ -41,7 +41,10 @@ export function Footer() {
                 src={logo}
                 alt="SUNAVIO — Énergie solaire premium Marrakech"
                 className="h-12 w-auto"
-                loading="eager"
+                width={301}
+                height={96}
+                loading="lazy"
+                decoding="async"
                 draggable={false}
               />
             </Link>
