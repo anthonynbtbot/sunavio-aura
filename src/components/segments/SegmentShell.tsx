@@ -91,10 +91,11 @@ export interface SegmentShellProps {
   pains: SegmentItem[];
   approachIntro: string;
   approach: { title: string; description: string }[];
-  referenceTitle: string;
-  referenceAccent: string[];
-  referenceParagraphs: ReactNode[];
-  metrics: SegmentMetric[];
+  /** Si absent, la section de référence n'est pas affichée. */
+  referenceTitle?: string;
+  referenceAccent?: string[];
+  referenceParagraphs?: ReactNode[];
+  metrics?: SegmentMetric[];
   metricsNote?: string;
   referenceEyebrow?: string;
   /** Remplace le bloc de chiffres (colonne droite) si fourni. */
@@ -124,9 +125,9 @@ export function SegmentShell({
   approachIntro,
   approach,
   referenceTitle,
-  referenceAccent,
-  referenceParagraphs,
-  metrics,
+  referenceAccent = [],
+  referenceParagraphs = [],
+  metrics = [],
   metricsNote,
   referenceEyebrow = "RÉALISATION DE RÉFÉRENCE",
   referenceAside,
@@ -306,6 +307,7 @@ export function SegmentShell({
         </section>
 
         {/* RÉALISATION DE RÉFÉRENCE */}
+        {referenceTitle && (
         <section className="bg-bg py-24 md:py-32">
           <Container size="wide">
             <div className="grid gap-16 lg:grid-cols-2 lg:gap-24">
@@ -347,6 +349,7 @@ export function SegmentShell({
             </div>
           </Container>
         </section>
+        )}
 
         {/* GARANTIES + LIEN DÉCRET + lien croisé optionnel */}
         <section className="bg-bg3 py-24 md:py-32">

@@ -64,11 +64,10 @@ const VillaMarrakech = () => (
     referenceAccent={["axe", "Marrakech."]}
     referenceParagraphs={[
       "SUNAVIO conçoit régulièrement des installations sur l'axe Marrakech — résidences Al Maaden, Ouidane, Tameslouht — pour des villas de 400 à 1 200 m² avec piscine, équipées en climatisation centralisée et domotique.",
-      "L'objectif récurrent : autoconsommation élevée, économies annuelles significatives, intégration invisible depuis les zones de vie et les espaces extérieurs.",
+      "Nos objectifs de conception : une production dimensionnée sur la consommation de la maison, des économies chiffrées sur vos factures réelles et une intégration discrète depuis les zones de vie et les espaces extérieurs.",
     ]}
     metrics={[
       { k: "Profil type", v: "Villa 400 à 1 200 m² avec piscine" },
-      { k: "Économies annuelles", v: "Fourchette significative selon usage" },
       { k: "Intégration", v: "Invisible depuis les zones de vie" },
     ]}
     metricsNote="Fourchettes indicatives. Les chiffres exacts sont arrêtés à l'issue de la visite technique et de l'analyse de vos factures réelles."
