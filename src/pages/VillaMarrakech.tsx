@@ -10,8 +10,8 @@ const VillaMarrakech = () => (
     seoDescription="Installation solaire premium pour villa : autoconsommation, stockage batterie, piscine. Étude sur-mesure et intégration architecturale discrète. Bureau d'études à Marrakech."
     ogImage={ogImage}
     eyebrow="VILLAS D'EXCEPTION · MARRAKECH"
-    heroTitle="L'indépendance énergétique, sans compromis sur l'esthétique de votre villa."
-    heroAccentWords={["sans", "compromis"]}
+    heroTitle="L'énergie solaire, intégrée à l'architecture de votre villa."
+    heroAccentWords={["intégrée"]}
     heroSubtitle="Piscine, climatisation, domotique : votre villa mérite une solution solaire pensée comme une pièce d'architecture, pas un assemblage de panneaux."
     phone={PHONE_PRIVATE}
     whatsappMessage="Bonjour, je souhaite une étude solaire pour ma villa à Marrakech."
@@ -22,7 +22,7 @@ const VillaMarrakech = () => (
         icon: Waves,
         title: "La piscine tire en continu",
         description:
-          "Filtration, chauffage, traitement, pool house : un bassin haut de gamme représente à lui seul une part majeure de votre facture annuelle.",
+          "Filtration, chauffage, traitement, pool house : un bassin haut de gamme consomme chaque jour, et davantage quand il est chauffé.",
       },
       {
         icon: Snowflake,
@@ -47,33 +47,35 @@ const VillaMarrakech = () => (
       {
         title: "Dimensionnement sur factures réelles",
         description:
-          "Analyse de 12 à 24 mois de factures ONEE. Identification des postes piscine, clim et domotique. Pas de chiffres théoriques.",
+          "Analyse de 12 mois consécutifs de vos factures d'électricité. Identification des postes piscine, clim et domotique. Pas de chiffres théoriques.",
       },
       {
-        title: "Stockage pour l'autonomie",
+        title: "Stockage en option",
         description:
-          "Batterie calibrée pour absorber les coupures, lisser les pics et assurer l'alimentation aux heures critiques.",
+          "Batterie dimensionnée selon les circuits à secourir et la consommation du soir. En cas de coupure du réseau, elle alimente les circuits choisis, dans la limite de sa capacité, avec un onduleur hybride et un boîtier de secours.",
       },
       {
-        title: "Simulation 3D SUNAVIO",
+        title: "Plan d'implantation",
         description:
-          "Vous validez l'intégration visuelle avant la moindre intervention. Aucune surprise sur le rendu final.",
+          "Avant les travaux, nous vous présentons le plan d'implantation des panneaux.",
       },
     ]}
-    referenceTitle="Villas haut de gamme · axe Marrakech."
-    referenceAccent={["axe", "Marrakech."]}
+    referenceEyebrow="RÉALISATION"
+    referenceTitle="Une pergola solaire en région de Marrakech."
+    referenceAccent={["pergola", "solaire"]}
     referenceParagraphs={[
-      "SUNAVIO conçoit régulièrement des installations sur l'axe Marrakech — résidences Al Maaden, Ouidane, Tameslouht — pour des villas de 400 à 1 200 m² avec piscine, équipées en climatisation centralisée et domotique.",
-      "Nos objectifs de conception : une production dimensionnée sur la consommation de la maison, des économies chiffrées sur vos factures réelles et une intégration discrète depuis les zones de vie et les espaces extérieurs.",
+      "Villa privée de la région de Marrakech, équipée d'une installation photovoltaïque de 13,86 kWc posée sur pergola, réalisée en 2026. Cas réel, anonymisé.",
+      "Pour votre maison, nos objectifs de conception : une production dimensionnée sur votre consommation, des économies chiffrées sur vos factures réelles et une intégration étudiée avec l'architecture de la maison.",
     ]}
     metrics={[
-      { k: "Profil type", v: "Villa 400 à 1 200 m² avec piscine" },
-      { k: "Intégration", v: "Invisible depuis les zones de vie" },
+      { k: "Puissance installée", v: "13,86 kWc" },
+      { k: "Pose", v: "Sur pergola" },
+      { k: "Réalisée en", v: "2026" },
     ]}
-    metricsNote="Fourchettes indicatives. Les chiffres exacts sont arrêtés à l'issue de la visite technique et de l'analyse de vos factures réelles."
+    metricsNote="Votre installation est dimensionnée sur vos propres factures, après la visite technique."
     ctaTitle="Votre villa, étudiée comme une pièce unique."
     ctaAccent={["pièce", "unique."]}
-    ctaIntro="Un ingénieur SUNAVIO se déplace chez vous, étudie l'architecture et conçoit une installation qui se voit le moins possible — et qui produit le plus possible."
+    ctaIntro="Un ingénieur SUNAVIO se déplace chez vous, étudie l'architecture et conçoit une installation intégrée à la maison, dimensionnée sur votre consommation."
   />
 );
 

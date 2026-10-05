@@ -12,7 +12,7 @@ const GolfMaroc = () => (
     eyebrow="GOLFS & RESORTS GOLFIQUES · MAROC"
     heroTitle="Votre flotte roule au soleil. Vos charges aussi."
     heroAccentWords={["Vos", "charges", "aussi."]}
-    heroSubtitle="Recharge nocturne des voiturettes, pompage et arrosage, club house : un golf consomme en continu. SUNAVIO conçoit un micro-réseau solaire avec stockage adapté à votre rythme d'exploitation."
+    heroSubtitle="Recharge nocturne des voiturettes, pompage et arrosage, club house : un golf consomme en continu. SUNAVIO dimensionne la production solaire sur votre rythme d'exploitation, avec le stockage si votre exploitation le justifie."
     phone={PHONE_BUSINESS}
     whatsappMessage="Bonjour, je gère un golf au Maroc et je souhaite une étude solaire SUNAVIO."
     painTitle="Un golf, ce n'est pas qu'un parcours."
