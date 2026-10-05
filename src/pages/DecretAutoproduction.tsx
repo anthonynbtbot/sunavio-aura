@@ -96,7 +96,7 @@ const DecretAutoproduction = () => {
                     onClick={() => trackContactClick("rendezvous")}
                     className={sunavioButtonVariants({ variant: "primary", size: "lg" })}
                   >
-                    Demander mon étude gratuite
+                    Demander une pré-étude
                   </Link>
                 </div>
               </Reveal>

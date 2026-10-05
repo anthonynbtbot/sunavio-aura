@@ -30,8 +30,6 @@ const CASES: CaseStudy[] = [
     imageOpacity: 0.5,
     kpis: [
       { value: 22.68, decimals: 2, suffix: " kWc", label: "Puissance installée" },
-      { value: 93,    suffix: " %",                label: "Autonomie solaire" },
-      { value: 6,     suffix: " ans",              label: "Retour sur investissement" },
     ],
   },
   {
@@ -42,7 +40,6 @@ const CASES: CaseStudy[] = [
     kpis: [
       { value: 645,  suffix: " kWc",                            label: "Puissance installée" },
       { value: 1285, suffix: " kWh", separator: ",",            label: "Stockage batterie" },
-      { value: 6.2,  decimals: 1, suffix: " ans",               label: "Retour sur investissement" },
     ],
   },
   {
@@ -52,7 +49,6 @@ const CASES: CaseStudy[] = [
     imageOpacity: 0.4,
     kpis: [
       { value: 12, suffix: " kWc", label: "Puissance installée" },
-      { value: 87, suffix: " %",   label: "Autonomie solaire" },
       { value: 50, suffix: " kWh", label: "Stockage batterie" },
     ],
   },
@@ -68,7 +64,7 @@ export function Cases() {
           eyebrow="Réalisations"
           title="Des projets qui produisent réellement."
           accentWords={["produisent"]}
-          intro="Cas anonymisés, chiffres réels — mesurés en exploitation."
+          intro="Cas anonymisés."
         />
 
         <motion.div

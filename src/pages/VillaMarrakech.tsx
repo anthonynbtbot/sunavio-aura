@@ -68,7 +68,6 @@ const VillaMarrakech = () => (
     ]}
     metrics={[
       { k: "Profil type", v: "Villa 400 à 1 200 m² avec piscine" },
-      { k: "Autoconsommation", v: "Élevée — 70 à 90%" },
       { k: "Économies annuelles", v: "Fourchette significative selon usage" },
       { k: "Intégration", v: "Invisible depuis les zones de vie" },
     ]}

@@ -61,19 +61,19 @@ const PARTNERS = [
     badge: "PANNEAUX",
     name: "Jinko Solar",
     description:
-      "Leader mondial des panneaux photovoltaïques monocristallins tier-1. Rendements jusqu'à 22%, garanties constructeur écrites, produit et production. Technologie N-Type dernière génération.",
+      "Leader mondial des panneaux photovoltaïques monocristallins tier-1. Rendement jusqu'à 23,32 % (Tiger Neo 630 W), garanties constructeur écrites, produit et production. Technologie N-Type dernière génération.",
   },
   {
     badge: "STOCKAGE & ONDULEURS",
     name: "Huawei FusionSolar",
     description:
-      "Onduleurs hybrides SUN2000 (rendement jusqu'à 98,6%) et batteries LUNA2000 en technologie LFP. Modularité 5 à 30 kWh, sécurité au niveau cellule, monitoring FusionSolar temps réel.",
+      "Onduleurs hybrides SUN2000 (rendement maximal jusqu'à 98,6 %) et batteries LUNA2000 en technologie LFP. Modularité 5 à 30 kWh par onduleur hybride, sécurité au niveau cellule, monitoring FusionSolar temps réel.",
   },
   {
     badge: "ONDULEURS & BOS",
     name: "Équipements électriques",
     description:
-      "Onduleurs hybrides haut rendement (98%+), disjoncteurs DC/AC certifiés, câblage conforme normes internationales. Chaque composant électrique est sélectionné pour sa durabilité.",
+      "Onduleurs hybrides, rendement maximal supérieur à 98 %, disjoncteurs DC/AC certifiés, câblage conforme normes internationales. Chaque composant électrique est sélectionné pour sa durabilité.",
   },
 ];
 

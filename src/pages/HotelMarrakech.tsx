@@ -116,13 +116,13 @@ const HotelMarrakech = () => {
         <title>Panneaux solaires pour hôtels & resorts à Marrakech | SUNAVIO</title>
         <meta
           name="description"
-          content="Réduisez la facture énergétique de votre hôtel de 40 à 70%. Étude multi-zones, chantier sans gêne pour vos clients, équipements premium. Bureau d'études solaire à Marrakech."
+          content="Réduisez la facture énergétique de votre hôtel. Étude multi-zones, chantier sans gêne pour vos clients, équipements premium. Bureau d'études solaire à Marrakech."
         />
         <link rel="canonical" href={`${SITE_URL}${PATH}`} />
         <meta property="og:title" content="Panneaux solaires pour hôtels & resorts à Marrakech | SUNAVIO" />
         <meta
           property="og:description"
-          content="Réduisez la facture énergétique de votre hôtel de 40 à 70%. Étude multi-zones, chantier sans gêne pour vos clients, équipements premium."
+          content="Réduisez la facture énergétique de votre hôtel. Étude multi-zones, chantier sans gêne pour vos clients, équipements premium."
         />
         <meta property="og:url" content={`${SITE_URL}${PATH}`} />
         <meta property="og:type" content="website" />
@@ -320,9 +320,6 @@ const HotelMarrakech = () => {
               <div className="space-y-6">
                 {[
                   { k: "Centrale", v: "250 à 400 kWc multi-zones + stockage" },
-                  { k: "Autoconsommation", v: "85 à 95% de la production" },
-                  { k: "Réduction de facture", v: "40 à 70% selon le profil" },
-                  { k: "Retour sur investissement", v: "5 à 7 ans (variable selon tarif moyen)" },
                 ].map((row, i) => (
                   <Reveal key={row.k} delay={i * 0.08}>
                     <div className="flex items-baseline justify-between gap-6 border-b border-line pb-5">
@@ -333,8 +330,8 @@ const HotelMarrakech = () => {
                 ))}
                 <Reveal delay={0.4}>
                   <p className="text-sm italic text-gr2">
-                    Fourchettes indicatives. Les chiffres réels dépendent de votre tarif ONEE moyen,
-                    de votre courbe de charge et de l'étude technique sur site.
+                    Fourchette indicative. La puissance réelle dépend de votre courbe de charge, des
+                    surfaces exploitables et de l'étude technique sur site.
                   </p>
                 </Reveal>
               </div>

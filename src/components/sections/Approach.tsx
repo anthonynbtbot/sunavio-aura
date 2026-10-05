@@ -22,7 +22,7 @@ const PILLARS: Pillar[] = [
     icon: Battery,
     title: "Stockage batterie lithium",
     description:
-      "Équipements Huawei FusionSolar haute performance, sécurité thermique maximale. Alimentation de secours en cas de coupure du réseau, selon la configuration.",
+      "Équipements Huawei FusionSolar haute performance, sécurité thermique maximale. Alimentation de secours de circuits choisis en cas de coupure du réseau, avec onduleur hybride, batterie et boîtier de secours, selon la configuration.",
   },
   {
     icon: Gauge,

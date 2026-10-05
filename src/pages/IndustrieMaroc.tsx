@@ -3,6 +3,8 @@ import { TrendingDown, Factory, LineChart } from "lucide-react";
 import { SegmentShell } from "@/components/segments/SegmentShell";
 import ogImage from "@/assets/og-industrie-maroc.jpg";
 
+const ROWS: [string, string, string][] = [["Consommation annuelle du site", "entre 1 et 1,5 GWh", "entre 1 et 1,5 GWh"], ["Centrale en toiture, sans batterie", "environ 300 kWc", "environ 400 kWc"], ["Production simulée", "environ 500 MWh par an", "environ 650 MWh par an"], ["Part consommée sur place", "environ 90 %", "environ 85 %"], ["Économie simulée sur l'électricité achetée", "environ 350 000 DH HT par an", "environ 450 000 DH HT par an"], ["Retour simple simulé", "environ 5 à 6 ans", "environ 5 à 6 ans"]];
+
 const IndustrieMaroc = () => (
   <SegmentShell
     path="/panneaux-solaires-industrie-maroc"
@@ -12,7 +14,7 @@ const IndustrieMaroc = () => (
     eyebrow="INDUSTRIE & TERTIAIRE · MARRAKECH–SOUSS"
     heroTitle="Votre poste énergie pèse sur vos marges. Reprenez le contrôle."
     heroAccentWords={["Reprenez", "le", "contrôle."]}
-    heroSubtitle="Tarification moyenne tension, exigences de décarbonation de vos donneurs d'ordre : l'autoproduction solaire devient un levier de compétitivité. SUNAVIO le rend rentable et conforme."
+    heroSubtitle="Tarification moyenne tension, exigences de décarbonation de vos donneurs d'ordre : l'autoproduction solaire devient un levier de compétitivité. SUNAVIO chiffre ce que le solaire peut vous faire économiser, sur vos factures réelles, avant tout engagement."
     phone={PHONE_BUSINESS}
     whatsappMessage="Bonjour, je dirige un site industriel ou tertiaire au Maroc et je souhaite une étude d'autoconsommation solaire SUNAVIO."
     painTitle="Le tarif MT n'est pas neutre."
@@ -66,16 +68,46 @@ const IndustrieMaroc = () => (
       "SUNAVIO accompagne des sites tertiaires et industriels sur l'axe Marrakech–Souss : bâtiments logistiques, ateliers, sièges régionaux, agro-industrie.",
       "L'objectif commun : une réduction durable du coût du kWh autoproduit, mesurable dès la première année et suivie sur la durée par le monitoring.",
     ]}
-    metrics={[
-      { k: "Cible tarifaire", v: "Heures pointe & pleines en priorité" },
-      { k: "Autoconsommation", v: "Optimisée — généralement > 90%" },
-      { k: "Raccordement", v: "Dossier au titre du décret 2-25-100" },
-      { k: "Pilotage", v: "Monitoring temps réel inclus" },
-    ]}
-    metricsNote="Fourchettes indicatives. Le gain réel dépend de votre profil de charge, de votre tarif MT et de la surface exploitable."
+    metrics={[]}
+    referenceEyebrow="EXEMPLES DE SIMULATION"
+    referenceAside={
+      <div>
+        <h3 className="font-display text-xl font-semibold text-wh">Deux exemples de simulation</h3>
+        <p className="mt-4 text-body text-gr">
+          Voici deux exemples de simulation établis à partir de nos études, pour des sites raccordés en moyenne tension : une année de factures d'électricité, une production simulée avec Huawei FusionSolar SmartDesign, des panneaux solaires et des onduleurs Huawei en limitation d'injection (valeurs arrondies).
+        </p>
+        <div className="mt-8 overflow-x-auto">
+          <table className="w-full min-w-[480px] border-collapse text-left">
+            <thead>
+              <tr className="border-b border-line">
+                <th className="pb-4" />
+                <th className="pb-4 text-eyebrow text-gr2">Exemple 1</th>
+                <th className="pb-4 text-eyebrow text-gr2">Exemple 2</th>
+              </tr>
+            </thead>
+            <tbody>
+              {ROWS.map(([k, a, b]) => (
+                <tr key={k} className="border-b border-line">
+                  <th scope="row" className="py-4 pr-4 text-eyebrow font-normal text-gr2">{k}</th>
+                  <td className="py-4 pr-4 font-display text-wh">{a}</td>
+                  <td className="py-4 font-display text-wh">{b}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+        <ul className="mt-8 list-disc space-y-2 pl-5 text-sm text-gr2">
+          <li>Ce sont des simulations, pas des mesures : aucun résultat n'est garanti.</li>
+          <li>L'économie ne compte que l'électricité achetée en moins, en DH hors taxes ; le retour suppose l'énergie réactive du site compensée, ce qui est chiffré à part.</li>
+          <li>Le reste de la production possible est perdu : la centrale est bridée pour ne pas injecter sur le réseau.</li>
+          <li>Le retour est calculé avec le coût d'installation retenu dans l'étude. Le prix d'un projet est fixé par devis, après visite technique.</li>
+        </ul>
+        <p className="mt-6 font-semibold text-wh">Votre site est différent. Pré-étude offerte sur votre facture.</p>
+      </div>
+    }
     ctaTitle="Faites du solaire un actif industriel."
     ctaAccent={["actif", "industriel."]}
-    ctaIntro="Un ingénieur SUNAVIO analyse votre facture MT, modélise votre courbe de charge et chiffre votre rentabilité. L'étude est gratuite, le monitoring est inclus."
+    ctaIntro="Un ingénieur SUNAVIO analyse votre facture MT, modélise votre courbe de charge et chiffre votre rentabilité. La pré-étude est offerte sur votre facture, le monitoring est inclus."
     extraCrossLink={{
       eyebrow: "FINANCEMENT VERT",
       title: "Votre projet peut être éligible aux financements verts.",
