@@ -374,18 +374,18 @@ const About = () => {
               />
               <Reveal delay={0.2}>
                 <p className="mx-auto mt-6 max-w-2xl text-body text-gr">
-                  Commencez par une estimation précise en ligne, ou contactez-nous directement
+                  Commencez par une pré-étude sur votre facture, ou contactez-nous directement
                   pour en discuter.
                 </p>
               </Reveal>
               <Reveal delay={0.3}>
                 <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
-                  <a
-                    href="https://estimer.sunavio.com"
+                  <Link
+                    to="/contact#contact-form"
                     className={sunavioButtonVariants({ variant: "primary", size: "lg" })}
                   >
-                    Estimer mon projet
-                  </a>
+                    Demander une pré-étude
+                  </Link>
                   <Link
                     to="/contact"
                     className={sunavioButtonVariants({ variant: "secondary", size: "lg" })}

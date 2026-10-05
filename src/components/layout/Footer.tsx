@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { Container } from "@/components/atoms/Container";
 import logo from "@/assets/sunavio-logo-white.png";
-import { trackSimulatorStart, trackContactClick } from "@/lib/tracking";
+import { trackContactClick } from "@/lib/tracking";
 
 const SERVICES = [
   { label: "Hôtellerie & Hospitality", to: "/panneaux-solaires-hotel-marrakech" },
@@ -16,7 +16,6 @@ const COMPANY = [
   { label: "À propos", to: "/a-propos" },
   { label: "Contact",  to: "/contact" },
   { label: "Le décret 2.25.100", to: "/decret-2-25-100-autoproduction-maroc" },
-  { label: "Simulateur", href: "https://estimer.sunavio.com" },
 ];
 
 const LEGAL = [
@@ -73,19 +72,8 @@ export function Footer() {
           <div>
             <h3 className="text-eyebrow mb-5">Entreprise</h3>
             <ul className="space-y-3">
-              {COMPANY.map((c) =>
-                "href" in c ? (
-                  <li key={c.label}>
-                    <a
-                      href={c.href}
-                      onClick={() => trackSimulatorStart()}
-                      className="text-sm text-gr transition-colors hover:text-or"
-                    >
-                      {c.label}
-                    </a>
-                  </li>
-                ) : (
-                  <li key={c.label}>
+              {COMPANY.map((c) => (
+                <li key={c.label}>
                     <Link
                       to={c.to}
                       onClick={() => trackContactClick("email")}

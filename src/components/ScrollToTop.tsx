@@ -1,23 +1,36 @@
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 
+type LenisLike = { scrollTo: (t: number | HTMLElement, o?: { immediate?: boolean; offset?: number }) => void };
+
 /**
- * Scroll automatique en haut de page à chaque changement de route.
- * Ignore les navigations avec hash (ancres) pour laisser les gestionnaires d'ancre opérer.
+ * Scroll en haut à chaque changement de route ; si un hash est présent,
+ * défilement doux jusqu'à l'élément ciblé (y compris sur la même page).
  */
 export function ScrollToTop() {
-  const { pathname, hash } = useLocation();
+  const { pathname, hash, key } = useLocation();
 
   useEffect(() => {
-    if (hash) return;
-
-    const lenis = (window as unknown as { __lenis?: { scrollTo: (t: number, o?: { immediate?: boolean }) => void } }).__lenis;
-    if (lenis) {
-      lenis.scrollTo(0, { immediate: true });
-    } else {
-      window.scrollTo({ top: 0, left: 0, behavior: "instant" as ScrollBehavior });
+    const lenis = (window as unknown as { __lenis?: LenisLike }).__lenis;
+    if (hash) {
+      const id = decodeURIComponent(hash.slice(1));
+      let tries = 0;
+      const attempt = () => {
+        const el = document.getElementById(id);
+        if (el) {
+          const l = (window as unknown as { __lenis?: LenisLike }).__lenis;
+          if (l) l.scrollTo(el, { offset: -80 });
+          else el.scrollIntoView({ behavior: "smooth", block: "start" });
+        } else if (tries++ < 20) {
+          setTimeout(attempt, 100);
+        }
+      };
+      setTimeout(attempt, 150);
+      return;
     }
-  }, [pathname, hash]);
+    if (lenis) lenis.scrollTo(0, { immediate: true });
+    else window.scrollTo({ top: 0, left: 0, behavior: "instant" as ScrollBehavior });
+  }, [pathname, hash, key]);
 
   return null;
 }

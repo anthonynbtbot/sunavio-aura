@@ -4,7 +4,7 @@ import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { Hero } from "@/components/sections/Hero";
 import { TrustBanner } from "@/components/sections/TrustBanner";
-import { Simulator } from "@/components/sections/Simulator";
+import { PreEtude } from "@/components/sections/PreEtude";
 import { Segments } from "@/components/sections/Segments";
 import { Approach } from "@/components/sections/Approach";
 import { Cases } from "@/components/sections/Cases";
@@ -25,7 +25,7 @@ const Index = () => {
       <main>
         <Hero />
         <TrustBanner />
-        <Simulator />
+        <PreEtude />
         <Segments />
         <Approach />
         <Cases />
