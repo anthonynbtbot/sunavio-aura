@@ -7,7 +7,7 @@ const IndustrieMaroc = () => (
   <SegmentShell
     path="/panneaux-solaires-industrie-maroc"
     seoTitle="Solaire industriel & tertiaire au Maroc | Autoconsommation | SUNAVIO"
-    seoDescription="Réduisez vos coûts énergétiques par l'autoconsommation solaire. Étude sur factures moyenne tension, dimensionnement rigoureux, conformité décret 2.25.100. Marrakech & axe Souss."
+    seoDescription="Réduisez vos coûts énergétiques par l'autoconsommation solaire. Étude sur factures moyenne tension, dimensionnement rigoureux, dossier au titre du décret 2-25-100. Marrakech & axe Souss."
     ogImage={ogImage}
     eyebrow="INDUSTRIE & TERTIAIRE · MARRAKECH–SOUSS"
     heroTitle="Votre poste énergie pèse sur vos marges. Reprenez le contrôle."
@@ -52,7 +52,7 @@ const IndustrieMaroc = () => (
       {
         title: "Dossier de raccordement conforme",
         description:
-          "Montage complet du dossier réglementaire au titre du décret 2.25.100, gestion des échanges avec le gestionnaire de réseau régional jusqu'à l'accord.",
+          "Montage du dossier de demande d'accord de raccordement au titre du décret 2-25-100, échanges avec le gestionnaire du réseau de distribution jusqu'à l'accord.",
       },
       {
         title: "Monitoring temps réel post-installation",
@@ -69,7 +69,7 @@ const IndustrieMaroc = () => (
     metrics={[
       { k: "Cible tarifaire", v: "Heures pointe & pleines en priorité" },
       { k: "Autoconsommation", v: "Optimisée — généralement > 90%" },
-      { k: "Conformité", v: "Décret 2.25.100" },
+      { k: "Raccordement", v: "Dossier au titre du décret 2-25-100" },
       { k: "Pilotage", v: "Monitoring temps réel inclus" },
     ]}
     metricsNote="Fourchettes indicatives. Le gain réel dépend de votre profil de charge, de votre tarif MT et de la surface exploitable."

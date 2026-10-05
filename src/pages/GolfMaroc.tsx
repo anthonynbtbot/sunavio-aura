@@ -57,7 +57,7 @@ const GolfMaroc = () => (
       {
         title: "Dossier de raccordement & conformité",
         description:
-          "Étude technique, dossier réglementaire, conformité décret 2.25.100, monitoring post-installation.",
+          "Dimensionnement, dossier au titre du décret 2-25-100, monitoring post-installation.",
       },
     ]}
     referenceTitle="Golf type resort · Marrakech."
