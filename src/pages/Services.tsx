@@ -41,9 +41,9 @@ const SEGMENTS: Segment[] = [
     title: "Énergie solaire et stockage pour hôtels d'exception.",
     accent: ["hôtels", "d'exception."],
     paragraphs: [
-      "Les établissements hôteliers premium ont des profils de consommation complexes : climatisation, cuisines professionnelles, éclairage d'ambiance, piscines, spas, buanderies. Une coupure ONEE en pleine saison peut coûter des milliers de dirhams en clients déçus et réputation fragilisée.",
+      "Les établissements hôteliers premium ont des profils de consommation complexes : climatisation, cuisines professionnelles, éclairage d'ambiance, piscines, spas, buanderies. Une coupure du réseau en pleine saison se ressent directement sur le confort des clients.",
       "SUNAVIO conçoit des centrales solaires dimensionnées sur votre consommation de journée, quand les clients sont présents et les équipements en marche, avec en option un stockage batterie pour l'alimentation de secours de circuits choisis en cas de coupure du réseau.",
-      "Nos installations sont intégrées architecturalement avec soin : panneaux sur toitures plates (parkings, annexes, terrasses techniques), câblage invisible, intégration dans les plans techniques sans compromettre l'esthétique du lieu.",
+      "Nos installations sont intégrées architecturalement avec soin : panneaux sur toitures plates (parkings, annexes, terrasses techniques), cheminement des câbles étudié avec le bâti, intégration dans les plans techniques sans compromettre l'esthétique du lieu.",
     ],
     cardTitle: "Bénéfices concrets",
     benefits: [
@@ -63,14 +63,14 @@ const SEGMENTS: Segment[] = [
     paragraphs: [
       "Une villa d'exception ne se contente pas d'une installation standard. Les propriétés de prestige ont des exigences spécifiques : maîtrise de l'énergie pendant les séjours de plusieurs mois, alimentation de piscines chauffées et spas, gestion de maisons intelligentes, éclairage extérieur étendu, systèmes de sécurité actifs 24/7.",
       "Nos solutions villa combinent micro-réseau solaire, stockage batterie dimensionné selon les circuits à secourir et la consommation du soir, et gestion intelligente de la consommation. L'objectif n'est pas seulement de produire de l'énergie : c'est de vous assurer une alimentation de secours de circuits choisis en cas de coupure du réseau, avec onduleur hybride, batterie et boîtier de secours, selon la configuration.",
-      "Nous intervenons sur tous les types de résidences premium : villas neuves en construction (intégration dès la conception), villas existantes (rénovation énergétique soignée), riads traditionnels (défi technique que nous savons relever sans dénaturer le patrimoine).",
+      "Nous étudions les villas neuves en construction (intégration dès la conception), les villas existantes et les riads (étude au cas par cas, dans le respect du bâti traditionnel).",
     ],
     cardTitle: "Ce que nous livrons",
     benefits: [
       "Audit énergétique complet sur 12 mois de consommation",
       "Dimensionnement sur-mesure selon usages réels",
       "Monitoring production via app mobile",
-      "Intégration esthétique (ombrières piscine, pergolas solaires, toitures invisibles)",
+      "Intégration esthétique (ombrières de piscine, pergolas solaires, pose discrète en toiture)",
     ],
     ctaLabel: "Étudier mon projet villa",
     bg: "bg3",
@@ -82,7 +82,7 @@ const SEGMENTS: Segment[] = [
     title: "Alimenter vos emprises étendues.",
     accent: ["emprises", "étendues."],
     paragraphs: [
-      "Les golfs et grands domaines présentent un défi énergétique singulier : des emprises vastes (50 à 200 hectares), des équipements dispersés (club-house, practice, maisonnée staff, irrigation automatisée, éclairage nocturne des allées), et des pics de consommation concentrés sur l'irrigation estivale.",
+      "Les golfs et grands domaines présentent un défi énergétique singulier : des emprises vastes, des équipements dispersés (club-house, practice, maisonnée staff, irrigation automatisée, éclairage nocturne des allées), et des pics de consommation concentrés sur l'irrigation estivale.",
       "Nos solutions golf combinent toitures solaires sur club-house et bâtiments techniques, avec si nécessaire des installations au sol en zones non-jouées. Le stockage batterie, quand il est retenu, est dimensionné sur les besoins d'irrigation critiques ; son intérêt face au tarif de pointe est chiffré sur vos factures avant toute décision.",
       "Pour les domaines privés et propriétés agricoles, nous concevons des micro-réseaux totalement autonomes lorsque le raccordement ONEE est coûteux ou indisponible. C'est le cas de certains sites isolés.",
     ],
@@ -105,12 +105,12 @@ const SEGMENTS: Segment[] = [
     paragraphs: [
       "Pour les sièges sociaux, immeubles de bureaux, cabinets, cliniques et commerces, le solaire permet aujourd'hui de produire sur place une partie de l'électricité achetée au réseau, pour mieux maîtriser les coûts énergétiques. Les toitures plates ou faiblement inclinées se prêtent idéalement à l'installation de panneaux, et la consommation diurne coïncide avec la production solaire.",
       "SUNAVIO dimensionne vos installations tertiaires pour maximiser l'autoconsommation directe (électricité produite et consommée immédiatement, sans stockage coûteux).",
-      "Nos clients tertiaires bénéficient également d'un argument RSE tangible : bilan carbone amélioré, certifications environnementales facilitées, communication valorisable auprès de leurs propres clients et partenaires.",
+      "Pour un site tertiaire, l'électricité produite sur place peut aussi réduire les émissions liées à l'électricité achetée au réseau et nourrir la communication RSE auprès de ses clients et partenaires.",
     ],
     cardTitle: "Avantages tertiaire",
     benefits: [
       "Autoconsommation directe, peu ou pas de stockage nécessaire",
-      "Bilan carbone amélioré, certifications facilitées",
+      "Moins d'électricité achetée au réseau, à intégrer au bilan carbone",
       "Argument RSE valorisable auprès clients et partenaires",
       "Maintenance minimale, production suivie dans la durée",
     ],
@@ -124,7 +124,7 @@ const SEGMENTS: Segment[] = [
     title: "Sécuriser vos process critiques.",
     accent: ["process", "critiques."],
     paragraphs: [
-      "Pour les sites industriels — ateliers, entrepôts, usines, exploitations agricoles — l'énergie n'est pas seulement un coût, c'est un facteur de continuité d'activité. Une coupure en pleine production peut coûter des dizaines de milliers de dirhams : matières gâchées, commandes retardées, équipements à redémarrer.",
+      "Pour les sites industriels — ateliers, entrepôts, usines, exploitations agricoles — l'énergie n'est pas seulement un coût, c'est un facteur de continuité d'activité. Une coupure en pleine production a un coût : matières gâchées, commandes retardées, équipements à redémarrer.",
       "SUNAVIO conçoit pour l'industrie des solutions hybrides combinant solaire photovoltaïque, stockage batterie pour les process critiques, et, si besoin, un groupe électrogène en secours. Nos études partent de vos factures réelles et dimensionnent le stockage seulement quand il se justifie.",
       "Nous travaillons étroitement avec vos équipes techniques pour intégrer le système sans perturber l'activité : phasage des travaux, tests hors production, formation des équipes de maintenance internes.",
     ],
@@ -146,7 +146,7 @@ const SEGMENTS: Segment[] = [
     title: "Confort et performance.",
     accent: ["performance."],
     paragraphs: [
-      "Les piscines et pool houses représentent un poste énergétique souvent sous-estimé dans les résidences premium : filtration continue (6-12h/jour en été), chauffage thermique (eau à 28°C toute l'année exige une puissance soutenue), éclairage subaquatique, équipements annexes (jacuzzis, douches chaudes, locaux techniques).",
+      "Les piscines et pool houses représentent un poste énergétique souvent sous-estimé dans les résidences premium : filtration quotidienne, plus longue en été, chauffage de l'eau (un bassin chauffé toute l'année consomme surtout en hiver, quand le solaire produit le moins), éclairage subaquatique, équipements annexes (jacuzzis, douches chaudes, locaux techniques).",
       "SUNAVIO propose deux approches complémentaires : le solaire photovoltaïque classique pour alimenter la pompe de filtration et les équipements électriques, et le solaire thermique (capteurs spécifiques) pour chauffer directement l'eau de bassin. Les deux peuvent être combinés selon l'usage de la piscine.",
       "Nos dimensionnements tiennent compte de l'usage réel : une piscine utilisée 3 mois par an ne nécessite pas la même installation qu'une piscine chauffée toute l'année. Chaque projet est étudié spécifiquement.",
     ],

@@ -38,9 +38,9 @@ const PAINS = [
   },
   {
     icon: Sparkles,
-    title: "Une exigence absolue de confort",
+    title: "Une exigence de confort",
     description:
-      "Pas une coupure, pas un bruit de chantier, pas une zone défigurée. L'intégration architecturale et la continuité de service ne sont pas négociables.",
+      "Vos clients ne doivent pas subir le chantier : la coupure nécessaire au raccordement est planifiée à une heure choisie avec vous, les travaux s'organisent autour de votre exploitation et l'intégration architecturale est étudiée sur place.",
   },
   {
     icon: Leaf,
@@ -297,7 +297,7 @@ const HotelMarrakech = () => {
                 </Reveal>
                 <AnimatedText
                   as="h2"
-                  text="Hôtel de prestige · profil type."
+                  text="Hôtel de prestige · plusieurs zones de pose."
                   accentWords={["profil", "type."]}
                   className="mt-6 font-display text-display-section text-wh"
                 />
