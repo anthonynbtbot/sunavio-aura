@@ -5,7 +5,7 @@ const CookiePolicy = () => (
     eyebrow="POLITIQUE COOKIES"
     title="Politique cookies."
     accentWords={["cookies."]}
-    updatedAt="Dernière mise à jour : 21 avril 2026"
+    updatedAt="Dernière mise à jour : 5 octobre 2026"
     seoTitle="Politique cookies | SUNAVIO — Panneaux solaires Marrakech"
     seoDescription="Politique cookies du site SUNAVIO, spécialiste de l'installation solaire villa et de l'énergie solaire premium à Marrakech."
     path="/cookies"
@@ -21,52 +21,40 @@ const CookiePolicy = () => (
     </section>
 
     <section>
-      <h2>2. Notre approche : minimale et transparente</h2>
+      <h2>2. Ce que le site utilise</h2>
       <p>
-        Le site sunavio.com applique une politique cookies <strong>minimale</strong>.
-        Nous n'utilisons aucun cookie marketing, aucun cookie de tracking tiers, aucun
-        cookie publicitaire.
+        Le site sunavio.com utilise l'outil de mesure d'audience de Google, Google
+        Analytics, et l'outil publicitaire de Meta, le pixel Meta. Ils déposent des cookies
+        sur votre appareil dès votre arrivée sur le site. Le site passe aussi par
+        Cloudflare, qui n'en dépose pas. Voici ces outils et à quoi ils servent.
       </p>
-      <p>Les seuls cookies présents sur ce site sont :</p>
 
-      <h3>a) Cookies strictement nécessaires</h3>
+      <h3>a) Mesure d'audience : Google Analytics</h3>
       <p>
-        Ces cookies sont indispensables au fonctionnement technique du site. Ils ne
-        peuvent être désactivés. Exemples :
+        Google Analytics compte les visites et les pages vues, et nous indique d'où
+        viennent les visiteurs (moteur de recherche, publicité, lien direct) et quel
+        appareil ils utilisent. Il nous sert à savoir quelles pages sont lues et à
+        améliorer le site. Il peut aussi servir à constituer des listes de visiteurs pour
+        la publicité Google. Cookies : _ga et _ga_GCYVQ3Q6VM, gardés environ 13 mois.
       </p>
-      <ul>
-        <li>Préférence de langue (si applicable dans le futur)</li>
-        <li>Session utilisateur sur les pages interactives</li>
-      </ul>
 
-      <h3>b) Cookies de mesure d'audience (Umami Analytics)</h3>
+      <h3>b) Publicité : pixel Meta</h3>
       <p>
-        Nous utilisons <strong>Umami Analytics</strong>, une solution d'analyse
-        d'audience respectueuse de la vie privée, auto-hébergée, et conforme RGPD par
-        conception. Umami ne dépose <strong>aucun cookie persistant</strong>. Les données
-        collectées sont anonymisées, agrégées, et ne permettent pas de vous identifier.
+        Le pixel Meta mesure si une visite vient d'une de nos publicités Facebook ou
+        Instagram et si elle se termine par une prise de contact. Il peut aussi servir à
+        montrer nos publicités aux personnes qui ont déjà visité le site. Cookie : _fbp,
+        gardé environ 3 mois.
       </p>
+
+      <h3>c) Cloudflare</h3>
       <p>
-        <strong>Aucun consentement n'est donc requis</strong> pour ces analytics
-        respectueux.
+        Le site passe par Cloudflare, qui mesure le nombre de visites et le temps de
+        chargement des pages, sans déposer de cookie.
       </p>
     </section>
 
     <section>
-      <h2>3. Ce que nous n'utilisons PAS</h2>
-      <p>Par transparence, voici ce que nous <strong>n'utilisons pas</strong> :</p>
-      <ul>
-        <li>Google Analytics (aucun cookie Google)</li>
-        <li>Meta Pixel / Facebook Pixel</li>
-        <li>Cookies publicitaires programmatiques</li>
-        <li>Trackers réseaux sociaux</li>
-        <li>Fingerprinting</li>
-        <li>Retargeting</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>4. Gérer vos cookies</h2>
+      <h2>3. Gérer vos cookies</h2>
       <p>
         Vous pouvez à tout moment configurer votre navigateur pour bloquer ou supprimer
         les cookies. Consultez la documentation de votre navigateur :
@@ -91,7 +79,7 @@ const CookiePolicy = () => (
     </section>
 
     <section>
-      <h2>5. Ancien simulateur en ligne</h2>
+      <h2>4. Ancien simulateur en ligne</h2>
       <p>
         Les personnes qui ont utilisé l'ancien simulateur en ligne de SUNAVIO peuvent
         demander l'accès à leurs données ou leur suppression par mail à
@@ -100,7 +88,7 @@ const CookiePolicy = () => (
     </section>
 
     <section>
-      <h2>6. Contact</h2>
+      <h2>5. Contact</h2>
       <p>
         Pour toute question relative aux cookies :{" "}
         <a href="mailto:sunavio.contact@gmail.com">sunavio.contact@gmail.com</a>

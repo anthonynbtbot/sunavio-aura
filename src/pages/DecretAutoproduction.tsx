@@ -17,28 +17,28 @@ import { trackContactClick, trackWhatsAppClick } from "@/lib/tracking";
 const CHANGES = [
   {
     icon: Scale,
-    title: "Un statut légal enfin clair",
+    title: "Un cadre d'application en vigueur",
     description:
       "Trois ans après la loi 82-21, le décret d'application fixe les règles de réalisation, de raccordement et d'exploitation des installations d'autoproduction, qu'elles soient hors réseau ou raccordées au réseau.",
   },
   {
     icon: Gauge,
-    title: "Petites installations facilitées",
+    title: "Moins de 11 kW : régime de déclaration",
     description:
-      "En dessous de 11 kW (habitation, pompage agricole), une simple déclaration auprès du gestionnaire de réseau suffit, sans frais.",
+      "Moins de 11 kW raccordés en basse tension : régime de déclaration auprès du gestionnaire du réseau de distribution, avec convention de raccordement avant travaux et certificat de conformité à la mise en exploitation.",
   },
   {
     icon: FileCheck,
-    title: "Revente d'excédent encadrée",
+    title: "Vente de l'excédent plafonnée",
     description:
-      "Le surplus injecté dans le réseau ne peut dépasser 20 % de votre production. Bien dimensionner son installation devient stratégique.",
+      "La loi 82-21 (art. 12) permet de vendre au gestionnaire de réseau jusqu'à 20 % de la production annuelle, à un tarif fixé par l'ANRE (aujourd'hui fixé pour les raccordements HT et MT).",
   },
 ];
 
 const STEPS = [
   { title: "Visite technique gratuite", description: "Relevé du site, analyse de vos factures et de vos contraintes." },
-  { title: "Étude & dimensionnement", description: "Calcul précis basé sur vos consommations réelles, pas sur des moyennes." },
-  { title: "Dossier de raccordement", description: "Constitution complète du dossier réglementaire pour le gestionnaire de réseau." },
+  { title: "Étude & dimensionnement", description: "Dimensionnement à partir de vos factures réelles." },
+  { title: "Dossier de raccordement", description: "Montage du dossier de demande d'accord de raccordement." },
   { title: "Installation & mise en service", description: "Pose, raccordement, tests et mise en service supervisés par un ingénieur." },
 ];
 
@@ -48,8 +48,8 @@ const DecretAutoproduction = () => {
   return (
     <div className="min-h-screen bg-bg text-wh">
       <SEO
-        title="Décret 2.25.100 : autoproduction solaire au Maroc — ce qui change | SUNAVIO"
-        description="Le décret 2.25.100 autorise enfin l'autoproduction d'électricité au Maroc depuis juin 2026. Villa, hôtel, golf, industrie : SUNAVIO gère votre étude technique et votre dossier de raccordement à Marrakech."
+        title="Décret 2-25-100 : autoproduction d'électricité au Maroc — ce qui change | SUNAVIO"
+        description="Le décret 2-25-100, en vigueur depuis le 9 juin 2026, fixe les conditions de réalisation et d'exploitation des installations d'autoproduction prévues par la loi 82-21. SUNAVIO monte votre dossier de raccordement."
         path="/decret-2-25-100-autoproduction-maroc"
       />
       <Header />
@@ -73,20 +73,20 @@ const DecretAutoproduction = () => {
           <Container size="wide">
             <div className="max-w-4xl">
               <Reveal>
-                <Eyebrow>DÉCRET 2.25.100 · EN VIGUEUR DEPUIS LE 9 JUIN 2026</Eyebrow>
+                <Eyebrow>DÉCRET 2-25-100 · EN VIGUEUR DEPUIS LE 9 JUIN 2026</Eyebrow>
               </Reveal>
               <AnimatedText
                 as="h1"
                 trigger="mount"
-                text="Vous avez désormais le droit de produire votre propre électricité."
-                accentWords={["produire", "propre", "électricité."]}
+                text="Autoproduction : le décret d'application est en vigueur."
+                accentWords={["en", "vigueur"]}
                 className="mt-6 font-display text-display-hero text-wh"
               />
               <Reveal delay={0.2}>
                 <p className="mt-8 max-w-2xl text-body-lg text-gr">
-                  Le décret 2.25.100, en vigueur depuis le 9 juin 2026, ouvre officiellement
-                  l'autoproduction solaire au Maroc. SUNAVIO transforme ce cadre légal en projet
-                  rentable, clé en main.
+                  Le décret 2-25-100, en vigueur depuis le 9 juin 2026, fixe les conditions de
+                  réalisation et d'exploitation des installations d'autoproduction prévues par la
+                  loi 82-21. SUNAVIO conçoit votre projet et monte le dossier, clé en main.
                 </p>
               </Reveal>
               <Reveal delay={0.35}>
@@ -108,7 +108,7 @@ const DecretAutoproduction = () => {
         <section className="bg-bg3 py-24 md:py-32">
           <Container size="wide">
             <SectionHeader
-              eyebrow="CE QUE LA LOI CHANGE"
+              eyebrow="CE QUE LE DÉCRET FIXE"
               title="Concrètement, pour vous."
               accentWords={["pour", "vous."]}
             />
@@ -149,22 +149,33 @@ const DecretAutoproduction = () => {
               <div className="space-y-6">
                 <Reveal delay={0.1}>
                   <p className="text-body text-gr">
-                    La plupart des villas, hôtels et golfs se situent dans la tranche raccordée
-                    basse ou moyenne tension. Dans ce cas, un accord de raccordement devient
-                    obligatoire.
+                    De 11 kW à 5 MW, en basse ou moyenne tension : accord de raccordement du
+                    gestionnaire du réseau de distribution, avant les travaux.
                   </p>
                 </Reveal>
                 <Reveal delay={0.2}>
                   <p className="text-body text-gr">
-                    Le dossier à déposer doit être complet : localisation du projet, description
-                    technique de l'installation, étude d'impact environnemental, prévision de
-                    production sur trois ans et schéma de raccordement. La décision dépend de
-                    l'étude technique validée par le gestionnaire de réseau régional.
+                    Le dossier à déposer doit être complet. Il comprend notamment : coordonnées du
+                    site, spécifications techniques détaillées des équipements (fabricant,
+                    références), étude d'impact sur l'environnement, conformément à la législation
+                    en vigueur, rapport de consommation annuelle des trois dernières années (ou
+                    consommation prévue sur trois ans pour un nouveau raccordement ou une hausse
+                    des quantités souscrites) et schéma de raccordement. La décision dépend de la
+                    capacité d'accueil du réseau et d'une étude technique réalisée par le
+                    gestionnaire du réseau de distribution, aux frais du demandeur.
                   </p>
                 </Reveal>
                 <Reveal delay={0.3}>
                   <p className="text-body text-gr">
-                    Au-delà de 5 MW, c'est un régime d'autorisation préalable qui s'applique.
+                    À partir de 5 MW : autorisation des services du ministère chargé de
+                    l'énergie, après avis du gestionnaire de réseau.
+                  </p>
+                </Reveal>
+                <Reveal delay={0.4}>
+                  <p className="text-xs text-gr2">
+                    Le texte officiel du décret 2-25-100 est en arabe : il est publié au Bulletin
+                    officiel n° 7489 du 9 mars 2026. Sa traduction française officielle n'est pas
+                    disponible au 5 octobre 2026. Cette page en présente le contenu, sans le citer.
                   </p>
                 </Reveal>
               </div>
@@ -179,7 +190,7 @@ const DecretAutoproduction = () => {
               eyebrow="POURQUOI SUNAVIO"
               title="Pourquoi passer par un bureau d'études."
               accentWords={["bureau", "d'études."]}
-              intro="Ce dossier n'est pas un formulaire qu'on remplit seul. Un dimensionnement erroné, c'est un raccordement refusé ou une installation surdimensionnée non rentable. SUNAVIO conçoit l'étude technique, monte le dossier de raccordement et vous accompagne jusqu'à la mise en service."
+              intro="Ce dossier n'est pas un formulaire qu'on remplit seul. Un dossier incomplet doit être complété sous 30 jours, sinon il est renvoyé ; une étude technique défavorable entraîne un refus. SUNAVIO réalise votre dimensionnement, monte le dossier de demande d'accord de raccordement et vous accompagne jusqu'à la mise en service, sous réserve de l'accord du gestionnaire de réseau."
             />
             <div className="mt-20 grid grid-cols-1 gap-x-16 gap-y-14 md:grid-cols-2">
               {STEPS.map((s, i) => (
@@ -213,8 +224,8 @@ const DecretAutoproduction = () => {
             <div className="mx-auto max-w-3xl text-center">
               <AnimatedText
                 as="h2"
-                text="Le cadre est en place. La fenêtre est ouverte."
-                accentWords={["fenêtre", "ouverte."]}
+                text="Le décret est en vigueur depuis le 9 juin 2026."
+                accentWords={["9", "juin", "2026"]}
                 className="font-display text-display-section text-wh"
               />
               <Reveal delay={0.2}>

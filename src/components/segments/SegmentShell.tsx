@@ -364,11 +364,10 @@ export function SegmentShell({
                   <div>
                     <Eyebrow>CADRE LÉGAL</Eyebrow>
                     <h3 className="mt-3 font-display text-2xl font-semibold text-wh">
-                      Le décret 2.25.100 sécurise désormais votre projet.
+                      Le décret 2-25-100 est en vigueur depuis le 9 juin 2026.
                     </h3>
                     <p className="mt-3 text-body text-gr">
-                      Autoproduction, raccordement, revente du surplus : tout ce qui change au
-                      Maroc.
+                      Autoproduction et raccordement : ce que fixe le décret.
                     </p>
                   </div>
                   <Link
