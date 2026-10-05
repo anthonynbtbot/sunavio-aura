@@ -47,10 +47,8 @@ const SEGMENTS: Segment[] = [
     ],
     cardTitle: "Bénéfices concrets",
     benefits: [
-      "Réduction facture ONEE de 40 à 70% selon configuration",
-      "Continuité de service en cas de coupure réseau",
+      "Alimentation de secours de circuits choisis en cas de coupure du réseau, avec onduleur hybride, batterie et boîtier de secours, selon la configuration",
       "Intégration architecturale respectueuse du design existant",
-      "Amortissement 5 à 8 ans, ROI positif sur 20 ans",
       "Image de marque renforcée (positionnement RSE crédible)",
     ],
     ctaLabel: "Parler de mon projet hôtelier",
@@ -71,7 +69,6 @@ const SEGMENTS: Segment[] = [
     benefits: [
       "Audit énergétique complet sur 12 mois de consommation",
       "Dimensionnement sur-mesure selon usages réels",
-      "Autonomie 80-100% selon configuration souhaitée",
       "Monitoring production via app mobile",
       "Intégration esthétique (ombrières piscine, pergolas solaires, toitures invisibles)",
     ],
@@ -91,11 +88,10 @@ const SEGMENTS: Segment[] = [
     ],
     cardTitle: "Spécificités golf & domaines",
     benefits: [
-      "Couverture irrigation estivale (30-50% de la consommation annuelle)",
+      "Couverture irrigation estivale",
       "Micro-réseau autonome possible (off-grid total)",
       "Intégration au sol dans zones non-jouées",
       "Gestion énergétique multi-bâtiments centralisée",
-      "Retour sur investissement accéléré (4-6 ans) grâce aux tarifs heures pleines évités",
     ],
     ctaLabel: "Étudier mon domaine",
     bg: "bg",
@@ -107,13 +103,12 @@ const SEGMENTS: Segment[] = [
     title: "Réduire votre facture professionnelle.",
     accent: ["facture", "professionnelle."],
     paragraphs: [
-      "Pour les sièges sociaux, immeubles de bureaux, cabinets, cliniques et commerces, le solaire est aujourd'hui le levier le plus rentable pour maîtriser les coûts énergétiques. Les toitures plates ou faiblement inclinées se prêtent idéalement à l'installation de panneaux, et la consommation diurne coïncide avec la production solaire.",
-      "SUNAVIO dimensionne vos installations tertiaires pour maximiser l'autoconsommation directe (électricité produite et consommée immédiatement, sans stockage coûteux) et couvrir jusqu'à 70% de vos besoins énergétiques annuels.",
+      "Pour les sièges sociaux, immeubles de bureaux, cabinets, cliniques et commerces, le solaire permet aujourd'hui de produire sur place une partie de l'électricité achetée au réseau, pour mieux maîtriser les coûts énergétiques. Les toitures plates ou faiblement inclinées se prêtent idéalement à l'installation de panneaux, et la consommation diurne coïncide avec la production solaire.",
+      "SUNAVIO dimensionne vos installations tertiaires pour maximiser l'autoconsommation directe (électricité produite et consommée immédiatement, sans stockage coûteux).",
       "Nos clients tertiaires bénéficient également d'un argument RSE tangible : bilan carbone amélioré, certifications environnementales facilitées, communication valorisable auprès de leurs propres clients et partenaires.",
     ],
     cardTitle: "Avantages tertiaire",
     benefits: [
-      "Amortissement rapide (5-7 ans) grâce aux tarifs pros élevés",
       "Autoconsommation directe, peu ou pas de stockage nécessaire",
       "Bilan carbone amélioré, certifications facilitées",
       "Argument RSE valorisable auprès clients et partenaires",

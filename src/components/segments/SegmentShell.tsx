@@ -36,13 +36,13 @@ const EQUIPMENT = [
     icon: Wrench,
     title: "Onduleurs Huawei SUN2000",
     description:
-      "Plateforme FusionSolar robuste, rendement jusqu'à 98,6%, pilotage fin de l'autoconsommation, compatible monophasé et triphasé.",
+      "Plateforme FusionSolar robuste, rendement maximal jusqu'à 98,6 %, pilotage fin de l'autoconsommation, compatible monophasé et triphasé.",
   },
   {
     icon: Battery,
     title: "Stockage Huawei LUNA2000",
     description:
-      "Batteries LFP modulaires (5 à 30 kWh), sécurité au niveau cellule, dimensionnées sur votre courbe de charge réelle pour absorber les pics et sécuriser l'alimentation.",
+      "Batteries LFP modulaires (5 à 30 kWh par onduleur hybride), sécurité au niveau cellule, dimensionnées sur votre courbe de charge réelle pour absorber les pics et sécuriser l'alimentation.",
   },
   {
     icon: ShieldCheck,
@@ -96,6 +96,9 @@ export interface SegmentShellProps {
   referenceParagraphs: ReactNode[];
   metrics: SegmentMetric[];
   metricsNote?: string;
+  referenceEyebrow?: string;
+  /** Remplace le bloc de chiffres (colonne droite) si fourni. */
+  referenceAside?: ReactNode;
   ctaTitle: string;
   ctaAccent: string[];
   ctaIntro: string;
@@ -125,6 +128,8 @@ export function SegmentShell({
   referenceParagraphs,
   metrics,
   metricsNote,
+  referenceEyebrow = "RÉALISATION DE RÉFÉRENCE",
+  referenceAside,
   ctaTitle,
   ctaAccent,
   ctaIntro,
@@ -306,7 +311,7 @@ export function SegmentShell({
             <div className="grid gap-16 lg:grid-cols-2 lg:gap-24">
               <div>
                 <Reveal>
-                  <Eyebrow>RÉALISATION DE RÉFÉRENCE</Eyebrow>
+                  <Eyebrow>{referenceEyebrow}</Eyebrow>
                 </Reveal>
                 <AnimatedText
                   as="h2"
@@ -320,6 +325,9 @@ export function SegmentShell({
                   </Reveal>
                 ))}
               </div>
+              {referenceAside ? (
+                <div className="min-w-0">{referenceAside}</div>
+              ) : (
               <div className="space-y-6">
                 {metrics.map((row, i) => (
                   <Reveal key={row.k} delay={i * 0.08}>
@@ -335,6 +343,7 @@ export function SegmentShell({
                   </Reveal>
                 )}
               </div>
+              )}
             </div>
           </Container>
         </section>
