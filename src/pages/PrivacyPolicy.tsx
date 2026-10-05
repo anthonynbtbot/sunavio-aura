@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { LegalLayout } from "@/components/layout/LegalLayout";
 
 const PrivacyPolicy = () => (
@@ -5,7 +6,7 @@ const PrivacyPolicy = () => (
     eyebrow="POLITIQUE DE CONFIDENTIALITÉ"
     title="Politique de confidentialité."
     accentWords={["confidentialité."]}
-    updatedAt="Dernière mise à jour : 21 avril 2026"
+    updatedAt="Dernière mise à jour : 5 octobre 2026"
     seoTitle="Politique de confidentialité | SUNAVIO Marrakech"
     seoDescription="Politique de confidentialité SUNAVIO : traitement des données pour nos services de panneaux solaires et installation solaire villa à Marrakech."
     path="/confidentialite"
@@ -17,11 +18,11 @@ const PrivacyPolicy = () => (
         dans le cadre de l'utilisation du site sunavio.com.
       </p>
       <p>
-        <strong>Principe fondamental :</strong> le site sunavio.com est un site vitrine.
-        Il ne collecte aucune donnée personnelle via formulaire, compte utilisateur ou
-        transaction. Les seules données traitées sont des données techniques de
-        fréquentation, anonymisées et strictement nécessaires au fonctionnement et à
-        l'amélioration du site.
+        Le site sunavio.com est un site vitrine. Il recueille des données de deux façons :
+        le formulaire de contact, que vous remplissez vous-même, et des outils de mesure
+        (Google Analytics pour la mesure d'audience, le pixel Meta pour la publicité,
+        Cloudflare pour le nombre de visites et le temps de chargement des pages), décrits
+        dans notre <Link to="/cookies">politique cookies</Link>.
       </p>
     </section>
 
@@ -40,27 +41,31 @@ const PrivacyPolicy = () => (
 
     <section>
       <h2>3. Données collectées</h2>
-      <h3>Données techniques de fréquentation (via Umami Analytics)</h3>
+      <h3>Données de visite (Google Analytics, pixel Meta, Cloudflare)</h3>
       <ul>
         <li>Pages visitées</li>
         <li>Temps passé sur le site</li>
         <li>Source de provenance (moteur de recherche, lien direct, etc.)</li>
-        <li>Type d'appareil et de navigateur (agrégé)</li>
+        <li>Type d'appareil et de navigateur</li>
         <li>Pays d'origine (via géolocalisation IP approximative)</li>
       </ul>
       <p>
-        Ces données sont <strong>agrégées et anonymisées</strong>. Aucune adresse IP n'est
-        stockée. Aucun identifiant permettant de vous reconnaître personnellement n'est
-        utilisé. Aucun cookie de tracking tiers (Google Analytics, Meta Pixel, etc.) n'est
-        déployé sur ce site.
+        Ces données sont recueillies par Google Analytics et le pixel Meta, chargés par le
+        code du site. Cloudflare, par lequel passe le site, mesure aussi le nombre de
+        visites et le temps de chargement des pages, sans déposer de cookie. Elles servent
+        à mesurer l'audience du site, à savoir quelles visites viennent de nos publicités
+        et se terminent par une prise de contact, et à montrer nos publicités aux personnes
+        qui ont déjà visité le site. Ces outils déposent des cookies sur votre appareil :
+        leur liste et leur rôle sont dans notre{" "}
+        <Link to="/cookies">politique cookies</Link>.
       </p>
 
       <h3>Données de contact direct</h3>
       <p>
-        Si vous choisissez de nous contacter via WhatsApp, email ou téléphone depuis notre
-        page Contact, les données que vous nous communiquez volontairement (nom,
-        coordonnées, contenu du message) sont traitées uniquement pour vous répondre.
-        Elles ne sont jamais partagées avec des tiers.
+        Si vous nous contactez par le formulaire du site, par WhatsApp, par mail ou par
+        téléphone, les données que vous nous communiquez (nom, coordonnées, message)
+        servent à vous répondre. Le formulaire du site nous est transmis par le service
+        d'envoi de formulaires Formspree.
       </p>
 
       <h3>Ancien simulateur en ligne</h3>
@@ -72,21 +77,17 @@ const PrivacyPolicy = () => (
     </section>
 
     <section>
-      <h2>4. Base légale et finalité</h2>
+      <h2>4. À quoi servent vos données</h2>
       <p>
-        Le traitement des données de fréquentation repose sur notre{" "}
-        <strong>intérêt légitime</strong> à comprendre l'audience du site et à en
-        améliorer les performances techniques. Aucune donnée n'est utilisée à des fins
-        commerciales, publicitaires ou de profilage.
+        Les données de visite servent à mesurer l'audience du site et à l'améliorer, et à
+        mesurer et diffuser nos publicités sur Facebook et Instagram ; Google Analytics
+        peut aussi servir à constituer des listes de visiteurs pour la publicité Google.
+        Les données de contact servent à vous répondre.
       </p>
     </section>
 
     <section>
       <h2>5. Durée de conservation</h2>
-      <p>
-        Les statistiques de fréquentation anonymisées sont conservées pendant 12 mois,
-        puis automatiquement supprimées.
-      </p>
       <p>
         Les échanges directs (emails, messages WhatsApp) sont conservés tant que la
         relation commerciale est active, puis archivés 5 ans conformément aux obligations
