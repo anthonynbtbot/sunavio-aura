@@ -308,14 +308,6 @@ const HotelMarrakech = () => {
                     de service.
                   </p>
                 </Reveal>
-                <Reveal delay={0.3}>
-                  <p className="mt-6 text-body text-gr">
-                    <span className="text-wh">Bon à savoir —</span> votre projet peut, sous
-                    conditions de classement, être éligible aux dispositifs de soutien à
-                    l'investissement touristique (type Go Siyaha). Nous vous orientons vers les
-                    interlocuteurs compétents pendant l'étude.
-                  </p>
-                </Reveal>
               </div>
               <div className="space-y-6">
                 {[
