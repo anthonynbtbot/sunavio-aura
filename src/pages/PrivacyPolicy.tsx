@@ -63,11 +63,11 @@ const PrivacyPolicy = () => (
         Elles ne sont jamais partagées avec des tiers.
       </p>
 
-      <h3>Estimation de projet</h3>
+      <h3>Ancien simulateur en ligne</h3>
       <p>
-        Si vous utilisez notre simulateur à l'adresse estimer.sunavio.com, ce dernier
-        dispose de sa propre politique de confidentialité détaillée, accessible depuis
-        son interface. Le simulateur est un outil distinct du site vitrine.
+        Les personnes qui ont utilisé l'ancien simulateur en ligne de SUNAVIO peuvent
+        demander l'accès à leurs données ou leur suppression par mail à
+        sunavio.contact@gmail.com.
       </p>
     </section>
 

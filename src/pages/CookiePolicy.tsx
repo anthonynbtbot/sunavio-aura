@@ -91,10 +91,11 @@ const CookiePolicy = () => (
     </section>
 
     <section>
-      <h2>5. Cookies du simulateur</h2>
+      <h2>5. Ancien simulateur en ligne</h2>
       <p>
-        Le simulateur à l'adresse estimer.sunavio.com dispose de sa propre politique
-        cookies, accessible depuis son interface.
+        Les personnes qui ont utilisé l'ancien simulateur en ligne de SUNAVIO peuvent
+        demander l'accès à leurs données ou leur suppression par mail à
+        sunavio.contact@gmail.com.
       </p>
     </section>
 

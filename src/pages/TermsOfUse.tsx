@@ -70,9 +70,14 @@ const TermsOfUse = () => (
       <h2>5. Liens externes</h2>
       <p>
         Le site peut contenir des liens vers des sites tiers (notamment
-        estimer.sunavio.com, wa.me pour WhatsApp, partenaires équipementiers cités à
+        wa.me pour WhatsApp, partenaires équipementiers cités à
         titre de référence). SUNAVIO SARL n'exerce aucun contrôle sur ces sites externes
         et décline toute responsabilité quant à leur contenu.
+      </p>
+      <p>
+        Les personnes qui ont utilisé l'ancien simulateur en ligne de SUNAVIO peuvent
+        demander l'accès à leurs données ou leur suppression par mail à
+        sunavio.contact@gmail.com.
       </p>
     </section>
 

@@ -11,7 +11,8 @@ import { Reveal } from "@/components/atoms/Reveal";
 import { SectionHeader } from "@/components/atoms/SectionHeader";
 import { sunavioButtonVariants } from "@/components/atoms/SunavioButton";
 import solarTexture from "@/assets/solar-texture.jpg";
-import { trackSimulatorStart, trackWhatsAppClick, trackContactClick } from "@/lib/tracking";
+import { Link } from "react-router-dom";
+import { trackWhatsAppClick, trackContactClick } from "@/lib/tracking";
 
 interface PersonCard {
   role: string;
@@ -71,7 +72,7 @@ const Contact = () => {
               />
               <Reveal delay={0.2}>
                 <p className="mt-6 max-w-2xl text-body text-gr">
-                  Une estimation en ligne, un message direct, ou un rendez-vous sur site.
+                  Une pré-étude sur votre facture, un message direct, ou un rendez-vous sur site.
                   Nous répondons sous 24h ouvrées.
                 </p>
               </Reveal>
@@ -93,23 +94,22 @@ const Contact = () => {
           />
           <Container size="wide" className="relative">
             <SectionHeader
-              eyebrow="ESTIMATION DÉTAILLÉE"
-              title="Connaître le potentiel de votre toit en 2 minutes."
+              eyebrow="PRÉ-ÉTUDE OFFERTE SUR VOTRE FACTURE"
+              title="Connaître le potentiel de votre toit."
               accentWords={["de", "votre", "toit"]}
-              intro="Notre simulateur calcule précisément la puissance installable, la production annuelle, les économies réalisées et le retour sur investissement. Basé sur les données ONEE, l'ensoleillement réel Marrakech et les tarifs équipements actualisés."
+              intro="Envoyez-nous votre dernière facture d'électricité : elle sert de base à la pré-étude de votre site. Laissez vos coordonnées dans le formulaire, nous vous recontactons pour la recevoir."
             />
             <Reveal delay={0.3} className="mt-10">
               <div className="flex flex-col items-start gap-3">
-                <a
-                  href="https://estimer.sunavio.com"
-                  onClick={() => trackSimulatorStart()}
+                <Link
+                  to="/contact#contact-form"
                   className={sunavioButtonVariants({ variant: "primary", size: "lg" })}
                 >
                   <span className="relative z-10 inline-flex items-center gap-2">
-                    Lancer le simulateur
+                    Demander une pré-étude
                   </span>
-                </a>
-                <p className="text-xs text-gr2">Estimation gratuite, sans engagement.</p>
+                </Link>
+                <p className="text-xs text-gr2">Pré-étude offerte, sans engagement.</p>
               </div>
             </Reveal>
           </Container>
@@ -248,18 +248,20 @@ const Contact = () => {
               />
               <Reveal delay={0.2}>
                 <p className="mx-auto mt-6 max-w-xl text-body text-gr">
-                  Commencez par une estimation précise en ligne, ou écrivez-nous directement.
+                  Écrivez-nous directement sur WhatsApp : Anthony pour les entreprises, Thierry pour les particuliers.
                 </p>
               </Reveal>
               <Reveal delay={0.3}>
                 <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
                   <a
-                    href="https://estimer.sunavio.com"
-                    onClick={() => trackSimulatorStart()}
+                    href="https://wa.me/212663284424"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    onClick={() => trackWhatsAppClick()}
                     className={sunavioButtonVariants({ variant: "primary", size: "lg" })}
                   >
                     <span className="relative z-10 inline-flex items-center gap-2">
-                      Estimer mon projet
+                      <MessageCircle className="h-4 w-4" /> WhatsApp Anthony
                     </span>
                   </a>
                   <a

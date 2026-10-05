@@ -53,10 +53,6 @@ export const trackContactLead = (type: ContactType) => {
 };
 
 // Events métier SUNAVIO
-export const trackSimulatorStart = () => {
-  trackEvent("simulateur_start", { source: "site_principal" });
-};
-
 export const trackSimulatorComplete = (data?: Record<string, any>) => {
   trackEvent("simulateur_complete", data);
 };

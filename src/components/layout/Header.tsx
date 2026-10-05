@@ -6,7 +6,6 @@ import { cn } from "@/lib/utils";
 import { Container } from "@/components/atoms/Container";
 import { SunavioButton } from "@/components/atoms/SunavioButton";
 import logo from "@/assets/sunavio-logo-white.png";
-import { trackSimulatorStart } from "@/lib/tracking";
 
 const SOLUTIONS = [
   { to: "/services", label: "Vue d'ensemble" },
@@ -163,9 +162,7 @@ export function Header() {
 
             <div className="hidden md:block">
               <SunavioButton size="sm" asChild>
-                <a href="https://estimer.sunavio.com" onClick={() => trackSimulatorStart()}>
-                  Estimer mon projet
-                </a>
+                <Link to="/contact#contact-form">Demander une pré-étude</Link>
               </SunavioButton>
             </div>
 
@@ -248,9 +245,7 @@ export function Header() {
               </ul>
 
               <SunavioButton size="lg" asChild className="w-full">
-                <a href="https://estimer.sunavio.com" onClick={() => trackSimulatorStart()}>
-                  Estimer mon projet
-                </a>
+                <Link to="/contact#contact-form">Demander une pré-étude</Link>
               </SunavioButton>
             </Container>
           </motion.div>
