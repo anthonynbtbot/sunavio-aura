@@ -68,6 +68,23 @@ const PrivacyPolicy = () => (
         d'envoi de formulaires Formspree.
       </p>
 
+      <h3>Formulaires de nos publicités Facebook et Instagram</h3>
+      <p>
+        Certaines de nos publicités sur Facebook et Instagram vous proposent de demander une pré-étude solaire en remplissant un formulaire, sans quitter l'application. Ce formulaire est fourni par Meta, la société qui exploite Facebook et Instagram. Vos réponses sont d'abord enregistrées par Meta, sur des serveurs situés hors du Maroc, puis SUNAVIO SARL les récupère pour vous rappeler. Votre nom, votre téléphone et votre e-mail peuvent être préremplis par Meta à partir de votre compte : vérifiez-les avant l'envoi. Meta peut aussi vous demander de confirmer votre numéro par un code reçu par SMS. Pour ce que Meta fait de ces informations de son côté, reportez-vous à la politique de confidentialité de Meta.
+      </p>
+      <p>
+        Les informations que nous recevons sont : votre nom, votre numéro de téléphone, votre adresse e-mail, si vous êtes propriétaire de votre logement ou non, le montant moyen de votre facture d'électricité par mois (par tranche) et votre ville ou votre quartier, ainsi que la date d'envoi du formulaire et la publicité depuis laquelle vous l'avez rempli.
+      </p>
+      <p>
+        Nous les utilisons seulement pour vous rappeler au sujet de votre demande et préparer votre pré-étude offerte, pour laquelle nous vous demanderons une facture d'électricité récente. Les réponses sur votre logement, votre facture et votre ville nous servent à savoir si une installation solaire est possible chez vous et à préparer l'appel. Toutes les questions du formulaire servent à ce rappel ; si vous préférez ne pas y répondre, vous pouvez nous contacter directement au +212 6 63 28 44 24 ou à sunavio.contact@gmail.com. Nous ne vendons pas ces informations et ne les transmettons à personne. Nous ne vous envoyons pas d'offres commerciales par e-mail, SMS ou WhatsApp sans votre accord.
+      </p>
+      <p>
+        SUNAVIO conserve vos réponses sur ses propres ordinateurs. Si votre demande n'aboutit ni à un devis ni à une installation, elles sont supprimées 12 mois après notre dernier échange. Si elle aboutit, elles sont conservées comme nos autres échanges (voir « Durée de conservation »). La copie gardée par Meta relève de la politique de confidentialité de Meta.
+      </p>
+      <p>
+        Vous pouvez à tout moment nous demander l'accès à ces informations, leur correction ou leur suppression, ou nous dire que vous ne souhaitez plus être contacté, en écrivant à sunavio.contact@gmail.com. Dès que vous nous demandez de ne plus vous contacter, nous ne vous rappelons plus. Pour les informations conservées par Meta, vous pouvez aussi vous adresser directement à Meta. Si vous estimez que vos droits ne sont pas respectés, vous pouvez saisir la Commission nationale de contrôle de la protection des données à caractère personnel (CNDP), l'autorité marocaine chargée des données personnelles.
+      </p>
+
       <h3>Ancien simulateur en ligne</h3>
       <p>
         Les personnes qui ont utilisé l'ancien simulateur en ligne de SUNAVIO peuvent
